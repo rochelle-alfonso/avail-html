@@ -19,8 +19,8 @@ INTERNAL_PAGES = {
 }
 
 EXTERNAL = {
-    "site_home": "http://localhost:9345/",
-    "deposit_site": "http://localhost:8848",
+    "site_home": "../avail-website/",
+    "deposit_site": "../avail-deposit",
     "docs": "https://docs.availproject.org/",
     "docs_nexus": "https://docs.availproject.org/docs/nexus/quickstart",
     "docs_deposit": "https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/deposit",
@@ -56,6 +56,12 @@ def internal(from_page: str, to_key: str) -> str:
     if rel in (".", ""):
         return "./"
     return rel + ("" if rel.endswith("/") else "/")
+
+
+def marketing_home(from_page: str) -> str:
+    """Relative path from an avail-deposit page to the marketing homepage."""
+    depth = 1 if not from_page else 2
+    return "../" * depth + "avail-website/"
 
 
 def external(key: str) -> str:

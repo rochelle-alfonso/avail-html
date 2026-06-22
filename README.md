@@ -2,6 +2,19 @@
 
 Marketing homepage and product pages built from Figma, served as static HTML/CSS/JS.
 
+## Live site (GitHub Pages)
+
+**https://rochelle-alfonso.github.io/avail-html/**
+
+| Page | URL |
+|------|-----|
+| Landing | https://rochelle-alfonso.github.io/avail-html/ |
+| Marketing homepage | https://rochelle-alfonso.github.io/avail-html/avail-website/ |
+| Deposits | https://rochelle-alfonso.github.io/avail-html/avail-deposit/ |
+| Nexus | https://rochelle-alfonso.github.io/avail-html/avail-deposit/nexus/ |
+| DA | https://rochelle-alfonso.github.io/avail-html/avail-deposit/da/ |
+| Ecosystem | https://rochelle-alfonso.github.io/avail-html/avail-deposit/ecosystem/ |
+
 ## Projects
 
 | Folder | URL (local) | Description |
@@ -11,11 +24,19 @@ Marketing homepage and product pages built from Figma, served as static HTML/CSS
 
 ## Run locally
 
-```bash
-# Marketing homepage
-cd avail-website && python3 -m http.server 9345 --bind 127.0.0.1
+Serve the repo root so cross-site links work:
 
-# Product pages
+```bash
+git clone https://github.com/rochelle-alfonso/avail-html.git
+cd avail-html
+python3 -m http.server 8080 --bind 127.0.0.1
+# Open http://localhost:8080/
+```
+
+Or run each site separately (use separate ports):
+
+```bash
+cd avail-website && python3 -m http.server 9345 --bind 127.0.0.1
 cd avail-deposit && python3 -m http.server 8848 --bind 127.0.0.1
 ```
 

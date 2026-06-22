@@ -6,7 +6,7 @@ from __future__ import annotations
 import re
 from pathlib import Path
 
-from site_urls import external, internal
+from site_urls import external, internal, marketing_home
 
 ROOT = Path(__file__).resolve().parent
 PAGES = [
@@ -34,11 +34,12 @@ def set_href(html: str, pattern: str, href: str) -> str:
 def patch_nav_and_footer(html: str, pg: str) -> str:
     d = lambda k: internal(pg, k)
     e = external
+    home = marketing_home(pg)
 
     # Logo → marketing homepage
     html = re.sub(
         r'(<a )href="[^"]*"(\s+class="nav-logo")',
-        rf'\1href="{e("site_home")}"\2',
+        rf'\1href="{home}"\2',
         html,
         count=1,
     )
@@ -70,8 +71,8 @@ def patch_nav_and_footer(html: str, pg: str) -> str:
         (r'(<a href=")[^"]*(" class="btn btn-primary nav-header__cta">Build with Avail)', rf'\1{e("docs_nexus")}\2'),
         (r'(<a href=")[^"]*(" class="btn btn-primary mobile-menu__cta">Build with Avail)', rf'\1{e("docs_nexus")}\2'),
         (r'(<a href=")[^"]*(" class="btn btn-primary site-footer__btn">Schedule A Demo)', rf'\1{e("calendly")}\2'),
-        (r'(<a href=")[^"]*(" class="site-footer__nav-link">Home)', rf'\1{e("site_home")}\2'),
-        (r'(<a href=")[^"]*(" class="site-footer__nav-link"[^>]*>Home)', rf'\1{e("site_home")}\2'),
+        (r'(<a href=")[^"]*(" class="site-footer__nav-link">Home)', rf'\1{home}\2'),
+        (r'(<a href=")[^"]*(" class="site-footer__nav-link"[^>]*>Home)', rf'\1{home}\2'),
         (r'(<a href=")[^"]*(" class="site-footer__nav-link">About us)', rf'\1{d("about")}\2'),
         (r'(<a href=")[^"]*(" class="site-footer__nav-link">Nexus)', rf'\1{d("nexus")}\2'),
         (r'(<a href=")[^"]*(" class="site-footer__nav-link">DA)', rf'\1{d("da")}\2'),
@@ -111,13 +112,13 @@ def patch_nav_and_footer(html: str, pg: str) -> str:
     # Events page home link
     html = re.sub(
         r'(<a href=")[^"]*(" class="nav-links__item">Home)',
-        rf'\1{e("site_home")}\2',
+        rf'\1{home}\2',
         html,
         count=1,
     )
     html = re.sub(
         r'(<a href=")[^"]*(" class="mobile-menu__link">Home)',
-        rf'\1{e("site_home")}\2',
+        rf'\1{home}\2',
         html,
         count=1,
     )
@@ -184,9 +185,10 @@ def patch_page_ctas(html: str, pg: str) -> str:
 def patch_events_footer(html: str, pg: str) -> str:
     d = lambda k: internal(pg, k)
     e = external
+    home = marketing_home(pg)
 
     events_links = [
-        (r'(<a href=")[^"]*(">Home</a>)', rf'\1{e("site_home")}\2'),
+        (r'(<a href=")[^"]*(">Home</a>)', rf'\1{home}\2'),
         (r'(<a href=")[^"]*(">Nexus</a>)', rf'\1{d("nexus")}\2'),
         (r'(<a href=")[^"]*(">DA</a>)', rf'\1{d("da")}\2'),
         (r'(<a href=")[^"]*(">Token</a>)', rf'\1{e("token")}\2'),
