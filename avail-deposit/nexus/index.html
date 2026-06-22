@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus — Avail</title>
+  <meta name="description" content="Avail Nexus is the multi-chain coordination layer that seamlessly connects users, assets, and apps across any blockchain." />
+  <link rel="icon" type="image/png" href="../assets/logo-mark.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../nav.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="page-bg" aria-hidden="true">
+      <canvas class="page-bg__canvas"></canvas>
+    </div>
+
+  <header class="nav-header">
+    <div class="nav-pill">
+      <a href="http://localhost:9345/" class="nav-logo" aria-label="Avail home">
+        <img src="../assets/logo-mark.svg" alt="" class="nav-logo__mark" width="24" height="24">
+        <img src="../assets/logo-wordmark.svg" alt="avail" class="nav-logo__wordmark" width="46" height="17">
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-solutions-trigger" aria-controls="nav-solutions-menu">Solutions</button>
+          <div class="nav-dropdown__menu" id="nav-solutions-menu" role="menu" aria-labelledby="nav-solutions-trigger">
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">App Developers</p>
+              <a href="../" class="nav-dropdown__link" role="menuitem">User Onboarding</a>
+              <a href="./" class="nav-dropdown__link" role="menuitem">Multi-Chain Solutions</a>
+            </div>
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">Blockchain Developers</p>
+              <a href="../da/" class="nav-dropdown__link" role="menuitem">Data Availability</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-products-trigger" aria-controls="nav-products-menu">Products</button>
+          <div class="nav-dropdown__menu nav-dropdown__menu--products" id="nav-products-menu" role="menu" aria-labelledby="nav-products-trigger">
+            <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+            <a href="../" class="nav-dropdown__link" role="menuitem">Avail Deposits</a>
+            <a href="./" class="nav-dropdown__link" role="menuitem">Avail Nexus</a>
+            <a href="../da/" class="nav-dropdown__link" role="menuitem">Avail DA</a>
+            <a href="https://docs.availproject.org/" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+          </div>
+        </div>
+        <a href="../ecosystem/" class="nav-links__item">Ecosystem</a>
+        <a href="https://docs.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Docs</a>
+        <a href="https://blog.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Blog</a>
+      </nav>
+
+      <button
+        type="button"
+        class="nav-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Open menu"
+      >
+        <span class="nav-menu__icon" aria-hidden="true"></span>
+        <span class="nav-menu__label">Menu</span>
+      </button>
+    </div>
+
+    <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary nav-header__cta" target="_blank" rel="noopener noreferrer">Build with Avail</a>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <details class="mobile-menu__details">
+        <summary class="mobile-menu__link">Solutions</summary>
+        <div class="mobile-menu__sub">
+          <p class="mobile-menu__heading">App Developers</p>
+          <a href="../" class="mobile-menu__sublink">User Onboarding</a>
+          <a href="./" class="mobile-menu__sublink">Multi-Chain Solutions</a>
+          <p class="mobile-menu__heading">Blockchain Developers</p>
+          <a href="../da/" class="mobile-menu__sublink">Data Availability</a>
+        </div>
+      </details>
+      <details class="mobile-menu__details">
+        <summary class="mobile-menu__link">Products</summary>
+        <div class="mobile-menu__sub">
+          <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+          <a href="../" class="mobile-menu__sublink">Avail Deposits</a>
+          <a href="./" class="mobile-menu__sublink">Avail Nexus</a>
+          <a href="../da/" class="mobile-menu__sublink">Avail DA</a>
+          <a href="https://docs.availproject.org/" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+        </div>
+      </details>
+      <a href="../ecosystem/" class="mobile-menu__link">Ecosystem</a>
+      <a href="https://docs.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Docs</a>
+      <a href="https://blog.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Blog</a>
+      <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary mobile-menu__cta" target="_blank" rel="noopener noreferrer">Build with Avail</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero__copy">
+          <h1 class="hero__title">Move Freely Between Blockchains</h1>
+          <p class="hero__text">Avail Nexus is the multi-chain coordination layer that seamlessly connects users, assets, and apps across any blockchain. Scale your reach, not your complexity.</p>
+          <div class="hero__cta">
+            <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Explore the Docs</a>
+            <a href="https://calendly.com/d/cwfp-t3y-gt2/avail-discovery-call" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Schedule a Demo</a>
+          </div>
+        </div>
+        <div class="hero__panel hero__panel--video">
+          <video
+            class="hero__video"
+            src="../assets/hero-nexus.mp4"
+            autoplay
+            loop
+            muted
+            playsinline
+            preload="auto"
+            aria-label="Cross chain swap confirm details preview"
+          ></video>
+        </div>
+      </div>
+    </section>
+
+    <section class="chains">
+      <div class="wrap">
+        <h2 class="section-title">Avail Nexus is Integrated With</h2>
+      </div>
+      <div class="marquee" style="--speed: 45s">
+        <div class="marquee__track">
+          <span class="marquee__item chains__item"><img src="../assets/chains/chain-ethereum.png" alt="Ethereum" /></span>
+          <span class="marquee__item chains__item"><img src="../assets/chains/chain-optimism.png" alt="Optimism" /></span>
+          <span class="marquee__item chains__item"><img src="../assets/chains/chain-polygon.png" alt="Polygon" /></span>
+          <span class="marquee__item chains__item"><img src="../assets/chains/chain-arbitrum.png" alt="Arbitrum" /></span>
+          <span class="marquee__item chains__item"><img src="../assets/chains/chain-avalanche.png" alt="Avalanche" /></span>
+          <span class="marquee__item chains__item"><img src="../assets/chains/chain-base.svg" alt="Base" /></span>
+          <span class="marquee__item chains__item"><img src="../assets/chains/chain-scroll.png" alt="Scroll" /></span>
+          <span class="marquee__item chains__item"><img src="../assets/chains/chain-sophon.png" alt="Sophon" /></span>
+          <span class="marquee__item chains__item"><img src="../assets/chains/chain-kaia.png" alt="Kaia" /></span>
+          <span class="marquee__item chains__item"><img src="../assets/chains/chain-bnb.png" alt="BNB Chain" /></span>
+          <span class="marquee__item chains__item"><img src="../assets/chains/chain-hyperevm.svg" alt="HyperEVM" /></span>
+          <span class="marquee__item chains__item"><img src="../assets/chains/chain-tron.png" alt="Tron" /></span>
+          <span class="marquee__item chains__item" aria-hidden="true"><img src="../assets/chains/chain-ethereum.png" alt="" /></span>
+          <span class="marquee__item chains__item" aria-hidden="true"><img src="../assets/chains/chain-optimism.png" alt="" /></span>
+          <span class="marquee__item chains__item" aria-hidden="true"><img src="../assets/chains/chain-polygon.png" alt="" /></span>
+          <span class="marquee__item chains__item" aria-hidden="true"><img src="../assets/chains/chain-arbitrum.png" alt="" /></span>
+          <span class="marquee__item chains__item" aria-hidden="true"><img src="../assets/chains/chain-avalanche.png" alt="" /></span>
+          <span class="marquee__item chains__item" aria-hidden="true"><img src="../assets/chains/chain-base.svg" alt="" /></span>
+          <span class="marquee__item chains__item" aria-hidden="true"><img src="../assets/chains/chain-scroll.png" alt="" /></span>
+          <span class="marquee__item chains__item" aria-hidden="true"><img src="../assets/chains/chain-sophon.png" alt="" /></span>
+          <span class="marquee__item chains__item" aria-hidden="true"><img src="../assets/chains/chain-kaia.png" alt="" /></span>
+          <span class="marquee__item chains__item" aria-hidden="true"><img src="../assets/chains/chain-bnb.png" alt="" /></span>
+          <span class="marquee__item chains__item" aria-hidden="true"><img src="../assets/chains/chain-hyperevm.svg" alt="" /></span>
+          <span class="marquee__item chains__item" aria-hidden="true"><img src="../assets/chains/chain-tron.png" alt="" /></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="solutions" aria-label="Benefits">
+      <div class="wrap solutions__stack">
+        <article class="solution-wrap">
+          <div class="solution">
+            <div class="solution__content">
+              <h3 class="solution__title">Build Freely, Scale Everywhere</h3>
+              <p class="solution__text">Deploy on your chain of choice, app-chain, L1, or L2 without fragmenting your user base or experience. Avail Nexus removes single-chain constraints with fast, secure cross-chain communication.</p>
+              <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Learn More</a>
+            </div>
+            <div class="solution__media"><img src="../assets/solution-1.png" alt="" /></div>
+          </div>
+        </article>
+        <article class="solution-wrap">
+          <div class="solution solution--reverse">
+            <div class="solution__content">
+              <h3 class="solution__title">Onboard Users Faster</h3>
+              <p class="solution__text">Deposit directly to contracts or fund new accounts from any chain. Avail Nexus handles the gas, bridging, and the swaps so your users don't have to.</p>
+              <a href="../" class="btn btn-secondary">Avail Deposits</a>
+            </div>
+            <div class="solution__media"><img loading="lazy" decoding="async" src="../assets/solution-2.png" alt="" /></div>
+          </div>
+        </article>
+        <article class="solution-wrap">
+          <div class="solution">
+            <div class="solution__content">
+              <h3 class="solution__title">Power Autonomous Agents</h3>
+              <p class="solution__text">Build intelligent AI agents that operate across the entire crypto ecosystem. Enable Agentic Payments with assets spread over multiple chains, powered by Avail x402.</p>
+              <p class="solution__soon">Coming Soon</p>
+            </div>
+            <div class="solution__media"><img loading="lazy" decoding="async" src="../assets/solution-3.png" alt="" /></div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="toolkit">
+      <div class="wrap">
+        <div class="section-label"><span class="pill-label">Features</span></div>
+        <h2 class="section-title">Your Multi-chain Toolkit</h2>
+        <div class="toolkit__layout">
+          <div class="toolkit__list" role="tablist" aria-label="Nexus toolkit">
+            <button type="button" class="toolkit__item is-active" role="tab" aria-selected="true" data-preview="../assets/toolkit-preview-ui.png?v=2" data-preview-alt="Nexus UI Elements preview">
+              <img src="../assets/toolkit-ui.png" alt="" class="toolkit__icon" width="40" height="40" />
+              <div>
+                <h3 class="toolkit__item-title">Nexus UI Elements</h3>
+                <p class="toolkit__item-text">Pre-built components for lightning-fast integrations.</p>
+              </div>
+            </button>
+            <button type="button" class="toolkit__item" role="tab" aria-selected="false" data-preview="../assets/toolkit-preview-sdk.png?v=2" data-preview-alt="Nexus SDK preview">
+              <img src="../assets/toolkit-sdk.png" alt="" class="toolkit__icon" width="40" height="40" />
+              <div>
+                <h3 class="toolkit__item-title">Nexus SDK</h3>
+                <p class="toolkit__item-text">The full suite for crafting seamless, branded multichain experiences.</p>
+              </div>
+            </button>
+            <button type="button" class="toolkit__item" role="tab" aria-selected="false" data-preview="../assets/toolkit-preview-api.png?v=2" data-preview-alt="Nexus API preview">
+              <img src="../assets/toolkit-api.png" alt="" class="toolkit__icon" width="40" height="40" />
+              <div>
+                <h3 class="toolkit__item-title">Nexus API</h3>
+                <p class="toolkit__item-text">Maximum flexibility. Power custom backend services and complex workflows.</p>
+              </div>
+            </button>
+            <button type="button" class="toolkit__item" role="tab" aria-selected="false" data-preview="../assets/toolkit-preview-x402.png?v=2" data-preview-alt="Avail x402 preview">
+              <img src="../assets/toolkit-x402.png" alt="" class="toolkit__icon" width="40" height="40" />
+              <div>
+                <h3 class="toolkit__item-title">Avail x402</h3>
+                <p class="toolkit__item-text">The agentic payment layer. Build AI that owns and moves assets across chains.</p>
+              </div>
+            </button>
+          </div>
+          <div class="toolkit__preview" aria-live="polite">
+            <img loading="lazy" decoding="async" src="../assets/toolkit-preview-ui.png?v=2" alt="Nexus UI Elements preview" id="toolkit-preview" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="integrations">
+      <div class="wrap">
+        <h2 class="section-title">Featured Nexus Integrations</h2>
+        <article class="integration">
+          <div class="integration__content">
+            <div class="badge"><span class="badge__text">DEX</span></div>
+            <img src="../assets/logo-bean.png" alt="Bean" class="integration__logo" />
+            <h3 class="integration__title">Unified Access to Spot &amp; Perps on Monad</h3>
+            <p class="integration__text">One flow. One interface. Users and liquidity from 13+ ecosystems.</p>
+            <p class="integration__text">Avail Nexus enables instant access to Bean on Monad even if your assets are on other blockchains.</p>
+          </div>
+          <div class="integration__media"><img loading="lazy" decoding="async" src="../assets/integration-bean.jpg" alt="" /></div>
+        </article>
+        <article class="integration integration--reverse">
+          <div class="integration__content">
+            <div class="badge"><span class="badge__text">DEX</span></div>
+            <img src="../assets/logo-kalqix.png" alt="KalqiX" class="integration__logo" />
+            <h3 class="integration__title">High-Speed Trades &amp; Unified Liquidity</h3>
+            <p class="integration__text">Fast, frictionless spot and perps trading on KalqiX. No bridges, fragmented balances, or gas tokens involved.</p>
+            <p class="integration__text">Powered by Avail Nexus and Avail DA.</p>
+          </div>
+          <div class="integration__media"><img loading="lazy" decoding="async" src="../assets/integration-kalqix.jpg" alt="" /></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="builders">
+      <div class="wrap">
+        <div class="section-label"><span class="pill-label">Partners</span></div>
+        <h2 class="section-title">Build the Multi-chain Future</h2>
+        <p class="section-sub section-sub--center">Join the 20+ teams building with Avail Nexus to reach new users and create dynamic multi-chain experiences.</p>
+        <div class="partners-grid">
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-01.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Defi</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-02.svg?v=2" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-03.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Defi</span><span class="partner-card__tag">AI</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-04.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chain Integrations</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-05.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-06.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-07.svg?v=2" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-08.svg?v=2" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-09.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-10.svg?v=2" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Defi</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-11.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Defi</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-12.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Defi</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-13.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Wallets</span><span class="partner-card__tag">Defi</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-14.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-15.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-16.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-17.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Defi</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-18.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Defi</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-19.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Gaming</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-20.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Defi</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-21.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-22.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-23.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-24.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-25.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Defi</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-26.svg?v=2" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Wallets</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-27.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Defi</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-28.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span><span class="partner-card__tag">Chain Integrations</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-29.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-30.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-31.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-32.svg?v=2" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Chains</span></div>
+          </article>
+          <article class="partner-card">
+            <div class="partner-card__logo"><img loading="lazy" decoding="async" src="../assets/partners/partner-33.png" alt="" /></div>
+            <div class="partner-card__tags"><span class="partner-card__tag">Defi</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="try-out">
+      <div class="wrap try-out__inner">
+        <div class="section-label"><span class="pill-label">Experience</span></div>
+        <h2 class="section-title">Try it Out Now</h2>
+        <p class="section-sub section-sub--center">Deposit assets faster than ever with Avail's Fast Bridge</p>
+        <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Bridge Now</a>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="wrap">
+        <blockquote class="quote__card">
+          <img loading="lazy" decoding="async" src="../assets/quote-pixel-1.png" alt="" class="quote__pixel quote__pixel--tl" aria-hidden="true" />
+          <img loading="lazy" decoding="async" src="../assets/quote-pixel-2.png" alt="" class="quote__pixel quote__pixel--br" aria-hidden="true" />
+          <div class="quote__media"><img loading="lazy" decoding="async" src="../assets/quote-anurag.jpg" alt="Anurag Arjun" /></div>
+          <div class="quote__body">
+            <p class="quote__text">"Users shouldn't have to know what chain they're on. That's the job of infrastructure. It's a new world out there and we are helping build it."</p>
+            <cite class="quote__cite">Anurag Arjun, Founder and CEO, Avail</cite>
+          </div>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="ready">
+      <div class="wrap ready__inner">
+        <div class="section-label"><span class="pill-label">Build</span></div>
+        <h2 class="section-title">Ready to Build a Unified Multi-chain Experience?</h2>
+        <div class="ready__buttons">
+          <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Read Documentation</a>
+          <a href="https://availproject.org/contact" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div class="site-footer__cta">
+          <h2 class="site-footer__headline">Have questions?</h2>
+          <p class="site-footer__subcopy">Get in touch with us and understand exactly what we do</p>
+          <a href="https://calendly.com/d/cwfp-t3y-gt2/avail-discovery-call" class="btn btn-primary site-footer__btn" target="_blank" rel="noopener noreferrer">Schedule A Demo</a>
+          <p class="site-footer__copyright">Copyright © Avail Project. All rights reserved.</p>
+        </div>
+
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <div class="site-footer__nav-group site-footer__nav-group--pages">
+            <p class="site-footer__nav-heading">Pages</p>
+            <div class="site-footer__nav-columns">
+              <ul class="site-footer__nav-list">
+                <li><a href="http://localhost:9345/" class="site-footer__nav-link">Home</a></li>
+                <li><a href="../about-us/" class="site-footer__nav-link">About us</a></li>
+                <li><a href="./" class="site-footer__nav-link">Nexus</a></li>
+                <li><a href="../da/" class="site-footer__nav-link">DA</a></li>
+                <li><a href="https://avail.keka.com/careers" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Careers</a></li>
+              </ul>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://blog.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                <li><a href="../ecosystem/" class="site-footer__nav-link">Ecosystem</a></li>
+                <li><a href="../events/" class="site-footer__nav-link">Events</a></li>
+                <li><a href="../terms/" class="site-footer__nav-link">T&amp;C</a></li>
+                <li><a href="../whitepaper/" class="site-footer__nav-link">Whitepaper</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer__nav-group site-footer__nav-group--support-press">
+            <div class="site-footer__nav-subgroup">
+              <p class="site-footer__nav-heading">Support</p>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://docs.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Docs</a></li>
+                <li><a href="https://discord.com/invite/AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                <li><a href="https://github.com/availproject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="site-footer__nav-subgroup">
+              <p class="site-footer__nav-heading">Press Kit</p>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://availproject.org/brand" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Brand Assets</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer__nav-group site-footer__nav-group--socials">
+            <p class="site-footer__nav-heading">Socials</p>
+            <ul class="site-footer__nav-list">
+              <li><a href="https://x.com/AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+              <li><a href="https://www.linkedin.com/company/availproject/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://t.me/availproject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+              <li><a href="https://www.youtube.com/@AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="site-footer__logo" aria-hidden="true">
+        <img
+          src="../assets/footer/avail-wordmark.png"
+          alt=""
+          class="site-footer__logo-img"
+          width="832"
+          height="203"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <script src="../halftone-background.js?v=2"></script>
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-menu');
+      var menu = document.getElementById('mobile-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!isOpen));
+          toggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+          menu.hidden = isOpen;
+          document.body.classList.toggle('menu-open', !isOpen);
+        });
+      }
+
+      var toolkitItems = document.querySelectorAll('.toolkit__item');
+      var preview = document.getElementById('toolkit-preview');
+      toolkitItems.forEach(function (item) {
+        item.addEventListener('click', function () {
+          toolkitItems.forEach(function (el) {
+            el.classList.remove('is-active');
+            el.setAttribute('aria-selected', 'false');
+          });
+          item.classList.add('is-active');
+          item.setAttribute('aria-selected', 'true');
+          if (preview) {
+            preview.src = item.getAttribute('data-preview');
+            preview.alt = item.getAttribute('data-preview-alt') || '';
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

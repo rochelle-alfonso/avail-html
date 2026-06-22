@@ -1,0 +1,15 @@
+# Only track the static HTML site folders (see README)
+/*
+!/.gitignore
+!/README.md
+!/avail-website/
+!/avail-deposit/
+
+# Dependencies & OS
+**/node_modules/
+**/.DS_Store
+**/__pycache__/
+**/*.pyc
+*.log
+.env
+.env.*

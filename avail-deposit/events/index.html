@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events — Avail</title>
+  <meta name="description" content="Check out where the Avail team has been and where we will be next. Join us at one of our upcoming events." />
+  <link rel="icon" type="image/png" href="../assets/logo-mark.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../nav.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="page-bg" aria-hidden="true">
+      <canvas class="page-bg__canvas"></canvas>
+    </div>
+
+    <header class="nav-header nav-header--events">
+      <a href="http://localhost:9345/" class="nav-logo" aria-label="Avail home">
+        <img src="../assets/logo-mark.svg" alt="" class="nav-logo__mark" width="24" height="24">
+        <img src="../assets/logo-wordmark.svg" alt="avail" class="nav-logo__wordmark" width="46" height="17">
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="http://localhost:9345/" class="nav-links__item">Home</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-solutions-trigger" aria-controls="nav-solutions-menu">Solutions</button>
+          <div class="nav-dropdown__menu" id="nav-solutions-menu" role="menu" aria-labelledby="nav-solutions-trigger">
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">App Developers</p>
+              <a href="../" class="nav-dropdown__link" role="menuitem">User Onboarding</a>
+              <a href="../nexus/" class="nav-dropdown__link" role="menuitem">Multi-Chain Solutions</a>
+            </div>
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">Blockchain Developers</p>
+              <a href="../da/" class="nav-dropdown__link" role="menuitem">Data Availability</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-products-trigger" aria-controls="nav-products-menu">Products</button>
+          <div class="nav-dropdown__menu nav-dropdown__menu--products" id="nav-products-menu" role="menu" aria-labelledby="nav-products-trigger">
+            <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+            <a href="../" class="nav-dropdown__link" role="menuitem">Avail Deposits</a>
+            <a href="../nexus/" class="nav-dropdown__link" role="menuitem">Avail Nexus</a>
+            <a href="../da/" class="nav-dropdown__link" role="menuitem">Avail DA</a>
+            <a href="https://docs.availproject.org/" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+          </div>
+        </div>
+        <a href="../ecosystem/" class="nav-links__item">Ecosystem</a>
+        <a href="https://docs.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Docs</a>
+        <a href="https://blog.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Blog</a>
+      </nav>
+      <button type="button" class="nav-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span class="nav-menu__icon" aria-hidden="true"></span>
+        <span class="nav-menu__label">Menu</span>
+      </button>
+    </header>
+
+    <div class="mobile-menu" id="mobile-menu" hidden>
+      <nav class="mobile-menu__nav" aria-label="Mobile">
+        <a href="http://localhost:9345/" class="mobile-menu__link">Home</a>
+        <details class="mobile-menu__details">
+          <summary class="mobile-menu__link">Solutions</summary>
+          <div class="mobile-menu__sub">
+            <p class="mobile-menu__heading">App Developers</p>
+            <a href="../" class="mobile-menu__sublink">User Onboarding</a>
+            <a href="../nexus/" class="mobile-menu__sublink">Multi-Chain Solutions</a>
+            <p class="mobile-menu__heading">Blockchain Developers</p>
+            <a href="../da/" class="mobile-menu__sublink">Data Availability</a>
+          </div>
+        </details>
+        <details class="mobile-menu__details">
+          <summary class="mobile-menu__link">Products</summary>
+          <div class="mobile-menu__sub">
+            <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+            <a href="../" class="mobile-menu__sublink">Avail Deposits</a>
+            <a href="../nexus/" class="mobile-menu__sublink">Avail Nexus</a>
+            <a href="../da/" class="mobile-menu__sublink">Avail DA</a>
+            <a href="https://docs.availproject.org/" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+          </div>
+        </details>
+        <a href="../ecosystem/" class="mobile-menu__link">Ecosystem</a>
+        <a href="https://docs.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Docs</a>
+        <a href="https://blog.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Blog</a>
+      </nav>
+    </div>
+
+    <main>
+      <section class="hero hero--events">
+        <div class="wrap hero--events__inner">
+          <div class="hero--events__copy">
+            <h1 class="hero--events__title">Featured Events at Avail</h1>
+            <p class="hero--events__subtitle">Check out where the Avail team has been and where we will be next! Join us at one of our upcoming events.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="events-section">
+        <div class="wrap">
+          <h2 class="section-title">Upcoming Events</h2>
+          <div class="events-grid">
+            <article class="event-card">
+              <div class="event-card__media">
+                <img src="assets/upcoming/kbw.jpg" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="event-card__body">
+                <h3 class="event-card__title">Korea Blockchain Week 2026</h3>
+                <p class="event-card__desc">Asia's Premier Crypto Event</p>
+                <div class="event-card__meta">
+                  <span class="event-card__date">SEP 30-Oct 1 2026</span>
+                  <span class="event-card__location">Seoul, South Korea</span>
+                </div>
+              </div>
+            </article>
+            <article class="event-card">
+              <div class="event-card__media">
+                <img src="assets/upcoming/token2049.jpg" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="event-card__body">
+                <h3 class="event-card__title">TOKEN2049 Singapore 2026</h3>
+                <p class="event-card__desc">The World's Largest Crypto Event</p>
+                <div class="event-card__meta">
+                  <span class="event-card__date">OCT 7-8, 2026</span>
+                  <span class="event-card__location">Singapore</span>
+                </div>
+              </div>
+            </article>
+            <article class="event-card event-card--tall">
+              <div class="event-card__media">
+                <img src="assets/upcoming/devcon8.jpg" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="event-card__body">
+                <h3 class="event-card__title">Devcon 8</h3>
+                <p class="event-card__desc">Devcon is an annual global event organized by the Ethereum Foundation; a space to dive into open-source technology, meet the communities behind it, and explore the ideas defining the future of open technology</p>
+                <div class="event-card__meta">
+                  <span class="event-card__date">NOV 3-6, 2026</span>
+                  <span class="event-card__location">Mumbai, India</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="events-section events-section--past">
+        <div class="wrap">
+          <h2 class="section-title">Past Events</h2>
+          <div class="events-grid">
+            <article class="event-card event-card--past">
+              <div class="event-card__media">
+                <img src="assets/past/consensus-miami.jpg" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="event-card__body">
+                <h3 class="event-card__title">Consensus Miami, USA</h3>
+                <p class="event-card__desc">Where crypto, finance &amp; the future of money converge. 20,000+ leaders. 500+ speakers. Stablecoins, tokenization, TradFi &amp; DeFi.</p>
+                <div class="event-card__meta">
+                  <span class="event-card__date">MAY 5-7, 2026</span>
+                  <span class="event-card__location">Miami, FL</span>
+                </div>
+              </div>
+            </article>
+            <article class="event-card event-card--past">
+              <div class="event-card__media">
+                <img src="assets/past/ethcc.webp" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="event-card__body">
+                <h3 class="event-card__title">EthCC</h3>
+                <p class="event-card__desc">The Ethereum Community Conference is the largest and longest-running annual European Ethereum event focused on technology and community.</p>
+                <div class="event-card__meta">
+                  <span class="event-card__date">MAR 30 - APR 2, 2026</span>
+                  <span class="event-card__location">Cannes, France</span>
+                </div>
+              </div>
+            </article>
+            <article class="event-card event-card--past event-card--tall">
+              <div class="event-card__media">
+                <img src="assets/past/consensus-hk.webp" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="event-card__body">
+                <h3 class="event-card__title">Consensus Hong Kong</h3>
+                <p class="event-card__desc">Consensus Hong Kong has quickly become Asia's leading Web3 conference, strengthening the bridge between the East and West to drive innovation in the APAC region and beyond.</p>
+                <div class="event-card__meta">
+                  <span class="event-card__date">FEB 10-12, 2026</span>
+                  <span class="event-card__location">Hong Kong</span>
+                </div>
+              </div>
+            </article>
+            <article class="event-card event-card--past">
+              <div class="event-card__media">
+                <img src="assets/past/solana-breakpoint.webp" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="event-card__body">
+                <h3 class="event-card__title">Solana Breakpoint</h3>
+                <p class="event-card__desc">Breakpoint is Solana's global flagship event, a conference of founders, builders, and institutions shaping the next era of the internet.</p>
+                <div class="event-card__meta">
+                  <span class="event-card__date">DEC 11-13, 2025</span>
+                  <span class="event-card__location">Conference, Talk, Panel, Builder</span>
+                </div>
+              </div>
+            </article>
+            <article class="event-card event-card--past">
+              <div class="event-card__media">
+                <img src="assets/past/devcon.webp" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="event-card__body">
+                <h3 class="event-card__title">Devcon</h3>
+                <p class="event-card__desc">The First Ethereum World's Fair.</p>
+                <div class="event-card__meta">
+                  <span class="event-card__date">NOV 17-22, 2025</span>
+                  <span class="event-card__location">Conference, Talk, Panel, Builder</span>
+                </div>
+              </div>
+            </article>
+            <article class="event-card event-card--past">
+              <div class="event-card__media">
+                <img src="assets/past/token2049.webp" alt="" loading="lazy" decoding="async" />
+              </div>
+              <div class="event-card__body">
+                <h3 class="event-card__title">TOKEN2049 Singapore</h3>
+                <p class="event-card__desc">TOKEN2049 Singapore will bring together top decision-makers to connect, exchange ideas, network, and shape the industry.</p>
+                <div class="event-card__meta">
+                  <span class="event-card__date">OCT 1-2, 2025</span>
+                  <span class="event-card__location">Conference, Talk, Panel, Investor</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="events-footer" aria-label="Footer">
+      <div class="events-footer__wordmark" aria-hidden="true">
+        <img src="../assets/footer/avail-wordmark.png" alt="" width="614" height="150" loading="lazy" decoding="async" />
+      </div>
+      <div class="events-footer__inner">
+        <div class="events-footer__main">
+          <div class="events-footer__links">
+            <p class="events-footer__heading">Pages</p>
+            <div class="events-footer__pages-grid">
+              <a href="http://localhost:9345/">Home</a>
+              <a href="../nexus/">Nexus</a>
+              <a href="../da/">DA</a>
+              <a href="../ecosystem/">Ecosystem</a>
+              <a href="./" aria-current="page">Events</a>
+              <a href="https://availproject.org/token" target="_blank" rel="noopener noreferrer">Token</a>
+              <a href="../about-us/">About Us</a>
+              <a href="https://blog.availproject.org/" target="_blank" rel="noopener noreferrer">Blog</a>
+              <a href="https://docs.availproject.org/" target="_blank" rel="noopener noreferrer">Docs</a>
+              <a href="../whitepaper/">Whitepaper</a>
+              <a href="https://avail.keka.com/careers" target="_blank" rel="noopener noreferrer">Careers</a>
+              <a href="https://avail-project.notion.site/Privacy-Policy-e5f47df2f3a64055a7966bbaabe9a2eb" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+              <a href="../terms/">T &amp; C</a>
+            </div>
+            <div class="events-footer__ancillary">
+              <div class="events-footer__group">
+                <p class="events-footer__heading">Support</p>
+                <a href="https://discord.com/invite/AvailProject" target="_blank" rel="noopener noreferrer">Discord</a>
+                <a href="https://github.com/availproject" target="_blank" rel="noopener noreferrer">Github</a>
+              </div>
+              <div class="events-footer__group">
+                <p class="events-footer__heading">Press Kit</p>
+                <a href="https://availproject.org/brand" target="_blank" rel="noopener noreferrer">Brand Assets</a>
+              </div>
+              <div class="events-footer__group events-footer__group--socials">
+                <p class="events-footer__heading">Socials</p>
+                <div class="events-footer__socials">
+                  <a href="https://x.com/AvailProject" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/footer/social-x.svg" alt="" width="16" height="16" /></a>
+                  <a href="https://t.me/availproject" aria-label="Telegram" target="_blank" rel="noopener noreferrer"><img src="assets/footer/social-telegram.svg" alt="" width="16" height="16" /></a>
+                  <a href="https://www.linkedin.com/company/availproject/" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/footer/social-linkedin.svg" alt="" width="16" height="16" /></a>
+                  <a href="https://www.youtube.com/@AvailProject" aria-label="YouTube" target="_blank" rel="noopener noreferrer"><img src="assets/footer/social-youtube.svg" alt="" width="21" height="15" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <aside class="events-footer__demo">
+            <h2 class="events-footer__demo-title">Schedule a Demo</h2>
+            <a href="https://calendly.com/d/cwfp-t3y-gt2/avail-discovery-call" class="events-footer__demo-btn" target="_blank" rel="noopener noreferrer">Pick a Time Slot</a>
+            <img src="assets/footer/demo-decor.png" alt="" class="events-footer__demo-decor" width="79" height="44" />
+          </aside>
+        </div>
+        <p class="events-footer__copyright">Copyright © Avail Project. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="../halftone-background.js?v=2"></script>
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-menu');
+      var menu = document.getElementById('mobile-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!isOpen));
+          toggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+          menu.hidden = isOpen;
+          document.body.classList.toggle('menu-open', !isOpen);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

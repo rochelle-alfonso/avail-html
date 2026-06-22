@@ -1,0 +1,732 @@
+[
+  {
+    "name": "Mayan",
+    "tag": "Defi",
+    "logoId": "657:3736"
+  },
+  {
+    "name": "Pelagos",
+    "tag": "Infrastructure",
+    "logoId": "657:3744"
+  },
+  {
+    "name": "Bitte",
+    "tag": "Defi",
+    "logoId": "657:3759"
+  },
+  {
+    "name": "Succinct",
+    "tag": "Infrastructure",
+    "logoId": "657:3769"
+  },
+  {
+    "name": "Nova Wallet",
+    "tag": "Wallets",
+    "logoId": "657:3777"
+  },
+  {
+    "name": "Family Wallet",
+    "tag": "Wallets",
+    "logoId": "657:3785"
+  },
+  {
+    "name": "Native",
+    "tag": "Defi",
+    "logoId": "657:3793"
+  },
+  {
+    "name": "MegaETH",
+    "tag": "Chains",
+    "logoId": "657:3801"
+  },
+  {
+    "name": "Cartesi",
+    "tag": "Infrastructure",
+    "logoId": "657:3811"
+  },
+  {
+    "name": "KGEN",
+    "tag": "Infrastructure",
+    "logoId": "657:3819"
+  },
+  {
+    "name": "AltLayer",
+    "tag": "Infrastructure",
+    "logoId": "657:3827"
+  },
+  {
+    "name": "Nexus Network",
+    "tag": "Infrastructure",
+    "logoId": "657:3835"
+  },
+  {
+    "name": "Polygon CDK",
+    "tag": "Chain Integrations",
+    "logoId": "657:3843"
+  },
+  {
+    "name": "Aglisos",
+    "tag": "Chains",
+    "logoId": "657:3851"
+  },
+  {
+    "name": "Carv",
+    "tag": "Chains",
+    "logoId": "657:3859"
+  },
+  {
+    "name": "Darwinia",
+    "tag": "Chains",
+    "logoId": "657:3867"
+  },
+  {
+    "name": "Fuse",
+    "tag": "Chains",
+    "logoId": "657:3875"
+  },
+  {
+    "name": "Henry",
+    "tag": "Chains",
+    "logoId": "657:3883"
+  },
+  {
+    "name": "Lens Protocol",
+    "tag": "Chains",
+    "logoId": "657:3891"
+  },
+  {
+    "name": "Monveil",
+    "tag": "Chains",
+    "logoId": "657:3899"
+  },
+  {
+    "name": "O3 Layer",
+    "tag": "Chains",
+    "logoId": "657:3907"
+  },
+  {
+    "name": "Particle Network",
+    "tag": "Chains",
+    "logoId": "657:3915"
+  },
+  {
+    "name": "Space And Time",
+    "tag": "Chains",
+    "logoId": "657:3923"
+  },
+  {
+    "name": "Pyth Network",
+    "tag": "Defi",
+    "logoId": "657:3931"
+  },
+  {
+    "name": "Ten",
+    "tag": "Chains",
+    "logoId": "657:3939"
+  },
+  {
+    "name": "Yona Network",
+    "tag": "Chains",
+    "logoId": "657:3947"
+  },
+  {
+    "name": "Paima Studios",
+    "tag": "Gaming",
+    "logoId": "657:3955"
+  },
+  {
+    "name": "Vitwit",
+    "tag": "Infrastructure",
+    "logoId": "657:3963"
+  },
+  {
+    "name": "Silencel Lboratories",
+    "tag": "Infrastructure",
+    "logoId": "657:3971"
+  },
+  {
+    "name": "Ankr",
+    "tag": "Infrastructure",
+    "logoId": "657:3979"
+  },
+  {
+    "name": "Encifher",
+    "tag": "Infrastructure",
+    "logoId": "657:3987"
+  },
+  {
+    "name": "Filecoin",
+    "tag": "Infrastructure",
+    "logoId": "657:3995"
+  },
+  {
+    "name": "NodeKit",
+    "tag": "Infrastructure",
+    "logoId": "657:4003"
+  },
+  {
+    "name": "Radium Block",
+    "tag": "Infrastructure",
+    "logoId": "657:4011"
+  },
+  {
+    "name": "SubSquid",
+    "tag": "Infrastructure",
+    "logoId": "657:4019"
+  },
+  {
+    "name": "OnFinality",
+    "tag": "Infrastructure",
+    "logoId": "657:4027"
+  },
+  {
+    "name": "Sooho.io",
+    "tag": "Infrastructure",
+    "logoId": "657:4035"
+  },
+  {
+    "name": "Mace",
+    "tag": "Defi",
+    "logoId": "657:4043"
+  },
+  {
+    "name": "Vanna Finance",
+    "tag": "Defi",
+    "logoId": "657:4059"
+  },
+  {
+    "name": "Atlantis DEX",
+    "tag": "Defi",
+    "logoId": "657:4067"
+  },
+  {
+    "name": "Symbiotic",
+    "tag": "Defi",
+    "logoId": "657:4075"
+  },
+  {
+    "name": "Mimir Global",
+    "tag": "Wallets",
+    "logoId": "657:4083"
+  },
+  {
+    "name": "Bitget Wallet",
+    "tag": "Wallets",
+    "logoId": "657:4091"
+  },
+  {
+    "name": "Clober",
+    "tag": "Defi",
+    "logoId": "657:4099"
+  },
+  {
+    "name": "Citrea",
+    "tag": "Chain Integrations",
+    "logoId": "657:4107"
+  },
+  {
+    "name": "Dymension",
+    "tag": "Infrastructure",
+    "logoId": "657:4115"
+  },
+  {
+    "name": "Movement",
+    "tag": "Infrastructure",
+    "logoId": "657:4123"
+  },
+  {
+    "name": "Gateway",
+    "tag": "Infrastructure",
+    "logoId": "657:4135"
+  },
+  {
+    "name": "arbitrum",
+    "tag": "Chain Integrations",
+    "logoId": "657:4143"
+  },
+  {
+    "name": "Polygon zkEVM",
+    "tag": "Chain Integrations",
+    "logoId": "657:4151"
+  },
+  {
+    "name": "Arcana",
+    "tag": "Chains",
+    "logoId": "657:4159"
+  },
+  {
+    "name": "Calimero",
+    "tag": "Chains",
+    "logoId": "657:4167"
+  },
+  {
+    "name": "Demex",
+    "tag": "Chains",
+    "logoId": "657:4175"
+  },
+  {
+    "name": "Gr1d",
+    "tag": "Chains",
+    "logoId": "657:4183"
+  },
+  {
+    "name": "Heurist",
+    "tag": "Chains",
+    "logoId": "657:4191"
+  },
+  {
+    "name": "LogX",
+    "tag": "Chains",
+    "logoId": "657:4199"
+  },
+  {
+    "name": "Morph",
+    "tag": "Chains",
+    "logoId": "657:4207"
+  },
+  {
+    "name": "Odysphere",
+    "tag": "Chains",
+    "logoId": "657:4215"
+  },
+  {
+    "name": "Prom",
+    "tag": "Chains",
+    "logoId": "657:4223"
+  },
+  {
+    "name": "Spheron Network",
+    "tag": "Chains",
+    "logoId": "657:4231"
+  },
+  {
+    "name": "Sophon",
+    "tag": "Chains",
+    "logoId": "657:4245"
+  },
+  {
+    "name": "Ternoa",
+    "tag": "Chains",
+    "logoId": "657:4253"
+  },
+  {
+    "name": "Zenith AI",
+    "tag": "Chains",
+    "logoId": "657:4263"
+  },
+  {
+    "name": "Snapchain",
+    "tag": "Infrastructure",
+    "logoId": "657:4271"
+  },
+  {
+    "name": "Zeeve",
+    "tag": "Infrastructure",
+    "logoId": "657:4279"
+  },
+  {
+    "name": "Talisman",
+    "tag": "Infrastructure",
+    "logoId": "657:4293"
+  },
+  {
+    "name": "Automata",
+    "tag": "Infrastructure",
+    "logoId": "657:4301"
+  },
+  {
+    "name": "Equilibrium",
+    "tag": "Infrastructure",
+    "logoId": "657:4309"
+  },
+  {
+    "name": "Lava",
+    "tag": "Infrastructure",
+    "logoId": "657:4317"
+  },
+  {
+    "name": "NodeOps",
+    "tag": "Infrastructure",
+    "logoId": "657:4325"
+  },
+  {
+    "name": "Router Protocol",
+    "tag": "Infrastructure",
+    "logoId": "657:4333"
+  },
+  {
+    "name": "Verstatus",
+    "tag": "Infrastructure",
+    "logoId": "657:4341"
+  },
+  {
+    "name": "StationX",
+    "tag": "Defi",
+    "logoId": "657:4349"
+  },
+  {
+    "name": "ZKCross",
+    "tag": "",
+    "logoId": "657:4357"
+  },
+  {
+    "name": "Silhouette",
+    "tag": "Defi",
+    "logoId": "657:4362"
+  },
+  {
+    "name": "Rug Rumble",
+    "tag": "Gaming",
+    "logoId": "657:4370"
+  },
+  {
+    "name": "Evolve",
+    "tag": "Infrastructure",
+    "logoId": "657:4378"
+  },
+  {
+    "name": "SubWallet",
+    "tag": "Wallets",
+    "logoId": "657:4386"
+  },
+  {
+    "name": "Klever",
+    "tag": "Wallets",
+    "logoId": "657:4394"
+  },
+  {
+    "name": "DeqFi",
+    "tag": "Defi",
+    "logoId": "657:4414"
+  },
+  {
+    "name": "Coin Academy",
+    "tag": "Media",
+    "logoId": "657:4422"
+  },
+  {
+    "name": "PingMe",
+    "tag": "Wallets",
+    "logoId": "657:4430"
+  },
+  {
+    "name": "Karnot",
+    "tag": "Infrastructure",
+    "logoId": "657:4440"
+  },
+  {
+    "name": "Risc Zero",
+    "tag": "Infrastructure",
+    "logoId": "657:4448"
+  },
+  {
+    "name": "Gelato Network",
+    "tag": "Infrastructure",
+    "logoId": "657:4456"
+  },
+  {
+    "name": "Madara",
+    "tag": "Chain Integrations",
+    "logoId": "657:4477"
+  },
+  {
+    "name": "Starkware",
+    "tag": "Chain Integrations",
+    "logoId": "657:4485"
+  },
+  {
+    "name": "BeFi Labs",
+    "tag": "Chains",
+    "logoId": "657:4493"
+  },
+  {
+    "name": "Chai Protocol",
+    "tag": "Chains",
+    "logoId": "657:4501"
+  },
+  {
+    "name": "Eternal AI",
+    "tag": "Chains",
+    "logoId": "657:4509"
+  },
+  {
+    "name": "Helix Labs",
+    "tag": "Chains",
+    "logoId": "657:4517"
+  },
+  {
+    "name": "Imua",
+    "tag": "Chains",
+    "logoId": "657:4530"
+  },
+  {
+    "name": "Meroku",
+    "tag": "Chains",
+    "logoId": "657:4538"
+  },
+  {
+    "name": "Neova",
+    "tag": "Chains",
+    "logoId": "657:4546"
+  },
+  {
+    "name": "OpenLayer",
+    "tag": "Chains",
+    "logoId": "657:4554"
+  },
+  {
+    "name": "QuickSwap",
+    "tag": "Chains",
+    "logoId": "657:4562"
+  },
+  {
+    "name": "Skate Chain",
+    "tag": "Chains",
+    "logoId": "657:4570"
+  },
+  {
+    "name": "Stackr",
+    "tag": "Chains",
+    "logoId": "657:4578"
+  },
+  {
+    "name": "UP",
+    "tag": "Chains",
+    "logoId": "657:4586"
+  },
+  {
+    "name": "Zulu",
+    "tag": "Chains",
+    "logoId": "657:4594"
+  },
+  {
+    "name": "TrueZK",
+    "tag": "Infrastructure",
+    "logoId": "657:4602"
+  },
+  {
+    "name": "CryptoStake",
+    "tag": "Infrastructure",
+    "logoId": "657:4610"
+  },
+  {
+    "name": "Air Chains",
+    "tag": "Infrastructure",
+    "logoId": "657:4618"
+  },
+  {
+    "name": "Brightlystake",
+    "tag": "Infrastructure",
+    "logoId": "657:4632"
+  },
+  {
+    "name": "Fairblock",
+    "tag": "Infrastructure",
+    "logoId": "657:4640"
+  },
+  {
+    "name": "Luga Nodes",
+    "tag": "Infrastructure",
+    "logoId": "657:4648"
+  },
+  {
+    "name": "P2P",
+    "tag": "Infrastructure",
+    "logoId": "657:4656"
+  },
+  {
+    "name": "Subscan",
+    "tag": "Infrastructure",
+    "logoId": "657:4664"
+  },
+  {
+    "name": "Wormhole",
+    "tag": "Infrastructure",
+    "logoId": "657:4672"
+  },
+  {
+    "name": "KalqiX",
+    "tag": "Defi",
+    "logoId": "657:4682"
+  },
+  {
+    "name": "Cypherock",
+    "tag": "Wallets",
+    "logoId": "657:4690"
+  },
+  {
+    "name": "Lemonade",
+    "tag": "Defi",
+    "logoId": "657:4706"
+  },
+  {
+    "name": "Fluent",
+    "tag": "Infrastructure",
+    "logoId": "657:4714"
+  },
+  {
+    "name": "Okto Tech",
+    "tag": "Wallets",
+    "logoId": "657:4722"
+  },
+  {
+    "name": "Fearless Wallet",
+    "tag": "Wallets",
+    "logoId": "657:4730"
+  },
+  {
+    "name": "LetsExchange",
+    "tag": "Defi",
+    "logoId": "657:4738"
+  },
+  {
+    "name": "Blockworks",
+    "tag": "Media",
+    "logoId": "657:4746"
+  },
+  {
+    "name": "Blade Games",
+    "tag": "Infrastructure",
+    "logoId": "657:4754"
+  },
+  {
+    "name": "Koni Stack",
+    "tag": "Infrastructure",
+    "logoId": "657:4762"
+  },
+  {
+    "name": "Sovereign",
+    "tag": "Infrastructure",
+    "logoId": "657:4770"
+  },
+  {
+    "name": "Lumoz",
+    "tag": "Infrastructure",
+    "logoId": "657:4778"
+  },
+  {
+    "name": "Optimism",
+    "tag": "Chain Integrations",
+    "logoId": "657:4786"
+  },
+  {
+    "name": "zkSync",
+    "tag": "Chain Integrations",
+    "logoId": "657:4794"
+  },
+  {
+    "name": "Bolt OS",
+    "tag": "Chains",
+    "logoId": "657:4806"
+  },
+  {
+    "name": "Copperx",
+    "tag": "Chains",
+    "logoId": "657:4814"
+  },
+  {
+    "name": "Fiamma",
+    "tag": "Chains",
+    "logoId": "657:4822"
+  },
+  {
+    "name": "Henez",
+    "tag": "Chains",
+    "logoId": "657:4830"
+  },
+  {
+    "name": "Layer Edge",
+    "tag": "Chains",
+    "logoId": "657:4838"
+  },
+  {
+    "name": "Mizu Labs",
+    "tag": "Chains",
+    "logoId": "657:4846"
+  },
+  {
+    "name": "Nim Network",
+    "tag": "Chains",
+    "logoId": "657:4854"
+  },
+  {
+    "name": "Phyken Network",
+    "tag": "Chains",
+    "logoId": "657:4862"
+  },
+  {
+    "name": "Rooch",
+    "tag": "Chains",
+    "logoId": "657:4921"
+  },
+  {
+    "name": "OpenBlock",
+    "tag": "Defi",
+    "logoId": "657:4929"
+  },
+  {
+    "name": "Titan Chain",
+    "tag": "Chains",
+    "logoId": "657:4937"
+  },
+  {
+    "name": "Yala",
+    "tag": "Chains",
+    "logoId": "657:4945"
+  },
+  {
+    "name": "Stackr",
+    "tag": "SDKs And Frameworks",
+    "logoId": "657:4953"
+  },
+  {
+    "name": "QuickNode",
+    "tag": "Infrastructure",
+    "logoId": "657:4961"
+  },
+  {
+    "name": "Polka Safe",
+    "tag": "Infrastructure",
+    "logoId": "657:4969"
+  },
+  {
+    "name": "Allnodes",
+    "tag": "Infrastructure",
+    "logoId": "657:4977"
+  },
+  {
+    "name": "Bware Labs",
+    "tag": "Infrastructure",
+    "logoId": "657:4985"
+  },
+  {
+    "name": "FalconX",
+    "tag": "Infrastructure",
+    "logoId": "657:4993"
+  },
+  {
+    "name": "Nocturnal Labs",
+    "tag": "Infrastructure",
+    "logoId": "657:5003"
+  },
+  {
+    "name": "Radius",
+    "tag": "Infrastructure",
+    "logoId": "657:5011"
+  },
+  {
+    "name": "SubQuery",
+    "tag": "Infrastructure",
+    "logoId": "657:5019"
+  },
+  {
+    "name": "Vistara",
+    "tag": "Infrastructure",
+    "logoId": "657:5027"
+  },
+  {
+    "name": "Bean Exchange",
+    "tag": "Defi",
+    "logoId": "657:5035"
+  }
+]

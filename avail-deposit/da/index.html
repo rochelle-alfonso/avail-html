@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Availability — Avail</title>
+  <meta name="description" content="Avail DA delivers verifiable data availability that lets every chain launch faster, scale further, and reach more users." />
+  <link rel="icon" type="image/png" href="../assets/logo-mark.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../nav.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="page-bg" aria-hidden="true">
+      <canvas class="page-bg__canvas"></canvas>
+    </div>
+
+  <header class="nav-header">
+    <div class="nav-pill">
+      <a href="http://localhost:9345/" class="nav-logo" aria-label="Avail home">
+        <img src="../assets/logo-mark.svg" alt="" class="nav-logo__mark" width="24" height="24">
+        <img src="../assets/logo-wordmark.svg" alt="avail" class="nav-logo__wordmark" width="46" height="17">
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-solutions-trigger" aria-controls="nav-solutions-menu">Solutions</button>
+          <div class="nav-dropdown__menu" id="nav-solutions-menu" role="menu" aria-labelledby="nav-solutions-trigger">
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">App Developers</p>
+              <a href="../" class="nav-dropdown__link" role="menuitem">User Onboarding</a>
+              <a href="../nexus/" class="nav-dropdown__link" role="menuitem">Multi-Chain Solutions</a>
+            </div>
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">Blockchain Developers</p>
+              <a href="./" class="nav-dropdown__link" role="menuitem">Data Availability</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-products-trigger" aria-controls="nav-products-menu">Products</button>
+          <div class="nav-dropdown__menu nav-dropdown__menu--products" id="nav-products-menu" role="menu" aria-labelledby="nav-products-trigger">
+            <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+            <a href="../" class="nav-dropdown__link" role="menuitem">Avail Deposits</a>
+            <a href="../nexus/" class="nav-dropdown__link" role="menuitem">Avail Nexus</a>
+            <a href="./" class="nav-dropdown__link" role="menuitem">Avail DA</a>
+            <a href="https://docs.availproject.org/" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+          </div>
+        </div>
+        <a href="../ecosystem/" class="nav-links__item">Ecosystem</a>
+        <a href="https://docs.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Docs</a>
+        <a href="https://blog.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Blog</a>
+      </nav>
+
+      <button
+        type="button"
+        class="nav-menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        aria-label="Open menu"
+      >
+        <span class="nav-menu__icon" aria-hidden="true"></span>
+        <span class="nav-menu__label">Menu</span>
+      </button>
+    </div>
+
+    <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary nav-header__cta" target="_blank" rel="noopener noreferrer">Build with Avail</a>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <details class="mobile-menu__details">
+        <summary class="mobile-menu__link">Solutions</summary>
+        <div class="mobile-menu__sub">
+          <p class="mobile-menu__heading">App Developers</p>
+          <a href="../" class="mobile-menu__sublink">User Onboarding</a>
+          <a href="../nexus/" class="mobile-menu__sublink">Multi-Chain Solutions</a>
+          <p class="mobile-menu__heading">Blockchain Developers</p>
+          <a href="./" class="mobile-menu__sublink">Data Availability</a>
+        </div>
+      </details>
+      <details class="mobile-menu__details">
+        <summary class="mobile-menu__link">Products</summary>
+        <div class="mobile-menu__sub">
+          <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+          <a href="../" class="mobile-menu__sublink">Avail Deposits</a>
+          <a href="../nexus/" class="mobile-menu__sublink">Avail Nexus</a>
+          <a href="./" class="mobile-menu__sublink">Avail DA</a>
+          <a href="https://docs.availproject.org/" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+        </div>
+      </details>
+      <a href="../ecosystem/" class="mobile-menu__link">Ecosystem</a>
+      <a href="https://docs.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Docs</a>
+      <a href="https://blog.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Blog</a>
+      <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary mobile-menu__cta" target="_blank" rel="noopener noreferrer">Build with Avail</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero hero--da">
+      <div class="wrap">
+        <div class="hero__copy">
+          <h1 class="hero__title">Scale Without Limits</h1>
+          <p class="hero__text">Blockchains need to guarantee that transaction data is published and retrievable—not just stored, but provably available to anyone who needs to verify it. That's data availability.</p>
+          <p class="hero__text">From DeFi to Gaming to RWAs, Avail delivers verifiable data availability that lets every chain launch faster, scale further, and reach more users. Build on a trusted foundation for the next generation of blockchain networks.</p>
+          <div class="hero__cta">
+            <a href="https://docs.availproject.org/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Build With Avail</a>
+            <a href="https://availproject.org/contact" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">Talk to Us</a>
+          </div>
+        </div>
+        <div class="hero__panel">
+          <img src="assets/hero-panel.png" alt="Avail DA network visualization" />
+        </div>
+      </div>
+    </section>
+
+    <section class="usp" aria-label="Product benefits">
+      <div class="wrap">
+        <div class="usp__stack">
+          <article class="usp-row">
+            <div class="usp-row__copy">
+              <div class="pill-label">
+                <span class="pill-label__text">USP</span>
+                <img src="assets/badge-notch.png" alt="" class="pill-label__notch" width="10" height="40" />
+              </div>
+              <h2 class="usp-row__title">Build Seamless Experiences</h2>
+              <div class="usp-row__text">
+                <p>Avail DA empowers developers to focus on product experience, not infrastructure. With predictable performance and instant data verification, your apps can deliver faster finality, smoother onboarding, and uninterrupted user flows — even under heavy load.</p>
+                <p>Whether you're building DeFi platforms, gaming worlds, or real-world asset markets, Avail's DA layer ensures your users get the speed, security, and reliability they expect from modern on-chain applications.</p>
+              </div>
+            </div>
+            <div class="usp-row__media">
+              <img src="assets/usp-seamless.png" alt="" loading="lazy" decoding="async" />
+            </div>
+          </article>
+
+          <article class="usp-row usp-row--reverse">
+            <div class="usp-row__copy">
+              <div class="pill-label">
+                <span class="pill-label__text">USP</span>
+                <img src="assets/badge-notch.png" alt="" class="pill-label__notch" width="10" height="40" />
+              </div>
+              <h2 class="usp-row__title">Verifiable by Design</h2>
+              <div class="usp-row__text">
+                <p>Avail DA guarantees data integrity through a combination of validity proofs, KZG polynomial commitments, and data availability sampling (DAS). Every block posted to Avail can be independently verified by light clients, even on resource-constrained devices, without needing to download the entire dataset.</p>
+                <p>This means applications built on Avail inherit cryptographic proof of data availability, enabling trustless interoperability and secure rollup settlement across L2s and L3s.</p>
+              </div>
+            </div>
+            <div class="usp-row__media">
+              <img src="assets/usp-verifiable.png" alt="" loading="lazy" decoding="async" />
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stacks">
+      <div class="wrap">
+        <h2 class="section-title">Supported Chain Stacks</h2>
+      </div>
+      <div class="marquee" style="--speed: 50s">
+        <div class="marquee__track">
+          <span class="marquee__item stacks__item"><img src="assets/stacks/arbitrum-orbit.svg" alt="Arbitrum Orbit" /></span>
+          <span class="marquee__item stacks__item"><img src="assets/stacks/optimism.png" alt="Optimism" /></span>
+          <span class="marquee__item stacks__item"><img src="assets/stacks/polygon-cdk.png" alt="Polygon CDK" /></span>
+          <span class="marquee__item stacks__item"><img src="assets/stacks/polygon-zkevm.png" alt="Polygon zkEVM" /></span>
+          <span class="marquee__item stacks__item"><img src="assets/stacks/madara.png" alt="Madara Starknet" /></span>
+          <span class="marquee__item stacks__item"><img src="assets/stacks/zksync.svg" alt="ZK Sync" /></span>
+          <span class="marquee__item stacks__item"><img src="assets/stacks/sovereign.png" alt="Sovereign SDK" /></span>
+          <span class="marquee__item stacks__item"><img src="assets/stacks/rollkit.png" alt="Rollkit" /></span>
+          <span class="marquee__item stacks__item"><img src="assets/stacks/dymension.png" alt="Dymension" /></span>
+          <span class="marquee__item stacks__item"><img src="assets/stacks/paima.svg" alt="Paima Engine" /></span>
+          <span class="marquee__item stacks__item"><img src="assets/stacks/cosmos.png" alt="Cosmos Avail DA" /></span>
+          <span class="marquee__item stacks__item" aria-hidden="true"><img src="assets/stacks/arbitrum-orbit.svg" alt="" /></span>
+          <span class="marquee__item stacks__item" aria-hidden="true"><img src="assets/stacks/optimism.png" alt="" /></span>
+          <span class="marquee__item stacks__item" aria-hidden="true"><img src="assets/stacks/polygon-cdk.png" alt="" /></span>
+          <span class="marquee__item stacks__item" aria-hidden="true"><img src="assets/stacks/polygon-zkevm.png" alt="" /></span>
+          <span class="marquee__item stacks__item" aria-hidden="true"><img src="assets/stacks/madara.png" alt="" /></span>
+          <span class="marquee__item stacks__item" aria-hidden="true"><img src="assets/stacks/zksync.svg" alt="" /></span>
+          <span class="marquee__item stacks__item" aria-hidden="true"><img src="assets/stacks/sovereign.png" alt="" /></span>
+          <span class="marquee__item stacks__item" aria-hidden="true"><img src="assets/stacks/rollkit.png" alt="" /></span>
+          <span class="marquee__item stacks__item" aria-hidden="true"><img src="assets/stacks/dymension.png" alt="" /></span>
+          <span class="marquee__item stacks__item" aria-hidden="true"><img src="assets/stacks/paima.svg" alt="" /></span>
+          <span class="marquee__item stacks__item" aria-hidden="true"><img src="assets/stacks/cosmos.png" alt="" /></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" aria-label="Features">
+      <div class="wrap">
+        <div class="features__panel">
+          <div class="features__head">
+            <div class="pill-label" style="margin: 0 auto 8px;">
+              <span class="pill-label__text">features</span>
+              <img src="assets/badge-notch.png" alt="" class="pill-label__notch" width="10" height="40" />
+            </div>
+            <h2 class="section-title">Built to Power Every Chain</h2>
+            <p class="section-sub">Blazingly fast, verifiable, and privacy-preserving — Avail DA sets the new standard for blockchain scalability.</p>
+          </div>
+          <div class="features-bento">
+            <article class="feature-card feature-card--large">
+              <div class="feature-card__content">
+                <h3 class="feature-card__title">Blazing Fast</h3>
+                <p class="feature-card__text">250ms preconfirmations with 20s DA finality, fastest in the industry.</p>
+              </div>
+              <div class="feature-card__illustration" aria-hidden="true">
+                <img src="assets/feature-blazing.png" alt="" loading="lazy" decoding="async" />
+              </div>
+            </article>
+            <article class="feature-card feature-card--predictable">
+              <div class="feature-card__bg" aria-hidden="true"><img src="assets/feature-predictable.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="feature-card__content">
+                <h3 class="feature-card__title">Predictable</h3>
+                <p class="feature-card__text">No surprises. Pre-purchase data credits in your own ERC-20 token.</p>
+              </div>
+            </article>
+            <article class="feature-card feature-card--tall">
+              <div class="feature-card__bg" aria-hidden="true"><img src="assets/feature-verifiable.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="feature-card__content">
+                <h3 class="feature-card__title">Verifiable</h3>
+                <p class="feature-card__text">Verify data is available on any device with light clients, settle L2s and L3s on-chain using our ZK bridge.</p>
+              </div>
+            </article>
+            <article class="feature-card feature-card--private">
+              <div class="feature-card__bg" aria-hidden="true"><img src="assets/feature-private.png" alt="" loading="lazy" decoding="async" /></div>
+              <div class="feature-card__content">
+                <h3 class="feature-card__title">Private</h3>
+                <p class="feature-card__text">Encrypted and verifiable DA for privacy-preserving applications.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="top-chains">
+      <div class="wrap">
+        <h2 class="section-title">Top 10 Chains using Avail DA</h2>
+        <p class="section-sub">Among the 70+ chains partnered with Avail DA, these are the top users of blob space</p>
+      </div>
+      <div class="marquee" style="--speed: 55s">
+        <div class="marquee__track">
+          <span class="marquee__item chain-card"><span class="chain-card__logo"><img src="assets/chains/rooch.png" alt="" /></span><span class="chain-card__name">Rooch</span></span>
+          <span class="marquee__item chain-card"><span class="chain-card__logo"><img src="assets/chains/lens.png" alt="" /></span><span class="chain-card__name">Lens</span></span>
+          <span class="marquee__item chain-card"><span class="chain-card__logo"><img src="assets/chains/sophon.png" alt="" /></span><span class="chain-card__name">Sophon</span></span>
+          <span class="marquee__item chain-card"><span class="chain-card__logo"><img src="assets/chains/odysphere.png" alt="" /></span><span class="chain-card__name">Odysphere</span></span>
+          <span class="marquee__item chain-card"><span class="chain-card__logo"><img src="assets/chains/soon.png" alt="" /></span><span class="chain-card__name">Soon</span></span>
+          <span class="marquee__item chain-card"><span class="chain-card__logo"><img src="assets/chains/up-or-down.png" alt="" /></span><span class="chain-card__name">Up or Down</span></span>
+          <span class="marquee__item chain-card"><span class="chain-card__logo"><img src="assets/chains/art-peace.png" alt="" /></span><span class="chain-card__name">Art Peace</span></span>
+          <span class="marquee__item chain-card"><span class="chain-card__logo"><img src="assets/chains/skate.png" alt="" /></span><span class="chain-card__name">Skate</span></span>
+          <span class="marquee__item chain-card"><span class="chain-card__logo"><img src="assets/chains/eternal.png" alt="" /></span><span class="chain-card__name">Eternal</span></span>
+          <span class="marquee__item chain-card"><span class="chain-card__logo"><img src="assets/chains/space-and-time.png" alt="" /></span><span class="chain-card__name">Space and Time</span></span>
+          <span class="marquee__item chain-card" aria-hidden="true"><span class="chain-card__logo"><img src="assets/chains/rooch.png" alt="" /></span><span class="chain-card__name">Rooch</span></span>
+          <span class="marquee__item chain-card" aria-hidden="true"><span class="chain-card__logo"><img src="assets/chains/lens.png" alt="" /></span><span class="chain-card__name">Lens</span></span>
+          <span class="marquee__item chain-card" aria-hidden="true"><span class="chain-card__logo"><img src="assets/chains/sophon.png" alt="" /></span><span class="chain-card__name">Sophon</span></span>
+          <span class="marquee__item chain-card" aria-hidden="true"><span class="chain-card__logo"><img src="assets/chains/odysphere.png" alt="" /></span><span class="chain-card__name">Odysphere</span></span>
+          <span class="marquee__item chain-card" aria-hidden="true"><span class="chain-card__logo"><img src="assets/chains/soon.png" alt="" /></span><span class="chain-card__name">Soon</span></span>
+          <span class="marquee__item chain-card" aria-hidden="true"><span class="chain-card__logo"><img src="assets/chains/up-or-down.png" alt="" /></span><span class="chain-card__name">Up or Down</span></span>
+          <span class="marquee__item chain-card" aria-hidden="true"><span class="chain-card__logo"><img src="assets/chains/art-peace.png" alt="" /></span><span class="chain-card__name">Art Peace</span></span>
+          <span class="marquee__item chain-card" aria-hidden="true"><span class="chain-card__logo"><img src="assets/chains/skate.png" alt="" /></span><span class="chain-card__name">Skate</span></span>
+          <span class="marquee__item chain-card" aria-hidden="true"><span class="chain-card__logo"><img src="assets/chains/eternal.png" alt="" /></span><span class="chain-card__name">Eternal</span></span>
+          <span class="marquee__item chain-card" aria-hidden="true"><span class="chain-card__logo"><img src="assets/chains/space-and-time.png" alt="" /></span><span class="chain-card__name">Space and Time</span></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="use-cases" aria-label="Use cases">
+      <div class="wrap">
+        <div class="use-cases__head">
+          <div class="pill-label" style="margin: 0 auto 8px;">
+            <span class="pill-label__text">use cases</span>
+            <img src="assets/badge-notch.png" alt="" class="pill-label__notch" width="10" height="40" />
+          </div>
+          <h2 class="section-title">Avail DA powers it all</h2>
+          <p class="section-sub">Avail DA powers every kind of chain, from high-performance rollups to privacy-preserving apps, giving you verifiable data availability at any scale.</p>
+        </div>
+        <div class="use-cases__grid">
+          <article class="use-case-card">
+            <div class="use-case-card__icon"><img src="assets/use-cases/scale-rollups.png" alt="" loading="lazy" decoding="async" /></div>
+            <h3 class="use-case-card__title">Scale Rollups Efficiently</h3>
+            <p class="use-case-card__text">Scale Validiums, Optimiums, or Sovereign Rollups without compromising verifiability. Avail DA combines KZG commitments, DAS, and a ZK bridge that lets rollups and light clients prove data inclusion and settle securely on-chain.</p>
+            <img src="assets/use-case-pixel.png" alt="" class="use-case-card__pixel" aria-hidden="true" loading="lazy" decoding="async" />
+          </article>
+          <article class="use-case-card">
+            <div class="use-case-card__icon"><img src="assets/use-cases/sequencer-chains.png" alt="" loading="lazy" decoding="async" /></div>
+            <h3 class="use-case-card__title">Power Based and Shared Sequencer Chains</h3>
+            <p class="use-case-card__text">Encrypted and verifiable DA for privacy-preserving applications.</p>
+            <img src="assets/use-case-pixel.png" alt="" class="use-case-card__pixel" aria-hidden="true" loading="lazy" decoding="async" />
+          </article>
+          <article class="use-case-card">
+            <div class="use-case-card__icon"><img src="assets/use-cases/instant-experiences.png" alt="" loading="lazy" decoding="async" /></div>
+            <h3 class="use-case-card__title">Deliver Instant Experiences</h3>
+            <p class="use-case-card__text">Give users lightning-fast responsiveness with 250ms preconfirmations and 20s finality. Ideal for gaming, social, and high-frequency apps where speed and reliability define the experience.</p>
+            <img src="assets/use-case-pixel.png" alt="" class="use-case-card__pixel" aria-hidden="true" loading="lazy" decoding="async" />
+          </article>
+          <article class="use-case-card">
+            <div class="use-case-card__icon"><img src="assets/use-cases/private-data.png" alt="" loading="lazy" decoding="async" /></div>
+            <h3 class="use-case-card__title">Protect Sensitive and Private Data</h3>
+            <p class="use-case-card__text">Keep data private while staying verifiable with encrypted DA. Confidential state updates remain provably available, enabling secure, privacy-preserving apps across DeFi, RWAs, and institutional use cases.</p>
+            <img src="assets/use-case-pixel.png" alt="" class="use-case-card__pixel" aria-hidden="true" loading="lazy" decoding="async" />
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="quote">
+      <div class="wrap">
+        <blockquote class="quote__card">
+          <img src="assets/quote-pixel-tl.png" alt="" class="quote__pixel quote__pixel--tl" aria-hidden="true" />
+          <img src="assets/quote-pixel-br.png" alt="" class="quote__pixel quote__pixel--br" aria-hidden="true" />
+          <div class="quote__media">
+            <img src="assets/quote-prabal.jpg" alt="Prabal Banerjee" loading="lazy" decoding="async" />
+          </div>
+          <div class="quote__body">
+            <p class="quote__text">"Data availability is the foundation everything else depends on. If you can't trust that data exists, nothing else matters. Avail DA makes that trust verifiable."</p>
+            <cite class="quote__cite">Prabal Banerjee, Founder, Avail</cite>
+          </div>
+        </blockquote>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div class="site-footer__cta">
+          <h2 class="site-footer__headline">Have questions?</h2>
+          <p class="site-footer__subcopy">Get in touch with us and understand exactly what we do</p>
+          <a href="https://calendly.com/d/cwfp-t3y-gt2/avail-discovery-call" class="btn btn-primary site-footer__btn" target="_blank" rel="noopener noreferrer">Schedule A Demo</a>
+          <p class="site-footer__copyright">Copyright © Avail Project. All rights reserved.</p>
+        </div>
+
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <div class="site-footer__nav-group site-footer__nav-group--pages">
+            <p class="site-footer__nav-heading">Pages</p>
+            <div class="site-footer__nav-columns">
+              <ul class="site-footer__nav-list">
+                <li><a href="http://localhost:9345/" class="site-footer__nav-link">Home</a></li>
+                <li><a href="../about-us/" class="site-footer__nav-link">About us</a></li>
+                <li><a href="../nexus/" class="site-footer__nav-link">Nexus</a></li>
+                <li><a href="./" class="site-footer__nav-link">DA</a></li>
+                <li><a href="https://avail.keka.com/careers" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Careers</a></li>
+              </ul>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://blog.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                <li><a href="../ecosystem/" class="site-footer__nav-link">Ecosystem</a></li>
+                <li><a href="../events/" class="site-footer__nav-link">Events</a></li>
+                <li><a href="../terms/" class="site-footer__nav-link">T&amp;C</a></li>
+                <li><a href="../whitepaper/" class="site-footer__nav-link">Whitepaper</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer__nav-group site-footer__nav-group--support-press">
+            <div class="site-footer__nav-subgroup">
+              <p class="site-footer__nav-heading">Support</p>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://docs.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Docs</a></li>
+                <li><a href="https://discord.com/invite/AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                <li><a href="https://github.com/availproject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="site-footer__nav-subgroup">
+              <p class="site-footer__nav-heading">Press Kit</p>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://availproject.org/brand" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Brand Assets</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer__nav-group site-footer__nav-group--socials">
+            <p class="site-footer__nav-heading">Socials</p>
+            <ul class="site-footer__nav-list">
+              <li><a href="https://x.com/AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+              <li><a href="https://www.linkedin.com/company/availproject/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://t.me/availproject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+              <li><a href="https://www.youtube.com/@AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="site-footer__logo" aria-hidden="true">
+        <img
+          src="../assets/footer/avail-wordmark.png"
+          alt=""
+          class="site-footer__logo-img"
+          width="832"
+          height="203"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <script src="../halftone-background.js?v=2"></script>
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-menu');
+      var menu = document.getElementById('mobile-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!isOpen));
+          toggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+          menu.hidden = isOpen;
+          document.body.classList.toggle('menu-open', !isOpen);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

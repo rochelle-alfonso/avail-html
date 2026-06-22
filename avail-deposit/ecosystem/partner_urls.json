@@ -1,0 +1,562 @@
+[
+  {
+    "slug": "air-chains",
+    "url": "https://www.figma.com/api/mcp/asset/a627a620-f50a-466e-b121-c087b3aa9cfc"
+  },
+  {
+    "slug": "allnodes",
+    "url": "https://www.figma.com/api/mcp/asset/b2709862-9f94-4c09-8b3f-b3bee0e3d09a"
+  },
+  {
+    "slug": "ankr",
+    "url": "https://www.figma.com/api/mcp/asset/ec2f75d2-0fa9-4197-8aeb-1336b1cc42ea"
+  },
+  {
+    "slug": "arbitrum",
+    "url": "https://www.figma.com/api/mcp/asset/1c33758e-2f2e-4c7a-9508-a47f29d33b0e"
+  },
+  {
+    "slug": "arcana",
+    "url": "https://www.figma.com/api/mcp/asset/f05b559f-28a1-436b-af52-7c40aaec7afd"
+  },
+  {
+    "slug": "automata",
+    "url": "https://www.figma.com/api/mcp/asset/a4db6d27-e28e-43bf-b511-cfc832e7ddbf"
+  },
+  {
+    "slug": "bean-exchange",
+    "url": "https://www.figma.com/api/mcp/asset/5120b44e-0892-4e33-8d0c-403d59821266"
+  },
+  {
+    "slug": "befi-labs",
+    "url": "https://www.figma.com/api/mcp/asset/14b84589-7bea-4ff7-8df5-195a72db95b7"
+  },
+  {
+    "slug": "bitget-wallet",
+    "url": "https://www.figma.com/api/mcp/asset/ae4e3188-fb49-46f3-be8a-7381bed5af32"
+  },
+  {
+    "slug": "bitte",
+    "url": "https://www.figma.com/api/mcp/asset/5a712b54-efbe-423a-9dae-4dd478085d37"
+  },
+  {
+    "slug": "blade-games",
+    "url": "https://www.figma.com/api/mcp/asset/a9e1705f-6116-4104-b988-c6b5eaccae56"
+  },
+  {
+    "slug": "blockworks",
+    "url": "https://www.figma.com/api/mcp/asset/3730cca9-69fc-465f-a130-7d2e9947a540"
+  },
+  {
+    "slug": "bolt-os",
+    "url": "https://www.figma.com/api/mcp/asset/1022046a-a9d4-4cf2-85f8-48ade11a7e00"
+  },
+  {
+    "slug": "brightlystake",
+    "url": "https://www.figma.com/api/mcp/asset/5633c7d4-d194-46cf-afa4-ed434e25dbb0"
+  },
+  {
+    "slug": "bware-labs",
+    "url": "https://www.figma.com/api/mcp/asset/a61433ec-ad2e-4ed1-bebe-a44aabc1d755"
+  },
+  {
+    "slug": "calimero",
+    "url": "https://www.figma.com/api/mcp/asset/d60c0ad5-9761-44b3-a474-d10945ae840c"
+  },
+  {
+    "slug": "cartesi",
+    "url": "https://www.figma.com/api/mcp/asset/ff69017d-966f-4ff1-adcb-879a9c2a2663"
+  },
+  {
+    "slug": "carv",
+    "url": "https://www.figma.com/api/mcp/asset/0537790d-bccd-4da2-b1ca-aa3c49133c86"
+  },
+  {
+    "slug": "chai-protocol",
+    "url": "https://www.figma.com/api/mcp/asset/c7a2e672-cc8b-4247-ad18-b524fe316742"
+  },
+  {
+    "slug": "citrea",
+    "url": "https://www.figma.com/api/mcp/asset/d7395184-eef1-48b9-a564-87784384ae05"
+  },
+  {
+    "slug": "clober",
+    "url": "https://www.figma.com/api/mcp/asset/119bdccf-1859-4984-98b0-ddbc3f6369c3"
+  },
+  {
+    "slug": "coin-academy",
+    "url": "https://www.figma.com/api/mcp/asset/958dc9ca-425d-426f-8a9b-f83bf4a66229"
+  },
+  {
+    "slug": "copperx",
+    "url": "https://www.figma.com/api/mcp/asset/bc18cb23-00a8-4f10-9fbc-8cda6b9ef17b"
+  },
+  {
+    "slug": "cryptostake",
+    "url": "https://www.figma.com/api/mcp/asset/d7d5bf0a-87d6-48c5-98cf-8d9f1905eb74"
+  },
+  {
+    "slug": "cypherock",
+    "url": "https://www.figma.com/api/mcp/asset/1b04e7a7-944c-44f5-9db8-b6a62b4de342"
+  },
+  {
+    "slug": "demex",
+    "url": "https://www.figma.com/api/mcp/asset/9c5d143f-894e-4c49-8d9d-dc41b1103f81"
+  },
+  {
+    "slug": "deqfi",
+    "url": "https://www.figma.com/api/mcp/asset/0282f928-ef7b-426c-8d17-3346e4afdc15"
+  },
+  {
+    "slug": "dymension",
+    "url": "https://www.figma.com/api/mcp/asset/0f5a7f47-9a54-4a14-9a9f-9979d61aa11e"
+  },
+  {
+    "slug": "encifher",
+    "url": "https://www.figma.com/api/mcp/asset/97e66501-2a8f-4da7-bfcb-b9608b0caebd"
+  },
+  {
+    "slug": "equilibrium",
+    "url": "https://www.figma.com/api/mcp/asset/024212fa-d267-4cc6-b5cd-90f5199d2850"
+  },
+  {
+    "slug": "eternal-ai",
+    "url": "https://www.figma.com/api/mcp/asset/2f760fe5-4954-426d-883e-46691224a972"
+  },
+  {
+    "slug": "evolve",
+    "url": "https://www.figma.com/api/mcp/asset/26ca889c-9786-4697-bb34-3c8978f9a82a"
+  },
+  {
+    "slug": "fairblock",
+    "url": "https://www.figma.com/api/mcp/asset/4f7f461f-dcc1-41b6-85ab-c3eab349716c"
+  },
+  {
+    "slug": "falconx",
+    "url": "https://www.figma.com/api/mcp/asset/3d00a856-cd83-4685-b2c6-5feba7e1324a"
+  },
+  {
+    "slug": "family-wallet",
+    "url": "https://www.figma.com/api/mcp/asset/a572da21-ddc3-496b-a04e-d1207835bbbb"
+  },
+  {
+    "slug": "fearless-wallet",
+    "url": "https://www.figma.com/api/mcp/asset/2de46e7a-fdfa-4900-844a-b7569bb4d3f8"
+  },
+  {
+    "slug": "fiamma",
+    "url": "https://www.figma.com/api/mcp/asset/f8b76f15-eaf8-45e1-a057-649655f5b0f5"
+  },
+  {
+    "slug": "filecoin",
+    "url": "https://www.figma.com/api/mcp/asset/11a1c05b-2ec0-4cfd-883f-cc79fa607243"
+  },
+  {
+    "slug": "fluent",
+    "url": "https://www.figma.com/api/mcp/asset/9742ed28-eb6e-4d97-b00a-e6fdfc35449d"
+  },
+  {
+    "slug": "gateway",
+    "url": "https://www.figma.com/api/mcp/asset/9bff17bd-07c9-479b-86d4-d5436dfbb91b"
+  },
+  {
+    "slug": "gelato-network",
+    "url": "https://www.figma.com/api/mcp/asset/8ffd2a13-256a-4785-8226-42ff29cc488f"
+  },
+  {
+    "slug": "gr1d",
+    "url": "https://www.figma.com/api/mcp/asset/b3a13773-cde1-45dd-ab89-8cc408cf3dbc"
+  },
+  {
+    "slug": "helix-labs",
+    "url": "https://www.figma.com/api/mcp/asset/797d3b66-ed9c-428b-843a-c2595587a271"
+  },
+  {
+    "slug": "henez",
+    "url": "https://www.figma.com/api/mcp/asset/ff9abfca-544a-4996-a90a-23131faefa9b"
+  },
+  {
+    "slug": "henry",
+    "url": "https://www.figma.com/api/mcp/asset/6a0e357c-3775-422c-936a-74697385026d"
+  },
+  {
+    "slug": "heurist",
+    "url": "https://www.figma.com/api/mcp/asset/4b2cabfc-fde8-4d77-9fb6-ba376c8ee2fc"
+  },
+  {
+    "slug": "imua",
+    "url": "https://www.figma.com/api/mcp/asset/46a7002c-92e7-4758-8d1d-69d58b91f9f7"
+  },
+  {
+    "slug": "kalqix",
+    "url": "https://www.figma.com/api/mcp/asset/d9c665c4-f1aa-462a-ab20-6778fd2df604"
+  },
+  {
+    "slug": "karnot",
+    "url": "https://www.figma.com/api/mcp/asset/c01963ac-e37f-40d4-9da8-16af88b8a15b"
+  },
+  {
+    "slug": "kgen",
+    "url": "https://www.figma.com/api/mcp/asset/12b725ce-98b2-4201-8e4e-f3c1e69b6e22"
+  },
+  {
+    "slug": "klever",
+    "url": "https://www.figma.com/api/mcp/asset/3c57321d-1f69-4f09-a806-5fbe3b1e4da6"
+  },
+  {
+    "slug": "koni-stack",
+    "url": "https://www.figma.com/api/mcp/asset/3f61c05d-3ca3-44f3-9fba-73f953453de3"
+  },
+  {
+    "slug": "lava",
+    "url": "https://www.figma.com/api/mcp/asset/ac8680c7-7bb2-4557-b29b-b33146ebb7dd"
+  },
+  {
+    "slug": "layer-edge",
+    "url": "https://www.figma.com/api/mcp/asset/119933b9-4684-408e-b3fc-28a033f81b6a"
+  },
+  {
+    "slug": "lemonade",
+    "url": "https://www.figma.com/api/mcp/asset/ffc05044-bf24-447b-9a15-89fb9c3fa1db"
+  },
+  {
+    "slug": "lens-protocol",
+    "url": "https://www.figma.com/api/mcp/asset/dad1882a-8c8e-456b-93d5-d8a76861c740"
+  },
+  {
+    "slug": "letsexchange",
+    "url": "https://www.figma.com/api/mcp/asset/627a84aa-a186-461f-8f5b-31618bb881a9"
+  },
+  {
+    "slug": "logx",
+    "url": "https://www.figma.com/api/mcp/asset/2aa0a6c8-05eb-4e74-a00c-c2cefb469742"
+  },
+  {
+    "slug": "luga-nodes",
+    "url": "https://www.figma.com/api/mcp/asset/db9ba451-55b1-41aa-90d5-f65a1df4976f"
+  },
+  {
+    "slug": "lumoz",
+    "url": "https://www.figma.com/api/mcp/asset/622641c7-9a5d-4cf6-9c35-8c0c1e880fcd"
+  },
+  {
+    "slug": "mace",
+    "url": "https://www.figma.com/api/mcp/asset/2a03fe74-4b09-4d9c-bbcc-fc9a4540e40c"
+  },
+  {
+    "slug": "madara",
+    "url": "https://www.figma.com/api/mcp/asset/68bc8877-299f-4610-aed1-7c914b8a53c9"
+  },
+  {
+    "slug": "mayan",
+    "url": "https://www.figma.com/api/mcp/asset/f97ecd5c-de14-4d41-a937-cb157379a372"
+  },
+  {
+    "slug": "megaeth",
+    "url": "https://www.figma.com/api/mcp/asset/1b01d1df-4cda-472b-85e8-3f08da3215b0"
+  },
+  {
+    "slug": "meroku",
+    "url": "https://www.figma.com/api/mcp/asset/75d71fe0-a554-4f61-9397-ec7950797922"
+  },
+  {
+    "slug": "mimir-global",
+    "url": "https://www.figma.com/api/mcp/asset/deacc3e0-f338-4806-b64c-fcd7a6e50936"
+  },
+  {
+    "slug": "mizu-labs",
+    "url": "https://www.figma.com/api/mcp/asset/fe91755c-0589-4f7f-a7ad-3544ad07c686"
+  },
+  {
+    "slug": "monveil",
+    "url": "https://www.figma.com/api/mcp/asset/4b32e23e-246d-43a7-9ba1-4bec66dc466c"
+  },
+  {
+    "slug": "morph",
+    "url": "https://www.figma.com/api/mcp/asset/f4eab8b6-bd2d-436e-b31d-28724e039f6d"
+  },
+  {
+    "slug": "movement",
+    "url": "https://www.figma.com/api/mcp/asset/288b70f9-d7c3-42e3-8560-cfa5aae36a7a"
+  },
+  {
+    "slug": "native",
+    "url": "https://www.figma.com/api/mcp/asset/292d0395-8e19-4125-8792-e60d8a15300a"
+  },
+  {
+    "slug": "neova",
+    "url": "https://www.figma.com/api/mcp/asset/73192838-9713-460d-b2db-828edb252aa6"
+  },
+  {
+    "slug": "nexus-network",
+    "url": "https://www.figma.com/api/mcp/asset/5c063732-df19-4e2b-a33e-93f968a3e8c7"
+  },
+  {
+    "slug": "nim-network",
+    "url": "https://www.figma.com/api/mcp/asset/721b94b1-4306-4341-b140-96e41116b0dd"
+  },
+  {
+    "slug": "nocturnal-labs",
+    "url": "https://www.figma.com/api/mcp/asset/ea1aa4af-851b-49e0-9179-faa214666bab"
+  },
+  {
+    "slug": "nodekit",
+    "url": "https://www.figma.com/api/mcp/asset/0d0682a2-c794-4b55-a848-aef7747997dd"
+  },
+  {
+    "slug": "nodeops",
+    "url": "https://www.figma.com/api/mcp/asset/b0c9c814-6d68-4926-8803-ae40e4ed73fa"
+  },
+  {
+    "slug": "nova-wallet",
+    "url": "https://www.figma.com/api/mcp/asset/65c75406-9ee3-471d-94d0-5c2feabc8123"
+  },
+  {
+    "slug": "o3-layer",
+    "url": "https://www.figma.com/api/mcp/asset/09bbf915-01f1-4c3d-b133-81ec92d44fcc"
+  },
+  {
+    "slug": "odysphere",
+    "url": "https://www.figma.com/api/mcp/asset/080ffeea-3b1d-4661-8904-aa5a7d7fb868"
+  },
+  {
+    "slug": "okto-tech",
+    "url": "https://www.figma.com/api/mcp/asset/eccfbe97-7862-46aa-adc0-8f87ce882347"
+  },
+  {
+    "slug": "onfinality",
+    "url": "https://www.figma.com/api/mcp/asset/7acaebce-0a1d-433a-9931-2f05833081bf"
+  },
+  {
+    "slug": "openblock",
+    "url": "https://www.figma.com/api/mcp/asset/9bde5a69-444e-4129-bbd2-0f2347c7d48b"
+  },
+  {
+    "slug": "openlayer",
+    "url": "https://www.figma.com/api/mcp/asset/e21fd24e-576e-4a21-9ba5-c99c3b4eb174"
+  },
+  {
+    "slug": "optimism",
+    "url": "https://www.figma.com/api/mcp/asset/be164422-703a-4b26-9993-e73766ec79b8"
+  },
+  {
+    "slug": "p2p",
+    "url": "https://www.figma.com/api/mcp/asset/3ed23f80-cdc9-4bcb-866b-e2fa0f407ddd"
+  },
+  {
+    "slug": "paima-studios",
+    "url": "https://www.figma.com/api/mcp/asset/4107d533-ad91-44fb-aabb-cc6170e15052"
+  },
+  {
+    "slug": "particle-network",
+    "url": "https://www.figma.com/api/mcp/asset/e991c3a5-1b14-4206-b0eb-321118eb1bfe"
+  },
+  {
+    "slug": "pelagos",
+    "url": "https://www.figma.com/api/mcp/asset/41c13b10-971e-4da3-ad42-3678be35040a"
+  },
+  {
+    "slug": "phyken-network",
+    "url": "https://www.figma.com/api/mcp/asset/6a2825a7-a3dd-4810-b2ff-88adb1d24c68"
+  },
+  {
+    "slug": "pingme",
+    "url": "https://www.figma.com/api/mcp/asset/4627604a-98be-48a6-9667-f632f3206a3a"
+  },
+  {
+    "slug": "polka-safe",
+    "url": "https://www.figma.com/api/mcp/asset/ab73ac75-c882-414f-8a18-1e2f48550952"
+  },
+  {
+    "slug": "polygon-cdk",
+    "url": "https://www.figma.com/api/mcp/asset/c6ab035c-0635-4c0b-a7da-0caa4fa69871"
+  },
+  {
+    "slug": "polygon-zkevm",
+    "url": "https://www.figma.com/api/mcp/asset/763952f9-309b-4c3b-9110-1b5a4b320e16"
+  },
+  {
+    "slug": "prom",
+    "url": "https://www.figma.com/api/mcp/asset/ee765f80-c597-4b29-af25-a52822931567"
+  },
+  {
+    "slug": "pyth-network",
+    "url": "https://www.figma.com/api/mcp/asset/5c111dc7-b0a6-4e71-a8f6-9b1d258c60a9"
+  },
+  {
+    "slug": "quicknode",
+    "url": "https://www.figma.com/api/mcp/asset/00622f50-caf2-4cdc-843e-3bb7da8dd238"
+  },
+  {
+    "slug": "quickswap",
+    "url": "https://www.figma.com/api/mcp/asset/1e1301a8-6da1-4442-991a-e9ca69bdbc6a"
+  },
+  {
+    "slug": "radium-block",
+    "url": "https://www.figma.com/api/mcp/asset/51706570-acf1-40f6-be96-8244c1478053"
+  },
+  {
+    "slug": "radius",
+    "url": "https://www.figma.com/api/mcp/asset/5ae61ed1-a32b-4812-b48c-43d0e57e3e68"
+  },
+  {
+    "slug": "risc-zero",
+    "url": "https://www.figma.com/api/mcp/asset/4d5d1be2-ff24-47e4-8e91-ec8c809062b8"
+  },
+  {
+    "slug": "rooch",
+    "url": "https://www.figma.com/api/mcp/asset/6f55ed49-c036-4e45-8940-3d629597cba9"
+  },
+  {
+    "slug": "router-protocol",
+    "url": "https://www.figma.com/api/mcp/asset/cead7c04-52f9-47eb-997b-56d78372c13c"
+  },
+  {
+    "slug": "rug-rumble",
+    "url": "https://www.figma.com/api/mcp/asset/995098b8-4104-4e4e-85c4-b3536e0d9a20"
+  },
+  {
+    "slug": "silencel-lboratories",
+    "url": "https://www.figma.com/api/mcp/asset/61de5e19-d1b5-43c4-97f1-d01bbd66f885"
+  },
+  {
+    "slug": "silhouette",
+    "url": "https://www.figma.com/api/mcp/asset/7977a0fe-a011-4cf4-b159-0c3325effc74"
+  },
+  {
+    "slug": "skate-chain",
+    "url": "https://www.figma.com/api/mcp/asset/bf192074-3c7f-4546-8c1f-fc24ca440904"
+  },
+  {
+    "slug": "snapchain",
+    "url": "https://www.figma.com/api/mcp/asset/86b05b3a-f401-493d-a436-fd1f8cb30006"
+  },
+  {
+    "slug": "sooho-io",
+    "url": "https://www.figma.com/api/mcp/asset/87c9048f-4595-4d5b-a895-43acf0e76c19"
+  },
+  {
+    "slug": "sophon",
+    "url": "https://www.figma.com/api/mcp/asset/039c9f75-6875-429b-91d7-76c36b0b9376"
+  },
+  {
+    "slug": "sovereign",
+    "url": "https://www.figma.com/api/mcp/asset/eaafc321-a4fe-4107-98d6-3562cc17336c"
+  },
+  {
+    "slug": "space-and-time",
+    "url": "https://www.figma.com/api/mcp/asset/77b4bfbb-667b-4083-8bc6-921a72ee2153"
+  },
+  {
+    "slug": "spheron-network",
+    "url": "https://www.figma.com/api/mcp/asset/d701ab2d-2f4c-4670-8be4-14a03aecee9f"
+  },
+  {
+    "slug": "stackr",
+    "url": "https://www.figma.com/api/mcp/asset/902f5044-aae8-4126-93a3-338bf1fd400a"
+  },
+  {
+    "slug": "stackr-sdks-and-frameworks",
+    "url": "https://www.figma.com/api/mcp/asset/0281f081-edee-4798-91c5-4e6b8b10d407"
+  },
+  {
+    "slug": "starkware",
+    "url": "https://www.figma.com/api/mcp/asset/54b32643-17d3-47ec-b177-3e1538b9163d"
+  },
+  {
+    "slug": "stationx",
+    "url": "https://www.figma.com/api/mcp/asset/d28388d6-cb93-455c-89e6-877979cb47b1"
+  },
+  {
+    "slug": "subquery",
+    "url": "https://www.figma.com/api/mcp/asset/5b149155-b44d-495b-90d7-1b43d88452cd"
+  },
+  {
+    "slug": "subscan",
+    "url": "https://www.figma.com/api/mcp/asset/19921eb5-2a37-488b-a486-c69501729e0d"
+  },
+  {
+    "slug": "subsquid",
+    "url": "https://www.figma.com/api/mcp/asset/ef0e033c-e4a2-46ba-b6f3-b0cbb95323ba"
+  },
+  {
+    "slug": "subwallet",
+    "url": "https://www.figma.com/api/mcp/asset/d9e2d3e4-a338-45b0-8b02-e4fe51d6c488"
+  },
+  {
+    "slug": "succinct",
+    "url": "https://www.figma.com/api/mcp/asset/8f7a9c86-6ea0-4233-82b5-7a0bd4776a5e"
+  },
+  {
+    "slug": "talisman",
+    "url": "https://www.figma.com/api/mcp/asset/1bfd11e0-db4b-40a5-ac81-ddecc919758c"
+  },
+  {
+    "slug": "ten",
+    "url": "https://www.figma.com/api/mcp/asset/8a62fea6-e5e9-43b3-adef-b54a514eb09e"
+  },
+  {
+    "slug": "ternoa",
+    "url": "https://www.figma.com/api/mcp/asset/f44ef47e-d3fb-493e-964a-060922f0d871"
+  },
+  {
+    "slug": "titan-chain",
+    "url": "https://www.figma.com/api/mcp/asset/77721a78-b4c8-4850-b680-d885b7ef502c"
+  },
+  {
+    "slug": "truezk",
+    "url": "https://www.figma.com/api/mcp/asset/1bef90a6-be22-4ede-8d76-620be9fad580"
+  },
+  {
+    "slug": "up",
+    "url": "https://www.figma.com/api/mcp/asset/21e5041b-7ede-412a-b444-02060df27269"
+  },
+  {
+    "slug": "vanna-finance",
+    "url": "https://www.figma.com/api/mcp/asset/3eb36cb5-fedc-40fa-a135-dab4abe5c26b"
+  },
+  {
+    "slug": "verstatus",
+    "url": "https://www.figma.com/api/mcp/asset/538f512d-0d2a-41a1-b9c6-da2133d91bef"
+  },
+  {
+    "slug": "vistara",
+    "url": "https://www.figma.com/api/mcp/asset/934b7ef1-8c77-4a43-b67a-ef33522399dd"
+  },
+  {
+    "slug": "vitwit",
+    "url": "https://www.figma.com/api/mcp/asset/bdfd5bb4-c37e-42fb-8bc1-02a47f5e01e3"
+  },
+  {
+    "slug": "wormhole",
+    "url": "https://www.figma.com/api/mcp/asset/6ebda727-22f8-4353-95c5-9ef59b8e4667"
+  },
+  {
+    "slug": "yala",
+    "url": "https://www.figma.com/api/mcp/asset/2ddc07ea-4a9d-480a-b50a-0f6ee984472e"
+  },
+  {
+    "slug": "yona-network",
+    "url": "https://www.figma.com/api/mcp/asset/d581b365-d6c1-47ea-9206-4ab5d62af708"
+  },
+  {
+    "slug": "zeeve",
+    "url": "https://www.figma.com/api/mcp/asset/26a133e3-7d4e-4588-b2cb-e43d85fff570"
+  },
+  {
+    "slug": "zenith-ai",
+    "url": "https://www.figma.com/api/mcp/asset/64d698a3-fac8-45fc-b7c7-70fbf1da0b9f"
+  },
+  {
+    "slug": "zkcross",
+    "url": "https://www.figma.com/api/mcp/asset/462a2d07-df6b-47d9-b367-873cfa89b70b"
+  },
+  {
+    "slug": "zksync",
+    "url": "https://www.figma.com/api/mcp/asset/d3c5502e-2360-4b41-9f6f-1a154b3e04af"
+  },
+  {
+    "slug": "zulu",
+    "url": "https://www.figma.com/api/mcp/asset/ab4c2c2a-60d3-4cdb-bb12-362bfb002ac4"
+  }
+]

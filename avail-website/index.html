@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avail — Grow Beyond One Chain</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=6">
+  <link rel="stylesheet" href="nav.css">
+  <link rel="preload" as="image" href="assets/1.png">
+  <link rel="preload" as="image" href="assets/roll-2.png">
+  <link rel="preload" as="image" href="assets/roll-3.png">
+  <link rel="preload" as="image" href="assets/roll-4.png">
+</head>
+<body>
+
+  <div class="hero-handoff" id="hero-handoff">
+    <section class="landing" aria-label="Hero">
+      <div class="landing__bg" aria-hidden="true">
+        <canvas class="landing__bg-canvas"></canvas>
+      </div>
+
+      <div class="landing__container site-container">
+      <header class="nav-header">
+        <div class="nav-pill">
+          <a href="./" class="nav-logo" aria-label="Avail home">
+            <img src="assets/logo-mark.svg" alt="" class="nav-logo__mark" width="24" height="24">
+            <img src="assets/logo-wordmark.svg" alt="avail" class="nav-logo__wordmark" width="46" height="17">
+          </a>
+
+          <nav class="nav-links" aria-label="Primary">
+            <div class="nav-dropdown">
+              <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-solutions-trigger" aria-controls="nav-solutions-menu">Solutions</button>
+              <div class="nav-dropdown__menu" id="nav-solutions-menu" role="menu" aria-labelledby="nav-solutions-trigger">
+                <div class="nav-dropdown__section">
+                  <p class="nav-dropdown__heading">App Developers</p>
+                  <a href="http://localhost:8848/" class="nav-dropdown__link" role="menuitem">User Onboarding</a>
+                  <a href="http://localhost:8848/nexus/" class="nav-dropdown__link" role="menuitem">Multi-Chain Solutions</a>
+                </div>
+                <div class="nav-dropdown__section">
+                  <p class="nav-dropdown__heading">Blockchain Developers</p>
+                  <a href="http://localhost:8848/da/" class="nav-dropdown__link" role="menuitem">Data Availability</a>
+                </div>
+              </div>
+            </div>
+            <div class="nav-dropdown">
+              <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-products-trigger" aria-controls="nav-products-menu">Products</button>
+              <div class="nav-dropdown__menu nav-dropdown__menu--products" id="nav-products-menu" role="menu" aria-labelledby="nav-products-trigger">
+                <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+                <a href="http://localhost:8848/" class="nav-dropdown__link" role="menuitem">Avail Deposits</a>
+                <a href="http://localhost:8848/nexus/" class="nav-dropdown__link" role="menuitem">Avail Nexus</a>
+                <a href="http://localhost:8848/da/" class="nav-dropdown__link" role="menuitem">Avail DA</a>
+                <a href="https://docs.availproject.org/" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+              </div>
+            </div>
+            <a href="http://localhost:8848/ecosystem/" class="nav-links__item">Ecosystem</a>
+            <a href="https://docs.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Docs</a>
+            <a href="https://blog.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Blog</a>
+          </nav>
+
+          <button
+            type="button"
+            class="nav-menu"
+            aria-expanded="false"
+            aria-controls="mobile-menu"
+            aria-label="Open menu"
+          >
+            <span class="nav-menu__icon" aria-hidden="true"></span>
+            <span class="nav-menu__label">Menu</span>
+          </button>
+        </div>
+
+        <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary nav-header__cta" target="_blank" rel="noopener noreferrer">Build with Avail</a>
+      </header>
+
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <nav class="mobile-menu__nav" aria-label="Mobile">
+          <details class="mobile-menu__details">
+            <summary class="mobile-menu__link">Solutions</summary>
+            <div class="mobile-menu__sub">
+              <p class="mobile-menu__heading">App Developers</p>
+              <a href="http://localhost:8848/" class="mobile-menu__sublink">User Onboarding</a>
+              <a href="http://localhost:8848/nexus/" class="mobile-menu__sublink">Multi-Chain Solutions</a>
+              <p class="mobile-menu__heading">Blockchain Developers</p>
+              <a href="http://localhost:8848/da/" class="mobile-menu__sublink">Data Availability</a>
+            </div>
+          </details>
+          <details class="mobile-menu__details">
+            <summary class="mobile-menu__link">Products</summary>
+            <div class="mobile-menu__sub">
+              <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+              <a href="http://localhost:8848/" class="mobile-menu__sublink">Avail Deposits</a>
+              <a href="http://localhost:8848/nexus/" class="mobile-menu__sublink">Avail Nexus</a>
+              <a href="http://localhost:8848/da/" class="mobile-menu__sublink">Avail DA</a>
+              <a href="https://docs.availproject.org/" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+            </div>
+          </details>
+          <a href="http://localhost:8848/ecosystem/" class="mobile-menu__link">Ecosystem</a>
+          <a href="https://docs.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Docs</a>
+          <a href="https://blog.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Blog</a>
+          <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary mobile-menu__cta" target="_blank" rel="noopener noreferrer">Build with Avail</a>
+        </nav>
+      </div>
+
+      <div class="hero-section">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1 class="hero-title">Grow beyond one chain</h1>
+            <p class="hero-description">
+              Build on Nexus, DA, FastBridge, and Deposits. Give your app access to users, liquidity, and scale beyond your chain, without rebuilding anything.
+            </p>
+          </div>
+          <a href="#" class="btn btn-primary hero-cta">Build with Avail</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-roll" data-handoff-source>
+          <div class="hero-roll__track">
+            <div class="hero-roll__slide is-active">
+              <img src="assets/1.png" width="439" height="400" alt="" decoding="async">
+            </div>
+            <div class="hero-roll__slide">
+              <img src="assets/roll-2.png" srcset="assets/roll-2.png 1x, assets/roll-2@2x.png 2x" width="439" height="400" alt="" decoding="async">
+            </div>
+            <div class="hero-roll__slide">
+              <img src="assets/roll-3.png" srcset="assets/roll-3.png 1x, assets/roll-3@2x.png 2x" width="439" height="400" alt="" decoding="async">
+            </div>
+            <div class="hero-roll__slide">
+              <img src="assets/roll-4.png" srcset="assets/roll-4.png 1x, assets/roll-4@2x.png 2x" width="439" height="400" alt="" decoding="async">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="product product--nexus is-handoff-pending" aria-label="Nexus">
+      <div class="product__layout">
+        <div class="product__content-col">
+          <div class="product__content-panel">
+            <div class="product__content-bg" aria-hidden="true">
+              <canvas class="product__content-bg-canvas"></canvas>
+            </div>
+
+            <div class="product__content-inner" data-handoff-content>
+              <img src="assets/nexus-logo.svg" alt="avail nexus" class="product__logo" width="154" height="24">
+
+              <h2 class="product__headline">One integration. Borderless reach.</h2>
+
+              <p class="product__description">
+                Give your app borderless access to users and liquidity.<br>
+                Nexus handles the coordination, execution routing, and chain-specific complexity so you don't have to.
+              </p>
+
+              <a href="#" class="btn btn-secondary product__cta">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product__visual-col">
+          <div class="product__visual-panel" data-handoff-panel>
+            <img
+              src="assets/1.png"
+              width="710"
+              height="647"
+              alt=""
+              class="product__visual-panel-img"
+              data-handoff-target
+              decoding="async"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="product product--deposit" aria-label="Deposit">
+    <div class="product__layout">
+      <div class="product__content-col">
+        <div class="product__content-panel">
+          <div class="product__content-bg" aria-hidden="true">
+            <canvas class="product__content-bg-canvas"></canvas>
+          </div>
+
+          <div class="product__content-inner">
+            <img src="assets/deposit-logo.svg" alt="avail deposit" class="product__logo" width="154" height="24">
+
+            <h2 class="product__headline">Let your users deposit from anywhere.</h2>
+
+            <p class="product__description">
+              One integration. Users deposit from every major EVM chain using any token, any source, directly into your smart contract. No bridging UI, no chain-switching, no drop-off.
+            </p>
+
+            <a href="#" class="btn btn-secondary product__cta">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product__visual-col">
+        <div class="product__visual-panel product__visual-panel--dark">
+          <img
+            src="assets/deposit-visual-panel.png"
+            srcset="assets/deposit-visual-panel.png 1x, assets/deposit-visual-panel@2x.png 2x"
+            width="710"
+            height="647"
+            alt=""
+            class="product__visual-panel-img"
+            decoding="async"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product product--fastbridge" aria-label="FastBridge">
+    <div class="product__layout">
+      <div class="product__content-col">
+        <div class="product__content-panel">
+          <div class="product__content-bg" aria-hidden="true">
+            <canvas class="product__content-bg-canvas"></canvas>
+          </div>
+
+          <div class="product__content-inner">
+            <img src="assets/fastbridge-logo.svg" alt="fastbridge" class="product__logo product__logo--fastbridge" width="152" height="32">
+
+            <h2 class="product__headline">Move from multiple chains in one transaction.</h2>
+
+            <p class="product__description">
+              Combine balances from multiple chains in a single move. What takes 3–4 bridge transactions elsewhere, here takes 1.
+            </p>
+
+            <div class="product__cta-row">
+              <a href="#" class="btn btn-primary product__cta">Launch App</a>
+              <a href="#" class="btn btn-secondary product__cta">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product__visual-col">
+        <div class="product__visual-panel">
+          <img
+            src="assets/fastbridge-visual-panel.png"
+            srcset="assets/fastbridge-visual-panel.png 1x, assets/fastbridge-visual-panel@2x.png 2x"
+            width="710"
+            height="647"
+            alt=""
+            class="product__visual-panel-img"
+            decoding="async"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="product product--da" aria-label="DA">
+    <div class="product__layout">
+      <div class="product__content-col">
+        <div class="product__content-panel">
+          <div class="product__content-bg" aria-hidden="true">
+            <canvas class="product__content-bg-canvas"></canvas>
+          </div>
+
+          <div class="product__content-inner">
+            <img src="assets/da-logo.svg" alt="avail da" class="product__logo product__logo--da" width="101" height="24">
+
+            <h2 class="product__headline">The foundation everything is built on.</h2>
+
+            <p class="product__description">
+              The verifiable data availability layer powering the next generation of rollups. Purpose-built for throughput and cost-efficiency. Every chain built on Avail DA connects natively to Nexus, FastBridge, and Deposits.
+            </p>
+
+            <a href="#" class="btn btn-secondary product__cta">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product__visual-col">
+        <div class="product__visual-panel product__visual-panel--dark">
+          <img
+            src="assets/da-visual-panel.png"
+            width="1420"
+            height="1294"
+            alt=""
+            class="product__visual-panel-img"
+            decoding="async"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="chains" aria-label="Chains">
+    <div class="chains__bg" aria-hidden="true">
+      <canvas class="chains__bg-canvas"></canvas>
+    </div>
+
+    <div class="chains__inner">
+      <h2 class="chains__headline">Your users are<br>already on these chains</h2>
+
+      <div class="chains__logos" style="--chains-marquee-speed: 50s">
+        <div class="chains__logos-track">
+          <img src="assets/chains-row.svg" alt="" class="chains__logos-img" width="1362" height="48" loading="lazy" decoding="async">
+          <img src="assets/chains-row.svg" alt="" class="chains__logos-img" width="1362" height="48" loading="lazy" decoding="async" aria-hidden="true">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" aria-label="Testimonials">
+    <div class="testimonials__bg" aria-hidden="true">
+      <canvas class="testimonials__bg-canvas"></canvas>
+    </div>
+
+    <div class="testimonials__inner">
+      <header class="testimonials__header">
+        <h2 class="testimonials__title">Join the apps building with Avail</h2>
+        <p class="testimonials__subtitle">We call them Liquid Apps. Yours could be next</p>
+      </header>
+
+      <div class="testimonials__carousel">
+        <div class="testimonials__viewport">
+          <div class="testimonials__track">
+            <article class="testimonials__slide is-active" id="testimonial-panel-0" data-index="0" role="tabpanel" aria-labelledby="testimonial-tab-0">
+              <img src="assets/testimonials/clober-logo-white.svg" alt="" class="testimonials__slide-logo testimonials__slide-logo--clober" width="142" height="34">
+              <blockquote class="testimonials__quote">
+                <p>Before Nexus, our traders were limited to liquidity on one chain. Now they access capital from everywhere. It changed the scale of what we could offer overnight.</p>
+              </blockquote>
+              <footer class="testimonials__attribution">John Doe, Sr. Product Manager</footer>
+            </article>
+
+            <article class="testimonials__slide" id="testimonial-panel-1" data-index="1" role="tabpanel" aria-labelledby="testimonial-tab-1" aria-hidden="true">
+              <img src="assets/testimonials/bean-logo-white.png" alt="" class="testimonials__slide-logo testimonials__slide-logo--bean" width="135" height="55">
+              <blockquote class="testimonials__quote">
+                <p>Integrating Deposits let our users fund positions from any chain in one step. Onboarding friction dropped immediately and retention followed.</p>
+              </blockquote>
+              <footer class="testimonials__attribution">Jane Smith, Head of Growth</footer>
+            </article>
+
+            <article class="testimonials__slide" id="testimonial-panel-2" data-index="2" role="tabpanel" aria-labelledby="testimonial-tab-2" aria-hidden="true">
+              <img src="assets/testimonials/mace-logo.svg" alt="" class="testimonials__slide-logo testimonials__slide-logo--mace" width="177" height="30">
+              <blockquote class="testimonials__quote">
+                <p>FastBridge turned a four-step bridge flow into a single transaction. Our power users finally had the experience they expected from a modern trading app.</p>
+              </blockquote>
+              <footer class="testimonials__attribution">Alex Chen, CTO</footer>
+            </article>
+          </div>
+        </div>
+
+        <div class="testimonials__nav">
+          <div class="testimonials__progress" aria-hidden="true">
+            <div class="testimonials__progress-fill"></div>
+          </div>
+
+          <div class="testimonials__logos" role="tablist" aria-label="Select testimonial">
+            <button type="button" class="testimonials__logo is-active" role="tab" data-index="0" aria-selected="true" aria-controls="testimonial-panel-0" id="testimonial-tab-0">
+              <img src="assets/testimonials/clober-logo.svg" alt="Clober" width="146" height="35">
+            </button>
+            <button type="button" class="testimonials__logo" role="tab" data-index="1" aria-selected="false" aria-controls="testimonial-panel-1" id="testimonial-tab-1" tabindex="-1">
+              <img src="assets/testimonials/bean-logo.svg" alt="Bean" width="135" height="55">
+            </button>
+            <button type="button" class="testimonials__logo" role="tab" data-index="2" aria-selected="false" aria-controls="testimonial-panel-2" id="testimonial-tab-2" tabindex="-1">
+              <img src="assets/testimonials/mace-logo.svg" alt="MACE" width="177" height="30">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats" aria-label="AVAIL stats">
+    <div class="stats__bg" aria-hidden="true">
+      <canvas class="stats__bg-canvas"></canvas>
+    </div>
+
+    <div class="stats__inner">
+      <div class="stats__content">
+        <h2 class="stats__headline">AVAIL the economic layer of the Avail Platform</h2>
+        <p class="stats__description">
+          Every transaction on Avail DA, every execution on Nexus. $AVAIL secures the network and captures the value flowing through it
+        </p>
+      </div>
+
+      <div class="stats__grid">
+        <article class="stats__card stats__card--blue">
+          <p class="stats__value">$53B</p>
+          <p class="stats__label">Potential Nexus TVL</p>
+        </article>
+
+        <article class="stats__card stats__card--light stats__card--blue-text">
+          <p class="stats__value">50M+</p>
+          <p class="stats__label">$AVAIL staked</p>
+        </article>
+
+        <article class="stats__card stats__card--light stats__card--dark-text">
+          <p class="stats__value">10+</p>
+          <p class="stats__label">chains connected</p>
+        </article>
+
+        <article class="stats__card stats__card--dark">
+          <p class="stats__value">100+</p>
+          <p class="stats__label">active validators</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="investors" aria-label="Investors">
+    <div class="investors__bg" aria-hidden="true">
+      <canvas class="investors__bg-canvas"></canvas>
+    </div>
+
+    <div class="investors__inner">
+      <h2 class="investors__headline">Backed by the best</h2>
+
+      <div class="investors__grid investors__grid--desktop">
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--a16z">
+            <img src="assets/investors/logos/a16z.png" alt="a16z" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/dragonfly.png" alt="Dragonfly" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/cyber-fund.png" alt="cyber Fund" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/longhash.png" alt="longhash ventures" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/sevenx.png" alt="SevenX Ventures" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/figment.png" alt="Figment Capital" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/crescent.png" alt="CMT Digital" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/n-logo.png" alt="Nascent" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/sequoia.png" alt="Sequoia Capital" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/variant-fund.png" alt="Variant Fund" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/alliance.png" alt="Alliance" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/hashkey.png" alt="HASHKEY CAPITAL" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/orange-mountain.png" alt="Orange Mountain" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/kr1.png" alt="KR1" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/altos.png" alt="ALTOS VENTURES" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+      </div>
+
+      <div class="investors__grid investors__grid--tablet">
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--a16z">
+            <img src="assets/investors/logos/a16z.png" alt="a16z" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/dragonfly.png" alt="Dragonfly" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/cyber-fund.png" alt="cyber Fund" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/longhash.png" alt="longhash ventures" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/sevenx.png" alt="SevenX Ventures" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/figment.png" alt="Figment Capital" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/crescent.png" alt="CMT Digital" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/n-logo.png" alt="Nascent" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/sequoia.png" alt="Sequoia Capital" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/variant-fund.png" alt="Variant Fund" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/alliance.png" alt="Alliance" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/hashkey.png" alt="HASHKEY CAPITAL" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/orange-mountain.png" alt="Orange Mountain" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/kr1.png" alt="KR1" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/altos.png" alt="ALTOS VENTURES" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+      </div>
+
+      <div class="investors__grid investors__grid--mobile">
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--a16z">
+            <img src="assets/investors/logos/a16z.png" alt="a16z" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/dragonfly.png" alt="Dragonfly" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/cyber-fund.png" alt="cyber Fund" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/longhash.png" alt="longhash ventures" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/sevenx.png" alt="SevenX Ventures" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/crescent.png" alt="CMT Digital" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/n-logo.png" alt="Nascent" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/sequoia.png" alt="Sequoia Capital" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/variant-fund.png" alt="Variant Fund" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/alliance.png" alt="Alliance" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/hashkey.png" alt="HASHKEY CAPITAL" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--fill">
+            <img src="assets/investors/logos/orange-mountain.png" alt="Orange Mountain" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/kr1.png" alt="KR1" loading="lazy" decoding="async">
+          </div>
+        </div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--empty" aria-hidden="true"></div>
+        <div class="investors__cell investors__cell--logo">
+          <div class="investors__logo-surface investors__logo-surface--border">
+            <img src="assets/investors/logos/altos.png" alt="ALTOS VENTURES" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="news" aria-label="News and events">
+    <div class="news__bg" aria-hidden="true">
+      <canvas class="news__bg-canvas"></canvas>
+    </div>
+
+    <div class="news__inner">
+      <header class="news__header">
+        <h2 class="news__headline">Latest from Avail</h2>
+        <p class="news__description">
+          Stay up to date with the latest happenings, announcements, and community events from across the Avail ecosystem
+        </p>
+      </header>
+    </div>
+
+    <div class="news__carousel" style="--news-marquee-speed: 60s">
+      <div class="news__track">
+        <article class="news__card">
+          <img src="assets/news/news-1.png" alt="" width="429" height="429" loading="lazy" decoding="async">
+        </article>
+        <article class="news__card">
+          <img src="assets/news/news-2.png" alt="" width="429" height="429" loading="lazy" decoding="async">
+        </article>
+        <article class="news__card">
+          <img src="assets/news/news-3.png" alt="" width="429" height="429" loading="lazy" decoding="async">
+        </article>
+        <article class="news__card">
+          <img src="assets/news/news-4.png" alt="" width="429" height="429" loading="lazy" decoding="async">
+        </article>
+        <article class="news__card" aria-hidden="true">
+          <img src="assets/news/news-1.png" alt="" width="429" height="429" loading="lazy" decoding="async">
+        </article>
+        <article class="news__card" aria-hidden="true">
+          <img src="assets/news/news-2.png" alt="" width="429" height="429" loading="lazy" decoding="async">
+        </article>
+        <article class="news__card" aria-hidden="true">
+          <img src="assets/news/news-3.png" alt="" width="429" height="429" loading="lazy" decoding="async">
+        </article>
+        <article class="news__card" aria-hidden="true">
+          <img src="assets/news/news-4.png" alt="" width="429" height="429" loading="lazy" decoding="async">
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div class="site-footer__cta">
+          <h2 class="site-footer__headline">Have questions?</h2>
+          <p class="site-footer__subcopy">Get in touch with us and understand exactly what we do</p>
+          <a href="https://calendly.com/d/cwfp-t3y-gt2/avail-discovery-call" class="btn btn-primary site-footer__btn" target="_blank" rel="noopener noreferrer">Schedule A Demo</a>
+          <p class="site-footer__copyright">Copyright © Avail Project. All rights reserved.</p>
+        </div>
+
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <div class="site-footer__nav-group site-footer__nav-group--pages">
+            <p class="site-footer__nav-heading">Pages</p>
+            <div class="site-footer__nav-columns">
+              <ul class="site-footer__nav-list">
+                <li><a href="./" class="site-footer__nav-link" aria-current="page">Home</a></li>
+                <li><a href="http://localhost:8848/about-us/" class="site-footer__nav-link">About us</a></li>
+                <li><a href="http://localhost:8848/nexus/" class="site-footer__nav-link">Nexus</a></li>
+                <li><a href="http://localhost:8848/da/" class="site-footer__nav-link">DA</a></li>
+                <li><a href="https://avail.keka.com/careers" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Careers</a></li>
+              </ul>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://blog.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                <li><a href="http://localhost:8848/ecosystem/" class="site-footer__nav-link">Ecosystem</a></li>
+                <li><a href="http://localhost:8848/events/" class="site-footer__nav-link">Events</a></li>
+                <li><a href="http://localhost:8848/terms/" class="site-footer__nav-link">T&amp;C</a></li>
+                <li><a href="http://localhost:8848/whitepaper/" class="site-footer__nav-link">Whitepaper</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer__nav-group site-footer__nav-group--support-press">
+            <div class="site-footer__nav-subgroup">
+              <p class="site-footer__nav-heading">Support</p>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://docs.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Docs</a></li>
+                <li><a href="https://discord.com/invite/AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                <li><a href="https://github.com/availproject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="site-footer__nav-subgroup">
+              <p class="site-footer__nav-heading">Press Kit</p>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://availproject.org/brand" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Brand Assets</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer__nav-group site-footer__nav-group--socials">
+            <p class="site-footer__nav-heading">Socials</p>
+            <ul class="site-footer__nav-list">
+              <li><a href="https://x.com/AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+              <li><a href="https://www.linkedin.com/company/availproject/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://t.me/availproject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+              <li><a href="https://www.youtube.com/@AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="site-footer__logo" aria-hidden="true">
+        <img
+          src="assets/footer/avail-wordmark.png"
+          alt=""
+          class="site-footer__logo-img"
+          width="832"
+          height="203"
+          loading="lazy"
+          decoding="async"
+        >
+      </div>
+    </div>
+  </footer>
+
+  <div class="hero-handoff__expander" id="hero-handoff-expander" aria-hidden="true">
+    <img
+      class="hero-handoff__panel-img"
+      id="hero-handoff-panel-img"
+      src="assets/1.png"
+      alt=""
+      width="710"
+      height="647"
+    >
+  </div>
+
+  <script src="halftone-background.js"></script>
+  <script src="hero-roll.js"></script>
+  <script src="hero-product-handoff.js"></script>
+  <script src="testimonials.js"></script>
+  <script>
+    (function () {
+      window.AvailHeroRoll && window.AvailHeroRoll.init();
+      window.AvailTestimonials && window.AvailTestimonials.init();
+
+      var toggle = document.querySelector('.nav-menu');
+      var menu = document.getElementById('mobile-menu');
+
+      if (!toggle || !menu) return;
+
+      toggle.addEventListener('click', function () {
+        var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+        toggle.setAttribute('aria-expanded', String(!isOpen));
+        toggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+        menu.hidden = isOpen;
+        document.body.classList.toggle('menu-open', !isOpen);
+      });
+    })();
+  </script>
+
+</body>
+</html>

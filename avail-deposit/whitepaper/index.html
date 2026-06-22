@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Whitepaper — Avail</title>
+  <meta name="description" content="Read the Avail whitepaper." />
+  <link rel="icon" type="image/png" href="../assets/logo-mark.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../nav.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="page-bg" aria-hidden="true">
+      <canvas class="page-bg__canvas"></canvas>
+    </div>
+
+  <header class="nav-header">
+    <div class="nav-pill">
+      <a href="http://localhost:9345/" class="nav-logo" aria-label="Avail home">
+        <img src="../assets/logo-mark.svg" alt="" class="nav-logo__mark" width="24" height="24">
+        <img src="../assets/logo-wordmark.svg" alt="avail" class="nav-logo__wordmark" width="46" height="17">
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-solutions-trigger" aria-controls="nav-solutions-menu">Solutions</button>
+          <div class="nav-dropdown__menu" id="nav-solutions-menu" role="menu" aria-labelledby="nav-solutions-trigger">
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">App Developers</p>
+              <a href="../" class="nav-dropdown__link" role="menuitem">User Onboarding</a>
+              <a href="../nexus/" class="nav-dropdown__link" role="menuitem">Multi-Chain Solutions</a>
+            </div>
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">Blockchain Developers</p>
+              <a href="../da/" class="nav-dropdown__link" role="menuitem">Data Availability</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-products-trigger" aria-controls="nav-products-menu">Products</button>
+          <div class="nav-dropdown__menu nav-dropdown__menu--products" id="nav-products-menu" role="menu" aria-labelledby="nav-products-trigger">
+            <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+            <a href="../" class="nav-dropdown__link" role="menuitem">Avail Deposits</a>
+            <a href="../nexus/" class="nav-dropdown__link" role="menuitem">Avail Nexus</a>
+            <a href="../da/" class="nav-dropdown__link" role="menuitem">Avail DA</a>
+            <a href="https://docs.availproject.org/" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+          </div>
+        </div>
+        <a href="../ecosystem/" class="nav-links__item">Ecosystem</a>
+        <a href="https://docs.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Docs</a>
+        <a href="https://blog.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Blog</a>
+      </nav>
+
+      <button type="button" class="nav-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span class="nav-menu__icon" aria-hidden="true"></span>
+        <span class="nav-menu__label">Menu</span>
+      </button>
+    </div>
+
+    <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary nav-header__cta" target="_blank" rel="noopener noreferrer">Build with Avail</a>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <details class="mobile-menu__details">
+        <summary class="mobile-menu__link">Solutions</summary>
+        <div class="mobile-menu__sub">
+          <p class="mobile-menu__heading">App Developers</p>
+          <a href="../" class="mobile-menu__sublink">User Onboarding</a>
+          <a href="../nexus/" class="mobile-menu__sublink">Multi-Chain Solutions</a>
+          <p class="mobile-menu__heading">Blockchain Developers</p>
+          <a href="../da/" class="mobile-menu__sublink">Data Availability</a>
+        </div>
+      </details>
+      <details class="mobile-menu__details">
+        <summary class="mobile-menu__link">Products</summary>
+        <div class="mobile-menu__sub">
+          <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+          <a href="../" class="mobile-menu__sublink">Avail Deposits</a>
+          <a href="../nexus/" class="mobile-menu__sublink">Avail Nexus</a>
+          <a href="../da/" class="mobile-menu__sublink">Avail DA</a>
+          <a href="https://docs.availproject.org/" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+        </div>
+      </details>
+      <a href="../ecosystem/" class="mobile-menu__link">Ecosystem</a>
+      <a href="https://docs.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Docs</a>
+      <a href="https://blog.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Blog</a>
+      <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary mobile-menu__cta" target="_blank" rel="noopener noreferrer">Build with Avail</a>
+    </nav>
+  </div>
+
+    <main>
+      <section class="hero hero--whitepaper">
+        <div class="wrap hero--whitepaper__inner">
+          <p class="hero--whitepaper__eyebrow">Read Our</p>
+          <h1 class="hero--whitepaper__title">Whitepaper</h1>
+        </div>
+      </section>
+
+      <section class="whitepaper-viewer" aria-label="Avail whitepaper">
+        <div class="wrap whitepaper-viewer__inner">
+          <iframe
+            class="whitepaper-viewer__frame"
+            src="https://drive.google.com/file/d/1mD4OYR02jINrMU8ffnXTOr8T8M8QibEc/preview"
+            title="Avail Whitepaper PDF"
+            allow="autoplay"
+            loading="lazy"
+          ></iframe>
+        </div>
+      </section>
+    </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div class="site-footer__cta">
+          <h2 class="site-footer__headline">Have questions?</h2>
+          <p class="site-footer__subcopy">Get in touch with us and understand exactly what we do</p>
+          <a href="https://calendly.com/d/cwfp-t3y-gt2/avail-discovery-call" class="btn btn-primary site-footer__btn" target="_blank" rel="noopener noreferrer">Schedule A Demo</a>
+          <p class="site-footer__copyright">Copyright © Avail Project. All rights reserved.</p>
+        </div>
+
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <div class="site-footer__nav-group site-footer__nav-group--pages">
+            <p class="site-footer__nav-heading">Pages</p>
+            <div class="site-footer__nav-columns">
+              <ul class="site-footer__nav-list">
+                <li><a href="http://localhost:9345/" class="site-footer__nav-link">Home</a></li>
+                <li><a href="../about-us/" class="site-footer__nav-link">About us</a></li>
+                <li><a href="../nexus/" class="site-footer__nav-link">Nexus</a></li>
+                <li><a href="../da/" class="site-footer__nav-link">DA</a></li>
+                <li><a href="https://avail.keka.com/careers" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Careers</a></li>
+              </ul>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://blog.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                <li><a href="../ecosystem/" class="site-footer__nav-link">Ecosystem</a></li>
+                <li><a href="../events/" class="site-footer__nav-link">Events</a></li>
+                <li><a href="../terms/" class="site-footer__nav-link">T&amp;C</a></li>
+                <li><a href="../whitepaper/" class="site-footer__nav-link" aria-current="page">Whitepaper</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer__nav-group site-footer__nav-group--support-press">
+            <div class="site-footer__nav-subgroup">
+              <p class="site-footer__nav-heading">Support</p>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://docs.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Docs</a></li>
+                <li><a href="https://discord.com/invite/AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                <li><a href="https://github.com/availproject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="site-footer__nav-subgroup">
+              <p class="site-footer__nav-heading">Press Kit</p>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://availproject.org/brand" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Brand Assets</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer__nav-group site-footer__nav-group--socials">
+            <p class="site-footer__nav-heading">Socials</p>
+            <ul class="site-footer__nav-list">
+              <li><a href="https://x.com/AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+              <li><a href="https://www.linkedin.com/company/availproject/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://t.me/availproject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+              <li><a href="https://www.youtube.com/@AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="site-footer__logo" aria-hidden="true">
+        <img src="../assets/footer/avail-wordmark.png" alt="" class="site-footer__logo-img" width="832" height="203" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <script src="../halftone-background.js?v=2"></script>
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-menu');
+      var menu = document.getElementById('mobile-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!isOpen));
+          toggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+          menu.hidden = isOpen;
+          document.body.classList.toggle('menu-open', !isOpen);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

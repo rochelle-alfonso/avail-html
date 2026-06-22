@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ecosystem — Avail</title>
+  <meta name="description" content="Discover the growing network of chains, applications, and infrastructure building with Avail." />
+  <link rel="icon" type="image/png" href="../assets/logo-mark.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../nav.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="page-bg" aria-hidden="true">
+      <canvas class="page-bg__canvas"></canvas>
+    </div>
+
+  <header class="nav-header">
+    <div class="nav-pill">
+      <a href="http://localhost:9345/" class="nav-logo" aria-label="Avail home">
+        <img src="../assets/logo-mark.svg" alt="" class="nav-logo__mark" width="24" height="24">
+        <img src="../assets/logo-wordmark.svg" alt="avail" class="nav-logo__wordmark" width="46" height="17">
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-solutions-trigger" aria-controls="nav-solutions-menu">Solutions</button>
+          <div class="nav-dropdown__menu" id="nav-solutions-menu" role="menu" aria-labelledby="nav-solutions-trigger">
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">App Developers</p>
+              <a href="../" class="nav-dropdown__link" role="menuitem">User Onboarding</a>
+              <a href="../nexus/" class="nav-dropdown__link" role="menuitem">Multi-Chain Solutions</a>
+            </div>
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">Blockchain Developers</p>
+              <a href="../da/" class="nav-dropdown__link" role="menuitem">Data Availability</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-products-trigger" aria-controls="nav-products-menu">Products</button>
+          <div class="nav-dropdown__menu nav-dropdown__menu--products" id="nav-products-menu" role="menu" aria-labelledby="nav-products-trigger">
+            <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+            <a href="../" class="nav-dropdown__link" role="menuitem">Avail Deposits</a>
+            <a href="../nexus/" class="nav-dropdown__link" role="menuitem">Avail Nexus</a>
+            <a href="../da/" class="nav-dropdown__link" role="menuitem">Avail DA</a>
+            <a href="https://docs.availproject.org/" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+          </div>
+        </div>
+        <a href="../ecosystem/" class="nav-links__item nav-links__item--active">Ecosystem</a>
+        <a href="https://docs.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Docs</a>
+        <a href="https://blog.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Blog</a>
+      </nav>
+      <button type="button" class="nav-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span class="nav-menu__icon" aria-hidden="true"></span>
+        <span class="nav-menu__label">Menu</span>
+      </button>
+    </div>
+    <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary nav-header__cta" target="_blank" rel="noopener noreferrer">Build with Avail</a>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <details class="mobile-menu__details">
+        <summary class="mobile-menu__link">Solutions</summary>
+        <div class="mobile-menu__sub">
+          <p class="mobile-menu__heading">App Developers</p>
+          <a href="../" class="mobile-menu__sublink">User Onboarding</a>
+          <a href="../nexus/" class="mobile-menu__sublink">Multi-Chain Solutions</a>
+          <p class="mobile-menu__heading">Blockchain Developers</p>
+          <a href="../da/" class="mobile-menu__sublink">Data Availability</a>
+        </div>
+      </details>
+      <details class="mobile-menu__details">
+        <summary class="mobile-menu__link">Products</summary>
+        <div class="mobile-menu__sub">
+          <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+          <a href="../" class="mobile-menu__sublink">Avail Deposits</a>
+          <a href="../nexus/" class="mobile-menu__sublink">Avail Nexus</a>
+          <a href="../da/" class="mobile-menu__sublink">Avail DA</a>
+          <a href="https://docs.availproject.org/" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+        </div>
+      </details>
+      <a href="./" class="mobile-menu__link">Ecosystem</a>
+      <a href="https://docs.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Docs</a>
+      <a href="https://blog.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Blog</a>
+      <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary mobile-menu__cta" target="_blank" rel="noopener noreferrer">Build with Avail</a>
+    </nav>
+  </div>
+
+  <main>
+    <section class="hero hero--ecosystem">
+      <div class="wrap hero--ecosystem__inner">
+        <div class="hero__copy">
+          <p class="hero__eyebrow">Explore the</p>
+          <h1 class="hero__title hero__title--display">Avail Ecosystem</h1>
+          <p class="hero__text">Discover the growing network of chains, applications, and infrastructure building with Avail.</p>
+        </div>
+        <div class="hero__panel">
+          <img src="assets/hero-panel.png" alt="" width="400" height="300" />
+        </div>
+      </div>
+    </section>
+
+    <section class="featured-partners">
+      <div class="wrap">
+        <h2 class="section-title">Featured Partners</h2>
+        <div class="featured-grid">
+          <a href="../nexus/" class="featured-card">
+            <img src="assets/decor/pixel-tl.png" alt="" class="featured-card__pixel featured-card__pixel--tl" aria-hidden="true" />
+            <span class="category-badge category-badge--white"><span>Chains</span></span>
+            <img src="assets/featured/monad.png" alt="Monad" class="featured-card__logo" />
+            <p class="featured-card__text">Instantly connect apps on Monad to over 13 chains with Avail Nexus.</p>
+          </a>
+          <a href="../nexus/" class="featured-card">
+            <img src="assets/decor/pixel-br.png" alt="" class="featured-card__pixel featured-card__pixel--br" aria-hidden="true" />
+            <span class="category-badge category-badge--white"><span>Apps</span></span>
+            <img src="assets/featured/clober.png" alt="Clober" class="featured-card__logo" />
+            <p class="featured-card__text">Fully onchain order book DEX routing orders to the best liquidity via Avail Nexus.</p>
+          </a>
+          <a href="../nexus/" class="featured-card">
+            <img src="assets/decor/pixel-tr.png" alt="" class="featured-card__pixel featured-card__pixel--tr" aria-hidden="true" />
+            <span class="category-badge category-badge--white"><span>Chains</span></span>
+            <img src="assets/featured/farcaster.png" alt="Farcaster" class="featured-card__logo" />
+            <p class="featured-card__text">Social media re-born onchain and powered by Avail.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="integrations">
+      <div class="wrap">
+        <h2 class="section-title">Featured Nexus Integrations</h2>
+        <article class="integration">
+          <div class="integration__content">
+            <div class="badge"><span class="badge__text">DEX</span></div>
+            <img src="assets/integrations/bean-logo.png" alt="Bean Exchange" class="integration__logo" />
+            <h3 class="integration__title">Unified Access to Spot &amp; Perps on Monad</h3>
+            <p class="integration__text">One flow. One interface. Users and liquidity from 13+ ecosystems.</p>
+            <p class="integration__text">Avail Nexus enables instant access to Bean on Monad even if your assets are on other blockchains.</p>
+          </div>
+          <div class="integration__media"><img loading="lazy" decoding="async" src="assets/integrations/bean.jpg" alt="" /></div>
+        </article>
+        <article class="integration integration--reverse">
+          <div class="integration__content">
+            <div class="badge"><span class="badge__text">DEX</span></div>
+            <img src="assets/integrations/kalqix-logo.png" alt="KalqiX" class="integration__logo" />
+            <h3 class="integration__title">High-Speed Trades &amp; Unified Liquidity</h3>
+            <p class="integration__text">Fast, frictionless spot and perps trading on KalqiX. No bridges, fragmented balances, or gas tokens involved.</p>
+            <p class="integration__text">Powered by Avail Nexus and Avail DA.</p>
+          </div>
+          <div class="integration__media"><img loading="lazy" decoding="async" src="assets/integrations/kalqix.jpg" alt="" /></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="integrations integrations--da">
+      <div class="wrap">
+        <h2 class="section-title">Featured DA Integrations</h2>
+        <article class="integration">
+          <div class="integration__content">
+            <div class="badge"><span class="badge__text">Chain</span></div>
+            <img src="assets/integrations/farcaster-logo.png" alt="Farcaster" class="integration__logo" />
+            <h3 class="integration__title">High performance chain for SocialFi</h3>
+            <p class="integration__text">Decentralized Social, where new and better forms of interaction become possible.</p>
+          </div>
+          <div class="integration__media"><img loading="lazy" decoding="async" src="assets/integrations/farcaster.jpg" alt="" /></div>
+        </article>
+        <article class="integration integration--reverse">
+          <div class="integration__content">
+            <div class="badge"><span class="badge__text">Chain</span></div>
+            <img src="assets/integrations/sxt-logo.png" alt="Space and Time" class="integration__logo" />
+            <h3 class="integration__title">A blockchain for ZK-proven data</h3>
+            <p class="integration__text">A decentralized database that witnesses data from onchain and offchain sources, secures it, and stores it for devs to query using Proof of SQL, SXT's ZK coprocessor.</p>
+          </div>
+          <div class="integration__media"><img loading="lazy" decoding="async" src="assets/integrations/sxt.jpg" alt="" /></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="spotlight">
+      <div class="wrap">
+        <h2 class="section-title">Spotlight of the Month</h2>
+        <div class="spotlight__panel">
+          <img src="assets/spotlight/clober-logo.png" alt="Clober" class="spotlight__logo" />
+          <p class="spotlight__quote">By integrating Avail Nexus, Clober becomes an 'Omnichain Liquidity Layer', pulling in liquidity from 13+ chains straight into Monad.</p>
+          <div class="spotlight__video">
+            <img src="assets/spotlight/video-thumb.jpg" alt="" loading="lazy" decoding="async" />
+            <button type="button" class="spotlight__play" aria-label="Play video">
+              <img src="assets/spotlight/play.svg" alt="" width="68" height="48" />
+            </button>
+          </div>
+        </div>
+        <div class="spotlight__cta">
+          <a href="https://availproject.org/contact" class="btn btn-primary btn-sm" target="_blank" rel="noopener noreferrer">Build With Us</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="blogs">
+      <div class="wrap">
+        <h2 class="section-title">Featured Partnership Blogs</h2>
+        <div class="blogs-grid">
+          <article class="blog-card">
+            <a href="https://blog.availproject.org/" class="blog-card__media" target="_blank" rel="noopener noreferrer"><img src="assets/blogs/blog-1.jpg" alt="" loading="lazy" decoding="async" /></a>
+            <div class="blog-card__body">
+              <h3 class="blog-card__title"><a href="https://blog.availproject.org/" target="_blank" rel="noopener noreferrer">Avail Empowers TRON dApps with Cross-Chain Liquidity and Market Access</a></h3>
+              <p class="blog-card__meta"><span>By Shailey Singh</span><span>3 min read</span></p>
+            </div>
+          </article>
+          <article class="blog-card">
+            <a href="https://blog.availproject.org/" class="blog-card__media" target="_blank" rel="noopener noreferrer"><img src="assets/blogs/blog-2.jpg" alt="" loading="lazy" decoding="async" /></a>
+            <div class="blog-card__body">
+              <h3 class="blog-card__title"><a href="https://blog.availproject.org/" target="_blank" rel="noopener noreferrer">Avail Expands to Monad Testnet: Powering the Next-Gen Multichain Apps</a></h3>
+              <p class="blog-card__meta"><span>By Andria Efstathiou</span><span>2 min read</span></p>
+            </div>
+          </article>
+          <article class="blog-card">
+            <a href="https://blog.availproject.org/" class="blog-card__media" target="_blank" rel="noopener noreferrer"><img src="assets/blogs/blog-3.jpg" alt="" loading="lazy" decoding="async" /></a>
+            <div class="blog-card__body">
+              <h3 class="blog-card__title"><a href="https://blog.availproject.org/" target="_blank" rel="noopener noreferrer">How Clober Unlocked Bridgeless Liquidity From 12+ Chains to Monad With Avail Nexus</a></h3>
+              <p class="blog-card__meta"><span>By Andria Efstathiou</span><span>2 min read</span></p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="wrap">
+        <h2 class="section-title">Success Stories</h2>
+      </div>
+      <div class="testimonials__stage">
+        <div class="testimonials__track" id="testimonials-track">
+          <article class="testimonial-card">
+            <img src="assets/testimonials/pixel-tl.png" alt="" class="testimonial-card__pixel testimonial-card__pixel--tl" aria-hidden="true" />
+            <img src="assets/testimonials/pixel-br.png" alt="" class="testimonial-card__pixel testimonial-card__pixel--br" aria-hidden="true" />
+            <div class="testimonial-card__logo"><img src="assets/testimonials/pingme.svg" alt="PingMe" /></div>
+            <blockquote class="testimonial-card__quote">
+              <p>"Avail makes cross-chain bridging effortless, perfectly aligning with PingMe's vision of making stablecoin transfers as simple as sending a text or email. With Avail, our users can move seamlessly across multiple blockchains with ease."</p>
+              <cite>Kai Cheung, Co-founder &amp; CTO</cite>
+            </blockquote>
+          </article>
+          <article class="testimonial-card">
+            <img src="assets/testimonials/pixel-tl.png" alt="" class="testimonial-card__pixel testimonial-card__pixel--tl" aria-hidden="true" />
+            <img src="assets/testimonials/pixel-br.png" alt="" class="testimonial-card__pixel testimonial-card__pixel--br" aria-hidden="true" />
+            <div class="testimonial-card__logo"><img src="assets/testimonials/kalqix.png" alt="KalqiX" /></div>
+            <blockquote class="testimonial-card__quote">
+              <p>"With Avail Nexus and Avail DA, KalqiX takes a big leap toward unified liquidity and frictionless cross-chain trading while keeping decentralisation at the core."</p>
+              <cite>Prateek Singhania, Co-Founder at KalqiX</cite>
+            </blockquote>
+          </article>
+          <article class="testimonial-card">
+            <img src="assets/testimonials/pixel-tl.png" alt="" class="testimonial-card__pixel testimonial-card__pixel--tl" aria-hidden="true" />
+            <img src="assets/testimonials/pixel-br.png" alt="" class="testimonial-card__pixel testimonial-card__pixel--br" aria-hidden="true" />
+            <div class="testimonial-card__logo"><img src="assets/testimonials/atlantis.png" alt="Atlantis DEX" /></div>
+            <blockquote class="testimonial-card__quote">
+              <p>"Avail Nexus allows users to trade on Atlantis with whatever assets they have, wherever they hold them. This removes many of the usual drop-off points."</p>
+              <cite>Thoth, Leading Atlantis DEX</cite>
+            </blockquote>
+          </article>
+          <article class="testimonial-card">
+            <img src="assets/testimonials/pixel-tl.png" alt="" class="testimonial-card__pixel testimonial-card__pixel--tl" aria-hidden="true" />
+            <img src="assets/testimonials/pixel-br.png" alt="" class="testimonial-card__pixel testimonial-card__pixel--br" aria-hidden="true" />
+            <div class="testimonial-card__logo"><img src="assets/testimonials/bean.png" alt="Bean Exchange" /></div>
+            <blockquote class="testimonial-card__quote">
+              <p>"By integrating Nexus we're simplifying things for our users. They can easily trade on Bean using their full balances across chains."</p>
+              <cite>Aaronx, Founder Bean Exchange</cite>
+            </blockquote>
+          </article>
+          <article class="testimonial-card">
+            <img src="assets/testimonials/pixel-tl.png" alt="" class="testimonial-card__pixel testimonial-card__pixel--tl" aria-hidden="true" />
+            <img src="assets/testimonials/pixel-br.png" alt="" class="testimonial-card__pixel testimonial-card__pixel--br" aria-hidden="true" />
+            <div class="testimonial-card__logo"><img src="assets/testimonials/clober.png" alt="Clober" /></div>
+            <blockquote class="testimonial-card__quote">
+              <p>"The bridgeless flow feels like magic. Our users can go from zero to trading on Monad in seconds, and that's a huge unlock for activation."</p>
+              <cite>Kevin, Founder at Clober</cite>
+            </blockquote>
+          </article>
+          <article class="testimonial-card">
+            <img src="assets/testimonials/pixel-tl.png" alt="" class="testimonial-card__pixel testimonial-card__pixel--tl" aria-hidden="true" />
+            <img src="assets/testimonials/pixel-br.png" alt="" class="testimonial-card__pixel testimonial-card__pixel--br" aria-hidden="true" />
+            <div class="testimonial-card__logo"><img src="assets/testimonials/quickswap.webp" alt="QuickSwap" /></div>
+            <blockquote class="testimonial-card__quote">
+              <p>"Avail Nexus removes the biggest source of friction in our funnel. Users don't need to bounce around chains and bridges anymore. With Unified Balances, users can route liquidity to QuickSwap instantly and it just works."</p>
+              <cite>Alexios Atlas, Head of BD, Quickswap Dex</cite>
+            </blockquote>
+          </article>
+        </div>
+        <button type="button" class="testimonials__nav testimonials__nav--prev" id="testimonials-prev" aria-label="Previous testimonial">
+          <img src="assets/testimonials/arrow-prev.svg" alt="" width="40" height="40" />
+        </button>
+        <button type="button" class="testimonials__nav testimonials__nav--next" id="testimonials-next" aria-label="Next testimonial">
+          <img src="assets/testimonials/arrow-next.svg" alt="" width="40" height="40" />
+        </button>
+      </div>
+    </section>
+
+    <section class="listings">
+      <div class="wrap">
+        <h2 class="section-title">Our Partners</h2>
+        <div class="listings-grid">
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">Mayan</h3>
+            <div class="listing-card__logo"><img src="assets/partners/mayan.png" alt="Mayan" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Pelagos</h3>
+            <div class="listing-card__logo"><img src="assets/partners/pelagos.png" alt="Pelagos" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">Bitte</h3>
+            <div class="listing-card__logo"><img src="assets/partners/bitte.png" alt="Bitte" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Succinct</h3>
+            <div class="listing-card__logo"><img src="assets/partners/succinct.png" alt="Succinct" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Wallets">
+            <h3 class="listing-card__name">Nova Wallet</h3>
+            <div class="listing-card__logo"><img src="assets/partners/nova-wallet.png" alt="Nova Wallet" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Wallets</span></div>
+          </article>
+          <article class="listing-card" data-tag="Wallets">
+            <h3 class="listing-card__name">Family Wallet</h3>
+            <div class="listing-card__logo"><img src="assets/partners/family-wallet.png" alt="Family Wallet" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Wallets</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">Native</h3>
+            <div class="listing-card__logo"><img src="assets/partners/native.png" alt="Native" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">MegaETH</h3>
+            <div class="listing-card__logo"><img src="assets/partners/megaeth.png" alt="MegaETH" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Cartesi</h3>
+            <div class="listing-card__logo"><img src="assets/partners/cartesi.png" alt="Cartesi" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">KGEN</h3>
+            <div class="listing-card__logo"><img src="assets/partners/kgen.png" alt="KGEN" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">AltLayer</h3>
+            <div class="listing-card__logo"><img src="assets/partners/altlayer.png" alt="AltLayer" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Nexus Network</h3>
+            <div class="listing-card__logo"><img src="assets/partners/nexus-network.png" alt="Nexus Network" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chain Integrations">
+            <h3 class="listing-card__name">Polygon CDK</h3>
+            <div class="listing-card__logo"><img src="assets/partners/polygon-cdk.png" alt="Polygon CDK" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chain Integrations</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Aglisos</h3>
+            <div class="listing-card__logo"><img src="assets/partners/aglisos.png" alt="Aglisos" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Carv</h3>
+            <div class="listing-card__logo"><img src="assets/partners/carv.png" alt="Carv" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Darwinia</h3>
+            <div class="listing-card__logo"><img src="assets/partners/darwinia.png" alt="Darwinia" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Fuse</h3>
+            <div class="listing-card__logo"><img src="assets/partners/fuse.png" alt="Fuse" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Henry</h3>
+            <div class="listing-card__logo"><img src="assets/partners/henry.png" alt="Henry" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Lens Protocol</h3>
+            <div class="listing-card__logo"><img src="assets/partners/lens-protocol.png" alt="Lens Protocol" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Monveil</h3>
+            <div class="listing-card__logo"><img src="assets/partners/monveil.png" alt="Monveil" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">O3 Layer</h3>
+            <div class="listing-card__logo"><img src="assets/partners/o3-layer.png" alt="O3 Layer" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Particle Network</h3>
+            <div class="listing-card__logo"><img src="assets/partners/particle-network.png" alt="Particle Network" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Space And Time</h3>
+            <div class="listing-card__logo"><img src="assets/partners/space-and-time.png" alt="Space And Time" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">Pyth Network</h3>
+            <div class="listing-card__logo"><img src="assets/partners/pyth-network.png" alt="Pyth Network" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Ten</h3>
+            <div class="listing-card__logo"><img src="assets/partners/ten.png" alt="Ten" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Yona Network</h3>
+            <div class="listing-card__logo"><img src="assets/partners/yona-network.png" alt="Yona Network" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Gaming">
+            <h3 class="listing-card__name">Paima Studios</h3>
+            <div class="listing-card__logo"><img src="assets/partners/paima-studios.png" alt="Paima Studios" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Gaming</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Vitwit</h3>
+            <div class="listing-card__logo"><img src="assets/partners/vitwit.png" alt="Vitwit" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Silencel Lboratories</h3>
+            <div class="listing-card__logo"><img src="assets/partners/silencel-lboratories.png" alt="Silencel Lboratories" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Ankr</h3>
+            <div class="listing-card__logo"><img src="assets/partners/ankr.png" alt="Ankr" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Encifher</h3>
+            <div class="listing-card__logo"><img src="assets/partners/encifher.png" alt="Encifher" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Filecoin</h3>
+            <div class="listing-card__logo"><img src="assets/partners/filecoin.png" alt="Filecoin" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">NodeKit</h3>
+            <div class="listing-card__logo"><img src="assets/partners/nodekit.png" alt="NodeKit" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Radium Block</h3>
+            <div class="listing-card__logo"><img src="assets/partners/radium-block.png" alt="Radium Block" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">SubSquid</h3>
+            <div class="listing-card__logo"><img src="assets/partners/subsquid.png" alt="SubSquid" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">OnFinality</h3>
+            <div class="listing-card__logo"><img src="assets/partners/onfinality.png" alt="OnFinality" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Sooho.io</h3>
+            <div class="listing-card__logo"><img src="assets/partners/sooho-io.png" alt="Sooho.io" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">Mace</h3>
+            <div class="listing-card__logo"><img src="assets/partners/mace.png" alt="Mace" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">Vanna Finance</h3>
+            <div class="listing-card__logo"><img src="assets/partners/vanna-finance.png" alt="Vanna Finance" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">Atlantis DEX</h3>
+            <div class="listing-card__logo"><img src="assets/partners/atlantis-dex.png" alt="Atlantis DEX" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">Symbiotic</h3>
+            <div class="listing-card__logo"><img src="assets/partners/symbiotic.png" alt="Symbiotic" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Wallets">
+            <h3 class="listing-card__name">Mimir Global</h3>
+            <div class="listing-card__logo"><img src="assets/partners/mimir-global.png" alt="Mimir Global" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Wallets</span></div>
+          </article>
+          <article class="listing-card" data-tag="Wallets">
+            <h3 class="listing-card__name">Bitget Wallet</h3>
+            <div class="listing-card__logo"><img src="assets/partners/bitget-wallet.png" alt="Bitget Wallet" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Wallets</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">Clober</h3>
+            <div class="listing-card__logo"><img src="assets/partners/clober.png" alt="Clober" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chain Integrations">
+            <h3 class="listing-card__name">Citrea</h3>
+            <div class="listing-card__logo"><img src="assets/partners/citrea.png" alt="Citrea" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chain Integrations</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Dymension</h3>
+            <div class="listing-card__logo"><img src="assets/partners/dymension.png" alt="Dymension" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Movement</h3>
+            <div class="listing-card__logo"><img src="assets/partners/movement.png" alt="Movement" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Gateway</h3>
+            <div class="listing-card__logo"><img src="assets/partners/gateway.png" alt="Gateway" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chain Integrations">
+            <h3 class="listing-card__name">arbitrum</h3>
+            <div class="listing-card__logo"><img src="assets/partners/arbitrum.png" alt="arbitrum" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chain Integrations</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chain Integrations">
+            <h3 class="listing-card__name">Polygon zkEVM</h3>
+            <div class="listing-card__logo"><img src="assets/partners/polygon-zkevm.png" alt="Polygon zkEVM" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chain Integrations</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Arcana</h3>
+            <div class="listing-card__logo"><img src="assets/partners/arcana.png" alt="Arcana" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Calimero</h3>
+            <div class="listing-card__logo"><img src="assets/partners/calimero.png" alt="Calimero" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Demex</h3>
+            <div class="listing-card__logo"><img src="assets/partners/demex.png" alt="Demex" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Gr1d</h3>
+            <div class="listing-card__logo"><img src="assets/partners/gr1d.png" alt="Gr1d" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Heurist</h3>
+            <div class="listing-card__logo"><img src="assets/partners/heurist.png" alt="Heurist" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">LogX</h3>
+            <div class="listing-card__logo"><img src="assets/partners/logx.png" alt="LogX" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Morph</h3>
+            <div class="listing-card__logo"><img src="assets/partners/morph.png" alt="Morph" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Odysphere</h3>
+            <div class="listing-card__logo"><img src="assets/partners/odysphere.png" alt="Odysphere" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Prom</h3>
+            <div class="listing-card__logo"><img src="assets/partners/prom.png" alt="Prom" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Spheron Network</h3>
+            <div class="listing-card__logo"><img src="assets/partners/spheron-network.png" alt="Spheron Network" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Sophon</h3>
+            <div class="listing-card__logo"><img src="assets/partners/sophon.png" alt="Sophon" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Ternoa</h3>
+            <div class="listing-card__logo"><img src="assets/partners/ternoa.png" alt="Ternoa" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Zenith AI</h3>
+            <div class="listing-card__logo"><img src="assets/partners/zenith-ai.png" alt="Zenith AI" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Snapchain</h3>
+            <div class="listing-card__logo"><img src="assets/partners/snapchain.png" alt="Snapchain" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Zeeve</h3>
+            <div class="listing-card__logo"><img src="assets/partners/zeeve.png" alt="Zeeve" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Talisman</h3>
+            <div class="listing-card__logo"><img src="assets/partners/talisman.png" alt="Talisman" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Automata</h3>
+            <div class="listing-card__logo"><img src="assets/partners/automata.png" alt="Automata" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Equilibrium</h3>
+            <div class="listing-card__logo"><img src="assets/partners/equilibrium.png" alt="Equilibrium" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Lava</h3>
+            <div class="listing-card__logo"><img src="assets/partners/lava.png" alt="Lava" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">NodeOps</h3>
+            <div class="listing-card__logo"><img src="assets/partners/nodeops.png" alt="NodeOps" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Router Protocol</h3>
+            <div class="listing-card__logo"><img src="assets/partners/router-protocol.png" alt="Router Protocol" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Verstatus</h3>
+            <div class="listing-card__logo"><img src="assets/partners/verstatus.png" alt="Verstatus" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">StationX</h3>
+            <div class="listing-card__logo"><img src="assets/partners/stationx.png" alt="StationX" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="">
+            <h3 class="listing-card__name">ZKCross</h3>
+            <div class="listing-card__logo"><img src="assets/partners/zkcross.png" alt="ZKCross" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">Silhouette</h3>
+            <div class="listing-card__logo"><img src="assets/partners/silhouette.png" alt="Silhouette" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Gaming">
+            <h3 class="listing-card__name">Rug Rumble</h3>
+            <div class="listing-card__logo"><img src="assets/partners/rug-rumble.png" alt="Rug Rumble" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Gaming</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Evolve</h3>
+            <div class="listing-card__logo"><img src="assets/partners/evolve.png" alt="Evolve" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Wallets">
+            <h3 class="listing-card__name">SubWallet</h3>
+            <div class="listing-card__logo"><img src="assets/partners/subwallet.png" alt="SubWallet" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Wallets</span></div>
+          </article>
+          <article class="listing-card" data-tag="Wallets">
+            <h3 class="listing-card__name">Klever</h3>
+            <div class="listing-card__logo"><img src="assets/partners/klever.png" alt="Klever" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Wallets</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">DeqFi</h3>
+            <div class="listing-card__logo"><img src="assets/partners/deqfi.png" alt="DeqFi" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Media">
+            <h3 class="listing-card__name">Coin Academy</h3>
+            <div class="listing-card__logo"><img src="assets/partners/coin-academy.png" alt="Coin Academy" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Media</span></div>
+          </article>
+          <article class="listing-card" data-tag="Wallets">
+            <h3 class="listing-card__name">PingMe</h3>
+            <div class="listing-card__logo"><img src="assets/partners/pingme.png" alt="PingMe" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Wallets</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Karnot</h3>
+            <div class="listing-card__logo"><img src="assets/partners/karnot.png" alt="Karnot" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Risc Zero</h3>
+            <div class="listing-card__logo"><img src="assets/partners/risc-zero.png" alt="Risc Zero" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Gelato Network</h3>
+            <div class="listing-card__logo"><img src="assets/partners/gelato-network.png" alt="Gelato Network" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chain Integrations">
+            <h3 class="listing-card__name">Madara</h3>
+            <div class="listing-card__logo"><img src="assets/partners/madara.png" alt="Madara" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chain Integrations</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chain Integrations">
+            <h3 class="listing-card__name">Starkware</h3>
+            <div class="listing-card__logo"><img src="assets/partners/starkware.png" alt="Starkware" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chain Integrations</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">BeFi Labs</h3>
+            <div class="listing-card__logo"><img src="assets/partners/befi-labs.png" alt="BeFi Labs" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Chai Protocol</h3>
+            <div class="listing-card__logo"><img src="assets/partners/chai-protocol.png" alt="Chai Protocol" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Eternal AI</h3>
+            <div class="listing-card__logo"><img src="assets/partners/eternal-ai.png" alt="Eternal AI" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Helix Labs</h3>
+            <div class="listing-card__logo"><img src="assets/partners/helix-labs.png" alt="Helix Labs" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Imua</h3>
+            <div class="listing-card__logo"><img src="assets/partners/imua.png" alt="Imua" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Meroku</h3>
+            <div class="listing-card__logo"><img src="assets/partners/meroku.png" alt="Meroku" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Neova</h3>
+            <div class="listing-card__logo"><img src="assets/partners/neova.png" alt="Neova" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">OpenLayer</h3>
+            <div class="listing-card__logo"><img src="assets/partners/openlayer.png" alt="OpenLayer" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">QuickSwap</h3>
+            <div class="listing-card__logo"><img src="assets/partners/quickswap.png" alt="QuickSwap" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Skate Chain</h3>
+            <div class="listing-card__logo"><img src="assets/partners/skate-chain.png" alt="Skate Chain" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Stackr</h3>
+            <div class="listing-card__logo"><img src="assets/partners/stackr.png" alt="Stackr" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">UP</h3>
+            <div class="listing-card__logo"><img src="assets/partners/up.png" alt="UP" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Zulu</h3>
+            <div class="listing-card__logo"><img src="assets/partners/zulu.png" alt="Zulu" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">TrueZK</h3>
+            <div class="listing-card__logo"><img src="assets/partners/truezk.png" alt="TrueZK" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">CryptoStake</h3>
+            <div class="listing-card__logo"><img src="assets/partners/cryptostake.png" alt="CryptoStake" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Air Chains</h3>
+            <div class="listing-card__logo"><img src="assets/partners/air-chains.png" alt="Air Chains" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Brightlystake</h3>
+            <div class="listing-card__logo"><img src="assets/partners/brightlystake.png" alt="Brightlystake" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Fairblock</h3>
+            <div class="listing-card__logo"><img src="assets/partners/fairblock.png" alt="Fairblock" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Luga Nodes</h3>
+            <div class="listing-card__logo"><img src="assets/partners/luga-nodes.png" alt="Luga Nodes" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">P2P</h3>
+            <div class="listing-card__logo"><img src="assets/partners/p2p.png" alt="P2P" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Subscan</h3>
+            <div class="listing-card__logo"><img src="assets/partners/subscan.png" alt="Subscan" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Wormhole</h3>
+            <div class="listing-card__logo"><img src="assets/partners/wormhole.png" alt="Wormhole" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">KalqiX</h3>
+            <div class="listing-card__logo"><img src="assets/partners/kalqix.png" alt="KalqiX" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Wallets">
+            <h3 class="listing-card__name">Cypherock</h3>
+            <div class="listing-card__logo"><img src="assets/partners/cypherock.png" alt="Cypherock" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Wallets</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">Lemonade</h3>
+            <div class="listing-card__logo"><img src="assets/partners/lemonade.png" alt="Lemonade" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Fluent</h3>
+            <div class="listing-card__logo"><img src="assets/partners/fluent.png" alt="Fluent" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Wallets">
+            <h3 class="listing-card__name">Okto Tech</h3>
+            <div class="listing-card__logo"><img src="assets/partners/okto-tech.png" alt="Okto Tech" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Wallets</span></div>
+          </article>
+          <article class="listing-card" data-tag="Wallets">
+            <h3 class="listing-card__name">Fearless Wallet</h3>
+            <div class="listing-card__logo"><img src="assets/partners/fearless-wallet.png" alt="Fearless Wallet" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Wallets</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">LetsExchange</h3>
+            <div class="listing-card__logo"><img src="assets/partners/letsexchange.png" alt="LetsExchange" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Media">
+            <h3 class="listing-card__name">Blockworks</h3>
+            <div class="listing-card__logo"><img src="assets/partners/blockworks.png" alt="Blockworks" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Media</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Blade Games</h3>
+            <div class="listing-card__logo"><img src="assets/partners/blade-games.png" alt="Blade Games" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Koni Stack</h3>
+            <div class="listing-card__logo"><img src="assets/partners/koni-stack.png" alt="Koni Stack" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Sovereign</h3>
+            <div class="listing-card__logo"><img src="assets/partners/sovereign.png" alt="Sovereign" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Lumoz</h3>
+            <div class="listing-card__logo"><img src="assets/partners/lumoz.png" alt="Lumoz" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chain Integrations">
+            <h3 class="listing-card__name">Optimism</h3>
+            <div class="listing-card__logo"><img src="assets/partners/optimism.png" alt="Optimism" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chain Integrations</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chain Integrations">
+            <h3 class="listing-card__name">zkSync</h3>
+            <div class="listing-card__logo"><img src="assets/partners/zksync.png" alt="zkSync" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chain Integrations</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Bolt OS</h3>
+            <div class="listing-card__logo"><img src="assets/partners/bolt-os.png" alt="Bolt OS" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Copperx</h3>
+            <div class="listing-card__logo"><img src="assets/partners/copperx.png" alt="Copperx" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Fiamma</h3>
+            <div class="listing-card__logo"><img src="assets/partners/fiamma.png" alt="Fiamma" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Henez</h3>
+            <div class="listing-card__logo"><img src="assets/partners/henez.png" alt="Henez" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Layer Edge</h3>
+            <div class="listing-card__logo"><img src="assets/partners/layer-edge.png" alt="Layer Edge" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Mizu Labs</h3>
+            <div class="listing-card__logo"><img src="assets/partners/mizu-labs.png" alt="Mizu Labs" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Nim Network</h3>
+            <div class="listing-card__logo"><img src="assets/partners/nim-network.png" alt="Nim Network" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Phyken Network</h3>
+            <div class="listing-card__logo"><img src="assets/partners/phyken-network.png" alt="Phyken Network" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Rooch</h3>
+            <div class="listing-card__logo"><img src="assets/partners/rooch.png" alt="Rooch" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">OpenBlock</h3>
+            <div class="listing-card__logo"><img src="assets/partners/openblock.png" alt="OpenBlock" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Titan Chain</h3>
+            <div class="listing-card__logo"><img src="assets/partners/titan-chain.png" alt="Titan Chain" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="Chains">
+            <h3 class="listing-card__name">Yala</h3>
+            <div class="listing-card__logo"><img src="assets/partners/yala.png" alt="Yala" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Chains</span></div>
+          </article>
+          <article class="listing-card" data-tag="SDKs And Frameworks">
+            <h3 class="listing-card__name">Stackr</h3>
+            <div class="listing-card__logo"><img src="assets/partners/stackr-sdks-and-frameworks.png" alt="Stackr" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">SDKs And Frameworks</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">QuickNode</h3>
+            <div class="listing-card__logo"><img src="assets/partners/quicknode.png" alt="QuickNode" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Polka Safe</h3>
+            <div class="listing-card__logo"><img src="assets/partners/polka-safe.png" alt="Polka Safe" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Allnodes</h3>
+            <div class="listing-card__logo"><img src="assets/partners/allnodes.png" alt="Allnodes" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Bware Labs</h3>
+            <div class="listing-card__logo"><img src="assets/partners/bware-labs.png" alt="Bware Labs" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">FalconX</h3>
+            <div class="listing-card__logo"><img src="assets/partners/falconx.png" alt="FalconX" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Nocturnal Labs</h3>
+            <div class="listing-card__logo"><img src="assets/partners/nocturnal-labs.png" alt="Nocturnal Labs" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Radius</h3>
+            <div class="listing-card__logo"><img src="assets/partners/radius.png" alt="Radius" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">SubQuery</h3>
+            <div class="listing-card__logo"><img src="assets/partners/subquery.png" alt="SubQuery" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Infrastructure">
+            <h3 class="listing-card__name">Vistara</h3>
+            <div class="listing-card__logo"><img src="assets/partners/vistara.png" alt="Vistara" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Infrastructure</span></div>
+          </article>
+          <article class="listing-card" data-tag="Defi">
+            <h3 class="listing-card__name">Bean Exchange</h3>
+            <div class="listing-card__logo"><img src="assets/partners/bean-exchange.png" alt="Bean Exchange" loading="lazy" decoding="async" /></div>
+            <div class="listing-card__footer"><span class="listing-card__tag">Defi</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div class="site-footer__cta">
+          <h2 class="site-footer__headline">Have questions?</h2>
+          <p class="site-footer__subcopy">Get in touch with us and understand exactly what we do</p>
+          <a href="https://calendly.com/d/cwfp-t3y-gt2/avail-discovery-call" class="btn btn-primary site-footer__btn" target="_blank" rel="noopener noreferrer">Schedule A Demo</a>
+          <p class="site-footer__copyright">Copyright © Avail Project. All rights reserved.</p>
+        </div>
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <div class="site-footer__nav-group site-footer__nav-group--pages">
+            <p class="site-footer__nav-heading">Pages</p>
+            <div class="site-footer__nav-columns">
+              <ul class="site-footer__nav-list">
+                <li><a href="http://localhost:9345/" class="site-footer__nav-link">Home</a></li>
+                <li><a href="../about-us/" class="site-footer__nav-link">About us</a></li>
+                <li><a href="../nexus/" class="site-footer__nav-link">Nexus</a></li>
+                <li><a href="../da/" class="site-footer__nav-link">DA</a></li>
+                <li><a href="https://avail.keka.com/careers" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Careers</a></li>
+              </ul>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://blog.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                <li><a href="./" class="site-footer__nav-link">Ecosystem</a></li>
+                <li><a href="../events/" class="site-footer__nav-link">Events</a></li>
+                <li><a href="../terms/" class="site-footer__nav-link">T&amp;C</a></li>
+                <li><a href="../whitepaper/" class="site-footer__nav-link">Whitepaper</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="site-footer__nav-group site-footer__nav-group--support-press">
+            <div class="site-footer__nav-subgroup">
+              <p class="site-footer__nav-heading">Support</p>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://docs.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Docs</a></li>
+                <li><a href="https://discord.com/invite/AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                <li><a href="https://github.com/availproject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="site-footer__nav-subgroup">
+              <p class="site-footer__nav-heading">Press Kit</p>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://availproject.org/brand" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Brand Assets</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="site-footer__nav-group site-footer__nav-group--socials">
+            <p class="site-footer__nav-heading">Socials</p>
+            <ul class="site-footer__nav-list">
+              <li><a href="https://x.com/AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+              <li><a href="https://www.linkedin.com/company/availproject/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://t.me/availproject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+              <li><a href="https://www.youtube.com/@AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="site-footer__logo" aria-hidden="true">
+        <img src="../assets/footer/avail-wordmark.png" alt="" class="site-footer__logo-img" width="832" height="203" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <script src="../halftone-background.js?v=2"></script>
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-menu');
+      var menu = document.getElementById('mobile-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!isOpen));
+          toggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+          menu.hidden = isOpen;
+          document.body.classList.toggle('menu-open', !isOpen);
+        });
+      }
+
+      var track = document.getElementById('testimonials-track');
+      var prev = document.getElementById('testimonials-prev');
+      var next = document.getElementById('testimonials-next');
+      if (track && prev && next) {
+        var index = 0;
+        var cards = track.children;
+        var total = cards.length;
+        function update() {
+          track.style.transform = 'translateX(' + (-index * 100) + '%)';
+        }
+        prev.addEventListener('click', function () {
+          index = (index - 1 + total) % total;
+          update();
+        });
+        next.addEventListener('click', function () {
+          index = (index + 1) % total;
+          update();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

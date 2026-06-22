@@ -1,0 +1,480 @@
+{
+  "founders": [
+    {
+      "slug": "anurag-arjun",
+      "name": "Anurag Arjun",
+      "title": "Co-Founder",
+      "image": "VBIh4valWSvSCWaBLtrRUiXpewM.png",
+      "socials": [
+        "twitter",
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "prabal-banerjee",
+      "name": "Prabal Banerjee",
+      "title": "Co-Founder",
+      "image": "V54QWwQUYT3UJuZqPcP4iJEE4.png",
+      "socials": [
+        "twitter",
+        "linkedin"
+      ]
+    }
+  ],
+  "team": [
+    {
+      "slug": "abheek-tripathy",
+      "name": "Abheek Tripathy",
+      "title": "Engineer",
+      "image": "3VjfcoWsZ6zHTi9NsVwcU9owA.png",
+      "socials": [
+        "twitter",
+        "github"
+      ]
+    },
+    {
+      "slug": "abhishek-chaudhary",
+      "name": "Abhishek Chaudhary",
+      "title": "Engineer",
+      "image": "xQe16QhlNHDQsFgPOwKLl1uhcE.png",
+      "socials": [
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "ajay-shetty",
+      "name": "Ajay Shetty",
+      "title": "Founder's Office Ops",
+      "image": "aswGm7p5Z5U9z1uyedfzn1VQys.png",
+      "socials": [
+        "twitter",
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "aleksandar-terentic",
+      "name": "Aleksandar Terentic",
+      "title": "Engineer",
+      "image": "pkzBerzgi1Z8brVLPSKFXtHYoyc.png",
+      "socials": [
+        "twitter",
+        "linkedin",
+        "github"
+      ]
+    },
+    {
+      "slug": "amartya-singh",
+      "name": "Amartya Singh",
+      "title": "Front End Engineer",
+      "image": "64NdjvdnGckwfzVyWReoMOfQE.png",
+      "socials": [
+        "twitter",
+        "linkedin",
+        "github"
+      ]
+    },
+    {
+      "slug": "amit-jayakar",
+      "name": "Amit Jayakar",
+      "title": "Design",
+      "image": "W0JTTDES5Bc3Urge8Z5tD013U8.png",
+      "socials": [
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "andria-efstathiou",
+      "name": "Andria Efstathiou",
+      "title": "Marketing",
+      "image": "lzwU1ArLGGMtSSazb8vfvhybz4.png",
+      "socials": [
+        "twitter",
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "anirudh-venu",
+      "name": "Anirudh Venu",
+      "title": "Product Manager",
+      "image": "hsy8PqqlZN4ivCqRkp7f7MClTW8.png",
+      "socials": [
+        "twitter",
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "ann-mary-alex",
+      "name": "Ann Mary Alex",
+      "title": "Design",
+      "image": "29jj65QzekJE5QEEMSaNV6ZbQA.png",
+      "socials": [
+        "twitter",
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "aravindh-kumar",
+      "name": "Aravindh Kumar",
+      "title": "BD/Partnerships",
+      "image": "JxwwCyp6FhtjVUtup3MwYlnF8.png",
+      "socials": [
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "dan-mills",
+      "name": "Dan Mills",
+      "title": "Head of Product",
+      "image": "nPxGWHBKG3nYboBo2qjDI5E9Jo.png",
+      "socials": [
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "ghali-el-ouarzazi",
+      "name": "Ghali El Ouarzazi",
+      "title": "Engineer",
+      "image": "xuRJfgXjiZ67uf9TU11h1hLCJI.png",
+      "socials": [
+        "twitter",
+        "linkedin",
+        "github"
+      ]
+    },
+    {
+      "slug": "hj",
+      "name": "HJ",
+      "title": "Korea Ecosystem",
+      "image": "YtPA7R7SRRcrMu3ZZNFvHzXt8I.png",
+      "socials": []
+    },
+    {
+      "slug": "ifrah",
+      "name": "Ifrah",
+      "title": "Finance",
+      "image": "N5eAiFCSiabDw3bVnTokbuoJ5sI.png",
+      "socials": [
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "jeremias-moraes",
+      "name": "Jeremias Moraes",
+      "title": "DevOps",
+      "image": "GHCSxEyudYG0jYp9NnMdoADhy4w.png",
+      "socials": [
+        "linkedin",
+        "github"
+      ]
+    },
+    {
+      "slug": "lakshay-jain",
+      "name": "Lakshay Jain",
+      "title": "DevOps",
+      "image": "End9Li8dFnDIEYxogmjb6AH3KM.png",
+      "socials": [
+        "twitter",
+        "linkedin",
+        "github"
+      ]
+    },
+    {
+      "slug": "lexi-flores",
+      "name": "Lexi Flores",
+      "title": "HR Coordinator",
+      "image": "WmO095TPMikHrq1cI7PsVO9Rwo.png",
+      "socials": []
+    },
+    {
+      "slug": "marko-petrli",
+      "name": "Marko Petrli\u0107",
+      "title": "Engineer",
+      "image": "BSa72HuVaAbkjOK6040UWTeU9f8.png",
+      "socials": [
+        "linkedin",
+        "github"
+      ]
+    },
+    {
+      "slug": "mayur-relekar",
+      "name": "Mayur Relekar",
+      "title": "Founder's Office Product",
+      "image": "jRDfPqxgRURZGiYmHAuSU932VzU.png",
+      "socials": [
+        "twitter",
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "piyush-maloo",
+      "name": "Piyush Maloo",
+      "title": "DevOps",
+      "image": "9AFcZmZYuntizgY8VDXqRjdjF6Q.png",
+      "socials": [
+        "linkedin",
+        "github"
+      ]
+    },
+    {
+      "slug": "pradip-bose",
+      "name": "Pradip Bose",
+      "title": "Design",
+      "image": "qnCynV6Qf0NBEdKcF5Yil2RG4.png",
+      "socials": [
+        "twitter"
+      ]
+    },
+    {
+      "slug": "rachit-srivastava",
+      "name": "Rachit Srivastava",
+      "title": "Senior R&D Engineer",
+      "image": "geyaSVAJk6moun4UNEEChxR3ng.png",
+      "socials": [
+        "twitter",
+        "linkedin",
+        "github"
+      ]
+    },
+    {
+      "slug": "rishi",
+      "name": "Rishi",
+      "title": "Founder's Office",
+      "image": "6baGZzhpeMyGjJB1kM4Mu75Fwuw.png",
+      "socials": [
+        "twitter",
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "rochelle-alfonso",
+      "name": "Rochelle Alfonso",
+      "title": "Design",
+      "image": "Iq2bJgkQee4nOIZd8CUmzHckWk.png",
+      "socials": [
+        "twitter",
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "sanchari-roy",
+      "name": "Sanchari Roy",
+      "title": "HR Manager",
+      "image": "PipISLgStlGI4j330Hj5dmGJs.png",
+      "socials": [
+        "twitter",
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "sandy-huang",
+      "name": "Sandy Huang",
+      "title": "Events",
+      "image": "RuxI1dBoQe828YFWemVkorMMAbA.png",
+      "socials": []
+    },
+    {
+      "slug": "sa-a-pr-i",
+      "name": "Sa\u0161a Pr\u0161i\u0107",
+      "title": "Engineer",
+      "image": "32QZzTSH4eVUesP28b7Yi0rg9I.png",
+      "socials": [
+        "twitter",
+        "linkedin",
+        "github"
+      ]
+    },
+    {
+      "slug": "scott-milat",
+      "name": "Scott Milat",
+      "title": "Marketing Manager ",
+      "image": "wHfccCikH2leeGyFYJR44hugOyo.png",
+      "socials": [
+        "twitter",
+        "linkedin",
+        "github"
+      ]
+    },
+    {
+      "slug": "sharan-grandigae",
+      "name": "Sharan Grandigae",
+      "title": "Head of Design",
+      "image": "gc4uRikRJmcZRBsoub5vrqqILA.png",
+      "socials": [
+        "twitter",
+        "linkedin",
+        "github",
+        "blog"
+      ]
+    },
+    {
+      "slug": "shrinath-prabhu",
+      "name": "Shrinath Prabhu",
+      "title": "Front End Engineer",
+      "image": "VGgsfzbSEx6zzpyhN3XkIAsD9o.png",
+      "socials": [
+        "twitter",
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "sneha-daga",
+      "name": "Sneha Daga",
+      "title": "Finance Head",
+      "image": "fozwDy3EtjzwYkD1kcwhC6vqT58.png",
+      "socials": []
+    },
+    {
+      "slug": "soumyajit-chaudhuri",
+      "name": "Soumyajit Chaudhuri",
+      "title": "Community",
+      "image": "Dt2rO47VBKcwTdLdBZrzOf8ohw.png",
+      "socials": []
+    },
+    {
+      "slug": "tanisha-katara",
+      "name": "Tanisha Katara",
+      "title": "Consultant",
+      "image": "xaRO1g2fjXIdgPIsbyWizKfc.png",
+      "socials": []
+    },
+    {
+      "slug": "toufeeq-pasha",
+      "name": "Toufeeq Pasha",
+      "title": "Engineer",
+      "image": "KcxpVGr1LDyDKBPjwCXAtK7sZAQ.png",
+      "socials": [
+        "linkedin",
+        "github"
+      ]
+    },
+    {
+      "slug": "vania-sebastian",
+      "name": "Vania Sebastian",
+      "title": "Executive Assistant",
+      "image": "r2zzbcyYukIpfUNg7tscVEEzwk0.png",
+      "socials": [
+        "twitter",
+        "github"
+      ]
+    },
+    {
+      "slug": "vibhu-rajeev",
+      "name": "Vibhu Rajeev",
+      "title": "Engineer",
+      "image": "zeezPEoczL8fCb0B7hbJRhaLU0.png",
+      "socials": [
+        "twitter",
+        "linkedin",
+        "github"
+      ]
+    },
+    {
+      "slug": "vidhi-verma",
+      "name": "Vidhi Verma",
+      "title": "Marketing",
+      "image": "WKyB2V8k4u4r51Qt4TWa3AkntOY.png",
+      "socials": [
+        "twitter",
+        "linkedin"
+      ]
+    },
+    {
+      "slug": "vikram-bhattacharjee",
+      "name": "Vikram Bhattacharjee",
+      "title": "Engineer",
+      "image": "ZNZTFQOIR4U3X4WC87HvVPpusaA.png",
+      "socials": [
+        "linkedin",
+        "github",
+        "blog"
+      ]
+    }
+  ],
+  "investors": [
+    {
+      "slug": "longhash-ventures",
+      "name": "LongHash Ventures",
+      "key": "ItemLongHashVentures"
+    },
+    {
+      "slug": "rw3",
+      "name": "RW3",
+      "key": "ItemRw3"
+    },
+    {
+      "slug": "logo",
+      "name": "Logo",
+      "key": "ItemLogo"
+    },
+    {
+      "slug": "kr1",
+      "name": "KR1",
+      "key": "ItemKr1"
+    },
+    {
+      "slug": "mirana",
+      "name": "Mirana",
+      "key": "ItemMirana"
+    },
+    {
+      "slug": "altos-ventures",
+      "name": "Altos Ventures",
+      "key": "ItemAltosVentures"
+    },
+    {
+      "slug": "hashkey-capital",
+      "name": "HashKey Capital",
+      "key": "ItemHashKeyCapital"
+    },
+    {
+      "slug": "foresight-ventures",
+      "name": "Foresight Ventures",
+      "key": "ItemForesightVentures"
+    },
+    {
+      "slug": "superscrypt",
+      "name": "Superscrypt",
+      "key": "ItemSuperscrypt"
+    },
+    {
+      "slug": "alliance",
+      "name": "Alliance",
+      "key": "ItemAlliance"
+    },
+    {
+      "slug": "chapter-one",
+      "name": "Chapter One",
+      "key": "ItemChapterOne"
+    },
+    {
+      "slug": "cyber-fund",
+      "name": "Cyber Fund",
+      "key": "ItemCyberFund"
+    },
+    {
+      "slug": "figment-capital",
+      "name": "Figment Capital",
+      "key": "ItemFigmentCapital"
+    },
+    {
+      "slug": "dragonfly",
+      "name": "DragonFly",
+      "key": "ItemDragonFly"
+    },
+    {
+      "slug": "nomad-capital",
+      "name": "Nomad Capital",
+      "key": "ItemNomadCapital"
+    },
+    {
+      "slug": "seven-x-ventures",
+      "name": "Seven X Ventures",
+      "key": "ItemSevenXVentures"
+    },
+    {
+      "slug": "founders-fund",
+      "name": "Founders Fund",
+      "key": "ItemFoundersFund"
+    }
+  ]
+}

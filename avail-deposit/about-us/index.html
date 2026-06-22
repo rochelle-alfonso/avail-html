@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us — Avail</title>
+  <meta name="description" content="Meet the Avail team building the future of modular blockchain infrastructure." />
+  <link rel="icon" type="image/png" href="../assets/logo-mark.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../nav.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="page-bg" aria-hidden="true">
+      <canvas class="page-bg__canvas"></canvas>
+    </div>
+
+  <header class="nav-header">
+    <div class="nav-pill">
+      <a href="http://localhost:9345/" class="nav-logo" aria-label="Avail home">
+        <img src="../assets/logo-mark.svg" alt="" class="nav-logo__mark" width="24" height="24">
+        <img src="../assets/logo-wordmark.svg" alt="avail" class="nav-logo__wordmark" width="46" height="17">
+      </a>
+
+      <nav class="nav-links" aria-label="Primary">
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-solutions-trigger" aria-controls="nav-solutions-menu">Solutions</button>
+          <div class="nav-dropdown__menu" id="nav-solutions-menu" role="menu" aria-labelledby="nav-solutions-trigger">
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">App Developers</p>
+              <a href="../" class="nav-dropdown__link" role="menuitem">User Onboarding</a>
+              <a href="../nexus/" class="nav-dropdown__link" role="menuitem">Multi-Chain Solutions</a>
+            </div>
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">Blockchain Developers</p>
+              <a href="../da/" class="nav-dropdown__link" role="menuitem">Data Availability</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-products-trigger" aria-controls="nav-products-menu">Products</button>
+          <div class="nav-dropdown__menu nav-dropdown__menu--products" id="nav-products-menu" role="menu" aria-labelledby="nav-products-trigger">
+            <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+            <a href="../" class="nav-dropdown__link" role="menuitem">Avail Deposits</a>
+            <a href="../nexus/" class="nav-dropdown__link" role="menuitem">Avail Nexus</a>
+            <a href="../da/" class="nav-dropdown__link" role="menuitem">Avail DA</a>
+            <a href="https://docs.availproject.org/" class="nav-dropdown__link" role="menuitem" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+          </div>
+        </div>
+        <a href="../ecosystem/" class="nav-links__item">Ecosystem</a>
+        <a href="https://docs.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Docs</a>
+        <a href="https://blog.availproject.org/" class="nav-links__item" target="_blank" rel="noopener noreferrer">Blog</a>
+      </nav>
+
+      <button type="button" class="nav-menu" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+        <span class="nav-menu__icon" aria-hidden="true"></span>
+        <span class="nav-menu__label">Menu</span>
+      </button>
+    </div>
+
+    <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary nav-header__cta" target="_blank" rel="noopener noreferrer">Build with Avail</a>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <nav class="mobile-menu__nav" aria-label="Mobile">
+      <details class="mobile-menu__details">
+        <summary class="mobile-menu__link">Solutions</summary>
+        <div class="mobile-menu__sub">
+          <p class="mobile-menu__heading">App Developers</p>
+          <a href="../" class="mobile-menu__sublink">User Onboarding</a>
+          <a href="../nexus/" class="mobile-menu__sublink">Multi-Chain Solutions</a>
+          <p class="mobile-menu__heading">Blockchain Developers</p>
+          <a href="../da/" class="mobile-menu__sublink">Data Availability</a>
+        </div>
+      </details>
+      <details class="mobile-menu__details">
+        <summary class="mobile-menu__link">Products</summary>
+        <div class="mobile-menu__sub">
+          <a href="https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail FastBridge</a>
+          <a href="../" class="mobile-menu__sublink">Avail Deposits</a>
+          <a href="../nexus/" class="mobile-menu__sublink">Avail Nexus</a>
+          <a href="../da/" class="mobile-menu__sublink">Avail DA</a>
+          <a href="https://docs.availproject.org/" class="mobile-menu__sublink" target="_blank" rel="noopener noreferrer">Avail Atomic</a>
+        </div>
+      </details>
+      <a href="../ecosystem/" class="mobile-menu__link">Ecosystem</a>
+      <a href="https://docs.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Docs</a>
+      <a href="https://blog.availproject.org/" class="mobile-menu__link" target="_blank" rel="noopener noreferrer">Blog</a>
+      <a href="https://docs.availproject.org/docs/nexus/quickstart" class="btn btn-primary mobile-menu__cta" target="_blank" rel="noopener noreferrer">Build with Avail</a>
+    </nav>
+  </div>
+
+    <main>
+      <section class="hero hero--about">
+        <div class="wrap hero--about__inner">
+          <h1 class="hero--about__title">About Us</h1>
+          <p class="hero--about__text">Avail started as a research project inside Polygon, born from the recognition that blockchain ecosystems needed scalability. We started Avail with this vision. We believe it must be delivered with the utmost speed, accessibility, and performant freedom for applications to scale and provide users unfettered access.</p>
+        </div>
+      </section>
+
+      <section class="team-panel">
+        <div class="wrap">
+          <div class="team-panel__section">
+            <h2 class="team-panel__heading">Founders</h2>
+            <div class="founders-grid">
+            <article class="person-card person-card--founder">
+              <div class="person-card__photo">
+                <img src="assets/team/anurag-arjun.png" alt="Anurag Arjun" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name">Anurag Arjun</h3>
+                <p class="person-card__title">Co-Founder</p>
+              </div>
+            </article>
+            <article class="person-card person-card--founder">
+              <div class="person-card__photo">
+                <img src="assets/team/prabal-banerjee.png" alt="Prabal Banerjee" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name">Prabal Banerjee</h3>
+                <p class="person-card__title">Co-Founder</p>
+              </div>
+            </article>
+            </div>
+          </div>
+          <div class="team-panel__section">
+            <h2 class="team-panel__heading">Team</h2>
+            <div class="team-grid">
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/abheek-tripathy.png" alt="Abheek Tripathy" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Abheek</span><span class="person-card__name-line">Tripathy</span></h3>
+                <p class="person-card__title">Engineer</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/abhishek-chaudhary.png" alt="Abhishek Chaudhary" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Abhishek</span><span class="person-card__name-line">Chaudhary</span></h3>
+                <p class="person-card__title">Engineer</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/ajay-shetty.png" alt="Ajay Shetty" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Ajay</span><span class="person-card__name-line">Shetty</span></h3>
+                <p class="person-card__title">Founder's Office Ops</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/aleksandar-terentic.png" alt="Aleksandar Terentic" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Aleksandar</span><span class="person-card__name-line">Terentic</span></h3>
+                <p class="person-card__title">Engineer</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/amartya-singh.png" alt="Amartya Singh" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Amartya</span><span class="person-card__name-line">Singh</span></h3>
+                <p class="person-card__title">Front End Engineer</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/amit-jayakar.png" alt="Amit Jayakar" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Amit</span><span class="person-card__name-line">Jayakar</span></h3>
+                <p class="person-card__title">Design</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/andria-efstathiou.png" alt="Andria Efstathiou" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Andria</span><span class="person-card__name-line">Efstathiou</span></h3>
+                <p class="person-card__title">Marketing</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/anirudh-venu.png" alt="Anirudh Venu" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Anirudh</span><span class="person-card__name-line">Venu</span></h3>
+                <p class="person-card__title">Product Manager</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/ann-mary-alex.png" alt="Ann Mary Alex" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Ann</span><span class="person-card__name-line">Mary Alex</span></h3>
+                <p class="person-card__title">Design</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/aravindh-kumar.png" alt="Aravindh Kumar" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Aravindh</span><span class="person-card__name-line">Kumar</span></h3>
+                <p class="person-card__title">BD/Partnerships</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/dan-mills.png" alt="Dan Mills" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Dan</span><span class="person-card__name-line">Mills</span></h3>
+                <p class="person-card__title">Head of Product</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/ghali-el-ouarzazi.png" alt="Ghali El Ouarzazi" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Ghali</span><span class="person-card__name-line">El Ouarzazi</span></h3>
+                <p class="person-card__title">Engineer</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/hj.png" alt="HJ" loading="lazy" decoding="async" />
+              </div>
+              
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">HJ</span></h3>
+                <p class="person-card__title">Korea Ecosystem</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/ifrah.png" alt="Ifrah" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Ifrah</span></h3>
+                <p class="person-card__title">Finance</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/jeremias-moraes.png" alt="Jeremias Moraes" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Jeremias</span><span class="person-card__name-line">Moraes</span></h3>
+                <p class="person-card__title">DevOps</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/lakshay-jain.png" alt="Lakshay Jain" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Lakshay</span><span class="person-card__name-line">Jain</span></h3>
+                <p class="person-card__title">DevOps</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/lexi-flores.png" alt="Lexi Flores" loading="lazy" decoding="async" />
+              </div>
+              
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Lexi</span><span class="person-card__name-line">Flores</span></h3>
+                <p class="person-card__title">HR Coordinator</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/marko-petrli.png" alt="Marko Petrlić" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Marko</span><span class="person-card__name-line">Petrlić</span></h3>
+                <p class="person-card__title">Engineer</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/mayur-relekar.png" alt="Mayur Relekar" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Mayur</span><span class="person-card__name-line">Relekar</span></h3>
+                <p class="person-card__title">Founder's Office Product</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/piyush-maloo.png" alt="Piyush Maloo" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Piyush</span><span class="person-card__name-line">Maloo</span></h3>
+                <p class="person-card__title">DevOps</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/pradip-bose.png" alt="Pradip Bose" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Pradip</span><span class="person-card__name-line">Bose</span></h3>
+                <p class="person-card__title">Design</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/rachit-srivastava.png" alt="Rachit Srivastava" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Rachit</span><span class="person-card__name-line">Srivastava</span></h3>
+                <p class="person-card__title">Senior R&D Engineer</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/rishi.png" alt="Rishi" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Rishi</span></h3>
+                <p class="person-card__title">Founder's Office</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/rochelle-alfonso.png" alt="Rochelle Alfonso" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Rochelle</span><span class="person-card__name-line">Alfonso</span></h3>
+                <p class="person-card__title">Design</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/sanchari-roy.png" alt="Sanchari Roy" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Sanchari</span><span class="person-card__name-line">Roy</span></h3>
+                <p class="person-card__title">HR Manager</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/sandy-huang.png" alt="Sandy Huang" loading="lazy" decoding="async" />
+              </div>
+              
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Sandy</span><span class="person-card__name-line">Huang</span></h3>
+                <p class="person-card__title">Events</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/sa-a-pr-i.png" alt="Saša Pršić" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Saša</span><span class="person-card__name-line">Pršić</span></h3>
+                <p class="person-card__title">Engineer</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/scott-milat.png" alt="Scott Milat" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Scott</span><span class="person-card__name-line">Milat</span></h3>
+                <p class="person-card__title">Marketing Manager </p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/sharan-grandigae.png" alt="Sharan Grandigae" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Sharan</span><span class="person-card__name-line">Grandigae</span></h3>
+                <p class="person-card__title">Head of Design</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/shrinath-prabhu.png" alt="Shrinath Prabhu" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Shrinath</span><span class="person-card__name-line">Prabhu</span></h3>
+                <p class="person-card__title">Front End Engineer</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/sneha-daga.png" alt="Sneha Daga" loading="lazy" decoding="async" />
+              </div>
+              
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Sneha</span><span class="person-card__name-line">Daga</span></h3>
+                <p class="person-card__title">Finance Head</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/soumyajit-chaudhuri.png" alt="Soumyajit Chaudhuri" loading="lazy" decoding="async" />
+              </div>
+              
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Soumyajit</span><span class="person-card__name-line">Chaudhuri</span></h3>
+                <p class="person-card__title">Community</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/tanisha-katara.png" alt="Tanisha Katara" loading="lazy" decoding="async" />
+              </div>
+              
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Tanisha</span><span class="person-card__name-line">Katara</span></h3>
+                <p class="person-card__title">Consultant</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/toufeeq-pasha.png" alt="Toufeeq Pasha" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Toufeeq</span><span class="person-card__name-line">Pasha</span></h3>
+                <p class="person-card__title">Engineer</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/vania-sebastian.png" alt="Vania Sebastian" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Vania</span><span class="person-card__name-line">Sebastian</span></h3>
+                <p class="person-card__title">Executive Assistant</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/vibhu-rajeev.png" alt="Vibhu Rajeev" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Vibhu</span><span class="person-card__name-line">Rajeev</span></h3>
+                <p class="person-card__title">Engineer</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/vidhi-verma.png" alt="Vidhi Verma" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://x.com/AvailProject" class="person-card__social" aria-label="X" target="_blank" rel="noopener noreferrer"><img src="assets/social/twitter.svg" alt="" width="24" height="24" /></a><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Vidhi</span><span class="person-card__name-line">Verma</span></h3>
+                <p class="person-card__title">Marketing</p>
+              </div>
+            </article>
+            <article class="person-card person-card--team">
+              <div class="person-card__photo">
+                <img src="assets/team/vikram-bhattacharjee.png" alt="Vikram Bhattacharjee" loading="lazy" decoding="async" />
+              </div>
+              <div class="person-card__socials"><a href="https://www.linkedin.com/company/availproject/" class="person-card__social" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><img src="assets/social/linkedin.svg" alt="" width="24" height="24" /></a><a href="https://github.com/availproject" class="person-card__social" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><img src="assets/social/github.svg" alt="" width="24" height="24" /></a></div>
+              <div class="person-card__info">
+                <h3 class="person-card__name"><span class="person-card__name-line">Vikram</span><span class="person-card__name-line">Bhattacharjee</span></h3>
+                <p class="person-card__title">Engineer</p>
+              </div>
+            </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="values">
+        <div class="wrap values__inner">
+          <h2 class="section-title">Values &amp; Philosophy</h2>
+          <p class="values__text">At Avail, our culture is built on accountability, curiosity, and ambition. We empower our team to take ownership, challenge assumptions, and embrace open debate because better ideas emerge when every voice is heard. We put culture before credentials, valuing people who strengthen our team for the long run. By thinking big and staying grounded in real-world usage, we build with vision while learning continuously through experimentation. This is how we work together: humble, ambitious, and always looking ahead.</p>
+        </div>
+      </section>
+
+      <section class="backed-by">
+        <div class="wrap">
+          <h2 class="section-title">Backed By</h2>
+          <div class="marquee investors-marquee" style="--speed: 55s">
+            <div class="marquee__track">
+<span class="marquee__item investors__item"><img src="assets/investors/longhash-ventures.png" alt="LongHash Ventures" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/rw3.png" alt="RW3" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/logo.png" alt="Investor" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/kr1.png" alt="KR1" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/mirana.png" alt="Mirana" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/altos-ventures.png" alt="Altos Ventures" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/hashkey-capital.png" alt="HashKey Capital" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/foresight-ventures.png" alt="Foresight Ventures" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/superscrypt.png" alt="Superscrypt" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/alliance.png" alt="Alliance" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/chapter-one.png" alt="Chapter One" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/cyber-fund.png" alt="Cyber Fund" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/figment-capital.png" alt="Figment Capital" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/dragonfly.png" alt="DragonFly" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/nomad-capital.png" alt="Nomad Capital" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/seven-x-ventures.png" alt="Seven X Ventures" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/founders-fund.png" alt="Founders Fund" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/longhash-ventures.png" alt="LongHash Ventures" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/rw3.png" alt="RW3" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/logo.png" alt="Investor" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/kr1.png" alt="KR1" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/mirana.png" alt="Mirana" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/altos-ventures.png" alt="Altos Ventures" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/hashkey-capital.png" alt="HashKey Capital" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/foresight-ventures.png" alt="Foresight Ventures" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/superscrypt.png" alt="Superscrypt" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/alliance.png" alt="Alliance" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/chapter-one.png" alt="Chapter One" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/cyber-fund.png" alt="Cyber Fund" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/figment-capital.png" alt="Figment Capital" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/dragonfly.png" alt="DragonFly" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/nomad-capital.png" alt="Nomad Capital" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/seven-x-ventures.png" alt="Seven X Ventures" loading="lazy" decoding="async" /></span>
+<span class="marquee__item investors__item"><img src="assets/investors/founders-fund.png" alt="Founders Fund" loading="lazy" decoding="async" /></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="life-at-avail">
+        <div class="wrap life-at-avail__inner">
+          <div class="life-at-avail__media">
+            <img src="assets/life-at-avail.jpg" alt="" loading="lazy" decoding="async" />
+          </div>
+          <div class="life-at-avail__copy">
+            <h2 class="life-at-avail__title">Life at Avail</h2>
+            <p class="life-at-avail__text">We are a remote-first company with the team residing across multiple locations and geographies. We empower our teams to take control of their work schedules and ownership of their passion projects. Skill expansion, fostering continuous personal and professional growth, is key to life at Avail.</p>
+            <p class="life-at-avail__text">Join us from anywhere in the world to help build the future multichain world.</p>
+            <a href="https://avail.keka.com/careers" class="btn btn-primary life-at-avail__cta" target="_blank" rel="noopener noreferrer">View Careers</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+  <footer class="site-footer" aria-label="Footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__top">
+        <div class="site-footer__cta">
+          <h2 class="site-footer__headline">Have questions?</h2>
+          <p class="site-footer__subcopy">Get in touch with us and understand exactly what we do</p>
+          <a href="https://calendly.com/d/cwfp-t3y-gt2/avail-discovery-call" class="btn btn-primary site-footer__btn" target="_blank" rel="noopener noreferrer">Schedule A Demo</a>
+          <p class="site-footer__copyright">Copyright © Avail Project. All rights reserved.</p>
+        </div>
+
+        <nav class="site-footer__nav" aria-label="Footer navigation">
+          <div class="site-footer__nav-group site-footer__nav-group--pages">
+            <p class="site-footer__nav-heading">Pages</p>
+            <div class="site-footer__nav-columns">
+              <ul class="site-footer__nav-list">
+                <li><a href="http://localhost:9345/" class="site-footer__nav-link">Home</a></li>
+                <li><a href="./" class="site-footer__nav-link" aria-current="page">About us</a></li>
+                <li><a href="../nexus/" class="site-footer__nav-link">Nexus</a></li>
+                <li><a href="../da/" class="site-footer__nav-link">DA</a></li>
+                <li><a href="https://avail.keka.com/careers" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Careers</a></li>
+              </ul>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://blog.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Blog</a></li>
+                <li><a href="../ecosystem/" class="site-footer__nav-link">Ecosystem</a></li>
+                <li><a href="../events/" class="site-footer__nav-link">Events</a></li>
+                <li><a href="../terms/" class="site-footer__nav-link">T&amp;C</a></li>
+                <li><a href="../whitepaper/" class="site-footer__nav-link">Whitepaper</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer__nav-group site-footer__nav-group--support-press">
+            <div class="site-footer__nav-subgroup">
+              <p class="site-footer__nav-heading">Support</p>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://docs.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Docs</a></li>
+                <li><a href="https://discord.com/invite/AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Discord</a></li>
+                <li><a href="https://github.com/availproject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="site-footer__nav-subgroup">
+              <p class="site-footer__nav-heading">Press Kit</p>
+              <ul class="site-footer__nav-list">
+                <li><a href="https://availproject.org/brand" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Brand Assets</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="site-footer__nav-group site-footer__nav-group--socials">
+            <p class="site-footer__nav-heading">Socials</p>
+            <ul class="site-footer__nav-list">
+              <li><a href="https://x.com/AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">X (Twitter)</a></li>
+              <li><a href="https://www.linkedin.com/company/availproject/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://t.me/availproject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Telegram</a></li>
+              <li><a href="https://www.youtube.com/@AvailProject" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="site-footer__logo" aria-hidden="true">
+        <img src="../assets/footer/avail-wordmark.png" alt="" class="site-footer__logo-img" width="832" height="203" loading="lazy" decoding="async">
+      </div>
+    </div>
+  </footer>
+  </div>
+
+  <script src="../halftone-background.js?v=2"></script>
+  <script>
+    (function () {
+      var toggle = document.querySelector('.nav-menu');
+      var menu = document.getElementById('mobile-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var isOpen = toggle.getAttribute('aria-expanded') === 'true';
+          toggle.setAttribute('aria-expanded', String(!isOpen));
+          toggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+          menu.hidden = isOpen;
+          document.body.classList.toggle('menu-open', !isOpen);
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
