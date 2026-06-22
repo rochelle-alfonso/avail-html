@@ -292,6 +292,10 @@ img {
    HERO
    =========================== */
 
+.hero-layout {
+  display: contents;
+}
+
 .hero-section {
   position: relative;
   z-index: 5;
@@ -635,6 +639,13 @@ img {
     display: block;
   }
 
+  .hero-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
   .hero-section {
     align-items: center;
     padding: 32px 72px 0;
@@ -672,18 +683,21 @@ img {
     right: auto;
     bottom: auto;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    max-width: 100%;
     height: auto;
     margin-top: 60px;
-    padding: 0;
+    padding: 0 72px;
+    box-sizing: border-box;
   }
 
   .hero-roll {
-    width: min(471px, 85vw);
+    width: min(471px, 100%);
     height: auto;
     aspect-ratio: 439 / 400;
+    margin-inline: auto;
   }
 
   .product__layout {
@@ -769,7 +783,8 @@ img {
   }
 
   .hero-section {
-    padding: 100px 24px;
+    width: 100%;
+    padding: 100px 24px 0;
   }
 
   .hero-content {
@@ -795,15 +810,16 @@ img {
   }
 
   .hero-visual {
-    justify-content: flex-start;
-    margin-top: 0;
+    justify-content: center;
+    margin-top: 32px;
     padding: 0 24px;
     box-sizing: border-box;
   }
 
   .hero-roll {
-    width: 100%;
-    max-width: 371px;
+    width: min(371px, 100%);
+    max-width: 100%;
+    margin-inline: auto;
   }
 
   .product__layout {
