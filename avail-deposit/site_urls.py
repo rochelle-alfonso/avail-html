@@ -32,7 +32,7 @@ EXTERNAL = {
     "brand": "https://availproject.org/brand",
     "calendly": "https://calendly.com/d/cwfp-t3y-gt2/avail-discovery-call",
     "deposit_demo": "https://nexus-deposit.availproject.org/",
-    "fastbridge": "https://docs.availproject.org/docs/nexus/nexus-ui-elements/components/bridge",
+    "fastbridge": "https://fastbridge.availproject.org/",
     "atomic": "https://docs.availproject.org/",
     "ai_skills": "https://docs.availproject.org/docs/nexus/nexus-ui-elements/skills/nexus-elements-deposit",
     "twitter": "https://x.com/AvailProject",

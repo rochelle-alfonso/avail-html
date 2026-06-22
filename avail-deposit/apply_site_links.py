@@ -49,7 +49,7 @@ def patch_nav_and_footer(html: str, pg: str) -> str:
         (r'(<a href=")[^"]*(" class="nav-dropdown__link" role="menuitem">User Onboarding)', rf'\1{d("deposits")}\2'),
         (r'(<a href=")[^"]*(" class="nav-dropdown__link" role="menuitem">Multi-Chain Solutions)', rf'\1{d("nexus")}\2'),
         (r'(<a href=")[^"]*(" class="nav-dropdown__link" role="menuitem">Data Availability)', rf'\1{d("da")}\2'),
-        (r'(<a href=")[^"]*(" class="nav-dropdown__link" role="menuitem">Avail FastBridge)', rf'\1{e("fastbridge")}\2'),
+        (r'(<a href=")[^"]*(" class="nav-dropdown__link" role="menuitem"[^>]*>Avail FastBridge)', rf'\1{e("fastbridge")}\2'),
         (r'(<a href=")[^"]*(" class="nav-dropdown__link" role="menuitem">Avail Deposits)', rf'\1{d("deposits")}\2'),
         (r'(<a href=")[^"]*(" class="nav-dropdown__link" role="menuitem">Avail Nexus)', rf'\1{d("nexus")}\2'),
         (r'(<a href=")[^"]*(" class="nav-dropdown__link" role="menuitem">Avail DA)', rf'\1{d("da")}\2'),
@@ -60,7 +60,7 @@ def patch_nav_and_footer(html: str, pg: str) -> str:
         (r'(<a href=")[^"]*(" class="mobile-menu__sublink">User Onboarding)', rf'\1{d("deposits")}\2'),
         (r'(<a href=")[^"]*(" class="mobile-menu__sublink">Multi-Chain Solutions)', rf'\1{d("nexus")}\2'),
         (r'(<a href=")[^"]*(" class="mobile-menu__sublink">Data Availability)', rf'\1{d("da")}\2'),
-        (r'(<a href=")[^"]*(" class="mobile-menu__sublink">Avail FastBridge)', rf'\1{e("fastbridge")}\2'),
+        (r'(<a href=")[^"]*(" class="mobile-menu__sublink"[^>]*>Avail FastBridge)', rf'\1{e("fastbridge")}\2'),
         (r'(<a href=")[^"]*(" class="mobile-menu__sublink">Avail Deposits)', rf'\1{d("deposits")}\2'),
         (r'(<a href=")[^"]*(" class="mobile-menu__sublink">Avail Nexus)', rf'\1{d("nexus")}\2'),
         (r'(<a href=")[^"]*(" class="mobile-menu__sublink">Avail DA)', rf'\1{d("da")}\2'),
@@ -142,7 +142,7 @@ def patch_page_ctas(html: str, pg: str) -> str:
         html = re.sub(r'(<a href=")[^"]*(" class="btn btn-secondary">Schedule a Demo)', rf'\1{e("calendly")}\2', html)
         html = re.sub(r'(<a href=")[^"]*(" class="btn btn-secondary">Learn More)', rf'\1{e("docs_nexus")}\2', html)
         html = re.sub(r'(<a href=")[^"]*(" class="btn btn-secondary">Avail Deposits)', rf'\1{d("deposits")}\2', html)
-        html = re.sub(r'(<a href=")[^"]*(" class="btn btn-primary">Bridge Now)', rf'\1{e("fastbridge")}\2', html)
+        html = re.sub(r'(<a href=")[^"]*(" class="btn btn-primary"[^>]*>Bridge Now)', rf'\1{e("fastbridge")}\2', html)
         html = re.sub(r'(<a href=")[^"]*(" class="btn btn-primary">Read Documentation)', rf'\1{e("docs_nexus")}\2', html)
         html = re.sub(r'(<a href=")[^"]*(" class="btn btn-secondary">Contact Us)', rf'\1{e("contact")}\2', html)
 
