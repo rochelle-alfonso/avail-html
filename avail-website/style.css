@@ -689,7 +689,7 @@ img {
     max-width: 100%;
     height: auto;
     margin-top: 60px;
-    padding: 0 72px;
+    padding: 0 72px 96px;
     box-sizing: border-box;
   }
 
@@ -776,10 +776,15 @@ img {
   }
 
   .landing {
-    min-height: auto;
+    min-height: 100svh;
     border-top-width: 0;
     border-left-width: 0;
     border-right-width: 0;
+  }
+
+  .hero-layout {
+    flex: 1;
+    justify-content: center;
   }
 
   .hero-section {
@@ -812,7 +817,7 @@ img {
   .hero-visual {
     justify-content: center;
     margin-top: 32px;
-    padding: 0 24px;
+    padding: 0 24px 140px;
     box-sizing: border-box;
   }
 
