@@ -7,7 +7,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=9">
+  <link rel="stylesheet" href="style.css?v=10">
   <link rel="stylesheet" href="nav.css">
   <link rel="preload" as="image" href="assets/1.png">
   <link rel="preload" as="image" href="assets/roll-2.png">
@@ -388,23 +388,23 @@
 
       <div class="stats__grid">
         <article class="stats__card stats__card--blue">
-          <p class="stats__value">$53B</p>
-          <p class="stats__label">Potential Nexus TVL</p>
+          <p class="stats__value" data-value="$53B"></p>
+          <p class="stats__label" data-value="Potential Nexus TVL"></p>
         </article>
 
         <article class="stats__card stats__card--light stats__card--blue-text">
-          <p class="stats__value">50M+</p>
-          <p class="stats__label">$AVAIL staked</p>
+          <p class="stats__value" data-value="50M+"></p>
+          <p class="stats__label" data-value="$AVAIL staked"></p>
         </article>
 
         <article class="stats__card stats__card--light stats__card--dark-text">
-          <p class="stats__value">10+</p>
-          <p class="stats__label">chains connected</p>
+          <p class="stats__value" data-value="10+"></p>
+          <p class="stats__label" data-value="chains connected"></p>
         </article>
 
         <article class="stats__card stats__card--dark">
-          <p class="stats__value">100+</p>
-          <p class="stats__label">active validators</p>
+          <p class="stats__value" data-value="100+"></p>
+          <p class="stats__label" data-value="active validators"></p>
         </article>
       </div>
     </div>
@@ -828,10 +828,12 @@
   <script src="hero-roll.js"></script>
   <script src="hero-product-handoff.js"></script>
   <script src="testimonials.js"></script>
+  <script src="stats-typing.js"></script>
   <script>
     (function () {
       window.AvailHeroRoll && window.AvailHeroRoll.init();
       window.AvailTestimonials && window.AvailTestimonials.init();
+      window.AvailStatsTyping && window.AvailStatsTyping.init();
 
       var toggle = document.querySelector('.nav-menu');
       var menu = document.getElementById('mobile-menu');

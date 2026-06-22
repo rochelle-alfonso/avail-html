@@ -1120,6 +1120,32 @@ img {
   line-height: var(--stats-label-lh);
 }
 
+.stats__value--typing::after,
+.stats__label--typing::after {
+  content: '';
+  display: inline-block;
+  width: 0.06em;
+  height: 0.9em;
+  margin-left: 0.04em;
+  background: currentColor;
+  vertical-align: -0.08em;
+  animation: stats-caret 0.75s step-end infinite;
+}
+
+@keyframes stats-caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stats__value--typing::after,
+  .stats__label--typing::after {
+    animation: none;
+    display: none;
+  }
+}
+
 .stats__card--blue {
   background: var(--nexus-blue);
   color: var(--white);
