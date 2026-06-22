@@ -4,8 +4,8 @@
   var triggered = false;
   var observer;
 
-  var CHAR_MS = 75;
-  var CARD_STAGGER_MS = 280;
+  var LOADER_MS = 900;
+  var CARD_STAGGER_MS = 220;
 
   function prefersReducedMotion() {
     return global.matchMedia && global.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -15,52 +15,31 @@
     cards = Array.prototype.slice.call(section.querySelectorAll('.stats__card')).map(function (card) {
       var valueEl = card.querySelector('.stats__value');
       var labelEl = card.querySelector('.stats__label');
-      var valueText = valueEl ? (valueEl.getAttribute('data-value') || valueEl.textContent.trim()) : '';
-      var labelText = labelEl ? (labelEl.getAttribute('data-value') || labelEl.textContent.trim()) : '';
+      var valueText = valueEl ? (valueEl.getAttribute('data-value') || '').trim() : '';
+      var labelText = labelEl ? (labelEl.getAttribute('data-value') || '').trim() : '';
 
-      if (valueEl) {
-        valueEl.setAttribute('data-value', valueText);
-        valueEl.textContent = '';
-      }
-      if (labelEl) {
-        labelEl.setAttribute('data-value', labelText);
-        labelEl.textContent = '';
-      }
+      card.classList.add('is-loading');
 
-      return { valueEl: valueEl, labelEl: labelEl, valueText: valueText, labelText: labelText };
+      return {
+        card: card,
+        valueEl: valueEl,
+        labelEl: labelEl,
+        valueText: valueText,
+        labelText: labelText
+      };
     });
   }
 
-  function typeText(el, text, typingClass, done) {
-    if (!el || !text) {
-      if (done) done();
-      return;
-    }
-
-    el.textContent = '';
-    el.classList.add(typingClass);
-    var index = 0;
-
-    function tick() {
-      if (index >= text.length) {
-        el.classList.remove(typingClass);
-        if (done) done();
-        return;
-      }
-      el.textContent += text.charAt(index);
-      index += 1;
-      global.setTimeout(tick, CHAR_MS);
-    }
-
-    tick();
+  function revealCard(cardData) {
+    if (cardData.valueEl) cardData.valueEl.textContent = cardData.valueText;
+    if (cardData.labelEl) cardData.labelEl.textContent = cardData.labelText;
+    cardData.card.classList.remove('is-loading');
+    cardData.card.classList.add('is-loaded');
   }
 
   function revealAll() {
-    cards.forEach(function (card) {
-      if (card.valueEl) card.valueEl.textContent = card.valueText;
-      if (card.labelEl) card.labelEl.textContent = card.labelText;
-    });
-    section.classList.add('is-typed');
+    cards.forEach(revealCard);
+    section.classList.add('is-loaded');
   }
 
   function animateAll() {
@@ -68,26 +47,18 @@
     triggered = true;
     if (observer) observer.disconnect();
 
-    section.classList.add('is-typing');
-
     if (prefersReducedMotion()) {
       revealAll();
-      section.classList.remove('is-typing');
-      section.classList.add('is-typed');
       return;
     }
 
-    cards.forEach(function (card, cardIndex) {
+    cards.forEach(function (cardData, index) {
       global.setTimeout(function () {
-        typeText(card.valueEl, card.valueText, 'stats__value--typing', function () {
-          typeText(card.labelEl, card.labelText, 'stats__label--typing', function () {
-            if (cardIndex === cards.length - 1) {
-              section.classList.remove('is-typing');
-              section.classList.add('is-typed');
-            }
-          });
-        });
-      }, cardIndex * CARD_STAGGER_MS);
+        revealCard(cardData);
+        if (index === cards.length - 1) {
+          section.classList.add('is-loaded');
+        }
+      }, LOADER_MS + index * CARD_STAGGER_MS);
     });
   }
 
