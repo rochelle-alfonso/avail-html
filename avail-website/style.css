@@ -135,6 +135,18 @@ img {
   width: 100%;
 }
 
+@media (min-width: 1390px) {
+  .landing {
+    min-height: 100svh;
+  }
+
+  .product__visual-panel,
+  .product__content-panel {
+    height: calc(75svh - var(--section-frame) * 2);
+    min-height: 0;
+  }
+}
+
 /* ===========================
    NAV
    =========================== */
@@ -361,6 +373,14 @@ img {
   isolation: isolate;
 }
 
+@media (min-width: 1390px) {
+  .hero-roll {
+    width: clamp(363px, 32.34vw, 631px);
+    height: auto;
+    aspect-ratio: 471 / 429;
+  }
+}
+
 .hero-roll__track {
   position: relative;
   width: 100%;
@@ -431,6 +451,8 @@ img {
     max-width: none;
     object-fit: cover;
     object-position: center;
+    border-radius: 4px;
+    clip-path: inset(0 round 4px);
   }
 
   .hero-roll.is-handoff-hidden {
@@ -498,6 +520,8 @@ img {
   border-radius: 4px;
   background: var(--nexus-blue);
   overflow: hidden;
+  clip-path: inset(0 round 4px);
+  isolation: isolate;
 }
 
 .product__visual-panel--dark {
@@ -528,6 +552,8 @@ img {
   max-width: none;
   object-fit: cover;
   object-position: center;
+  border-radius: 4px;
+  clip-path: inset(0 round 4px);
 }
 
 .product__content-panel {
@@ -541,7 +567,7 @@ img {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  background: var(--white) url('assets/Product%20Section%20Background.png?v=1') center bottom / cover no-repeat;
+  background: var(--white) url('assets/Product%20Section%20Background.png?v=4') center bottom / 100% auto no-repeat;
   image-rendering: -webkit-optimize-contrast;
   opacity: 0.75;
 }
@@ -1520,6 +1546,7 @@ img {
   width: calc(100% - 10px);
   height: 280px;
   background: var(--black);
+  border-radius: 4px;
 }
 
 .testimonials__slide-surface {
@@ -1530,12 +1557,15 @@ img {
   height: 280px;
   background: var(--nexus-blue);
   overflow: hidden;
+  border-radius: 4px;
 }
 
 .testimonials__slide-pattern {
   position: absolute;
   inset: 0;
   pointer-events: none;
+  border-radius: inherit;
+  overflow: hidden;
 }
 
 .testimonials__slide-pattern img {
@@ -1912,7 +1942,7 @@ img {
 }
 
 .investors__cell--empty {
-  background: var(--border);
+  background: transparent;
 }
 
 .investors__cell--logo {
