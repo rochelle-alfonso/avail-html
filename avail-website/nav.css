@@ -22,19 +22,10 @@
 }
 
 .nav-pill {
-  --nav-pill-height: 48px;
-}
-
-.nav-header > .nav-links {
-  --nav-pill-height: 38px;
+  --nav-pill-height: 62px;
 }
 
 .nav-pill .nav-links {
-  align-self: stretch;
-  align-items: center;
-}
-
-.nav-header > .nav-links {
   align-self: stretch;
   align-items: center;
 }
@@ -86,7 +77,7 @@
 .nav-dropdown__menu {
   position: absolute;
   /* Anchor below the nav bar, not the centered trigger button */
-  top: calc((var(--nav-pill-height, 48px) + 100%) / 2 + 10px);
+  top: calc((var(--nav-pill-height, 62px) + 100%) / 2 + 10px);
   left: 0;
   min-width: 248px;
   padding: 16px 20px;
