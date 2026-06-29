@@ -7,20 +7,22 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=12">
+  <link rel="stylesheet" href="style.css?v=22">
   <link rel="stylesheet" href="nav.css?v=2">
+  <link rel="preload" as="image" href="assets/Background.png?v=2">
+  <link rel="preload" as="image" href="assets/Product%20Section%20Background.png?v=1">
+  <link rel="preload" as="image" href="assets/Background_2.png?v=6">
+  <link rel="preload" as="image" href="assets/Background_3.png?v=1">
   <link rel="preload" as="image" href="assets/1.png">
-  <link rel="preload" as="image" href="assets/roll-2.png">
-  <link rel="preload" as="image" href="assets/roll-3.png">
-  <link rel="preload" as="image" href="assets/roll-4.png">
+  <link rel="preload" as="image" href="assets/2.png">
+  <link rel="preload" as="image" href="assets/3.png">
+  <link rel="preload" as="image" href="assets/4.png">
 </head>
 <body>
 
   <div class="hero-handoff" id="hero-handoff">
     <section class="landing" aria-label="Hero">
-      <div class="landing__bg" aria-hidden="true">
-        <canvas class="landing__bg-canvas"></canvas>
-      </div>
+      <div class="landing__bg" aria-hidden="true"></div>
 
       <div class="landing__container site-container">
       <header class="nav-header">
@@ -124,13 +126,13 @@
               <img src="assets/1.png" width="439" height="400" alt="" decoding="async">
             </div>
             <div class="hero-roll__slide">
-              <img src="assets/roll-2.png" srcset="assets/roll-2.png 1x, assets/roll-2@2x.png 2x" width="439" height="400" alt="" decoding="async">
+              <img src="assets/2.png" width="439" height="400" alt="" decoding="async">
             </div>
             <div class="hero-roll__slide">
-              <img src="assets/roll-3.png" srcset="assets/roll-3.png 1x, assets/roll-3@2x.png 2x" width="439" height="400" alt="" decoding="async">
+              <img src="assets/3.png" width="439" height="400" alt="" decoding="async">
             </div>
             <div class="hero-roll__slide">
-              <img src="assets/roll-4.png" srcset="assets/roll-4.png 1x, assets/roll-4@2x.png 2x" width="439" height="400" alt="" decoding="async">
+              <img src="assets/4.png" width="439" height="400" alt="" decoding="async">
             </div>
           </div>
         </div>
@@ -143,9 +145,7 @@
       <div class="product__layout">
         <div class="product__content-col">
           <div class="product__content-panel">
-            <div class="product__content-bg" aria-hidden="true">
-              <canvas class="product__content-bg-canvas"></canvas>
-            </div>
+            <div class="product__content-bg" aria-hidden="true"></div>
 
             <div class="product__content-inner" data-handoff-content>
               <img src="assets/nexus-logo.svg" alt="avail nexus" class="product__logo" width="154" height="24">
@@ -166,8 +166,8 @@
           <div class="product__visual-panel" data-handoff-panel>
             <img
               src="assets/1.png"
-              width="710"
-              height="647"
+              width="1756"
+              height="1600"
               alt=""
               class="product__visual-panel-img"
               data-handoff-target
@@ -183,9 +183,7 @@
     <div class="product__layout">
       <div class="product__content-col">
         <div class="product__content-panel">
-          <div class="product__content-bg" aria-hidden="true">
-            <canvas class="product__content-bg-canvas"></canvas>
-          </div>
+          <div class="product__content-bg" aria-hidden="true"></div>
 
           <div class="product__content-inner">
             <img src="assets/deposit-logo.svg" alt="avail deposit" class="product__logo" width="154" height="24">
@@ -204,10 +202,9 @@
       <div class="product__visual-col">
         <div class="product__visual-panel product__visual-panel--dark">
           <img
-            src="assets/deposit-visual-panel.png"
-            srcset="assets/deposit-visual-panel.png 1x, assets/deposit-visual-panel@2x.png 2x"
-            width="710"
-            height="647"
+            src="assets/2.png"
+            width="1756"
+            height="1600"
             alt=""
             class="product__visual-panel-img"
             decoding="async"
@@ -221,9 +218,7 @@
     <div class="product__layout">
       <div class="product__content-col">
         <div class="product__content-panel">
-          <div class="product__content-bg" aria-hidden="true">
-            <canvas class="product__content-bg-canvas"></canvas>
-          </div>
+          <div class="product__content-bg" aria-hidden="true"></div>
 
           <div class="product__content-inner">
             <img src="assets/fastbridge-logo.svg" alt="fastbridge" class="product__logo product__logo--fastbridge" width="152" height="32">
@@ -245,10 +240,9 @@
       <div class="product__visual-col">
         <div class="product__visual-panel">
           <img
-            src="assets/fastbridge-visual-panel.png"
-            srcset="assets/fastbridge-visual-panel.png 1x, assets/fastbridge-visual-panel@2x.png 2x"
-            width="710"
-            height="647"
+            src="assets/3.png"
+            width="1756"
+            height="1600"
             alt=""
             class="product__visual-panel-img"
             decoding="async"
@@ -262,9 +256,7 @@
     <div class="product__layout">
       <div class="product__content-col">
         <div class="product__content-panel">
-          <div class="product__content-bg" aria-hidden="true">
-            <canvas class="product__content-bg-canvas"></canvas>
-          </div>
+          <div class="product__content-bg" aria-hidden="true"></div>
 
           <div class="product__content-inner">
             <img src="assets/da-logo.svg" alt="avail da" class="product__logo product__logo--da" width="101" height="24">
@@ -283,9 +275,9 @@
       <div class="product__visual-col">
         <div class="product__visual-panel product__visual-panel--dark">
           <img
-            src="assets/da-visual-panel.png"
-            width="1420"
-            height="1294"
+            src="assets/4.png"
+            width="1756"
+            height="1600"
             alt=""
             class="product__visual-panel-img"
             decoding="async"
@@ -295,11 +287,13 @@
     </div>
   </section>
 
-  <section class="chains" aria-label="Chains">
-    <div class="chains__bg" aria-hidden="true">
-      <canvas class="chains__bg-canvas"></canvas>
+  <div class="lower-sections">
+    <div class="lower-sections__bg" aria-hidden="true">
+      <div class="lower-sections__bg-piece lower-sections__bg-piece--primary"></div>
+      <div class="lower-sections__bg-piece lower-sections__bg-piece--secondary"></div>
     </div>
 
+  <section class="chains" aria-label="Chains">
     <div class="chains__inner">
       <h2 class="chains__headline">Your users are<br>already on these chains</h2>
 
@@ -313,9 +307,6 @@
   </section>
 
   <section class="testimonials" aria-label="Testimonials">
-    <div class="testimonials__bg" aria-hidden="true">
-      <canvas class="testimonials__bg-canvas"></canvas>
-    </div>
 
     <div class="testimonials__inner">
       <header class="testimonials__header">
@@ -327,27 +318,57 @@
         <div class="testimonials__viewport">
           <div class="testimonials__track">
             <article class="testimonials__slide is-active" id="testimonial-panel-0" data-index="0" role="tabpanel" aria-labelledby="testimonial-tab-0">
-              <img src="assets/testimonials/clober-logo-white.svg" alt="" class="testimonials__slide-logo testimonials__slide-logo--clober" width="142" height="34">
-              <blockquote class="testimonials__quote">
-                <p>Before Nexus, our traders were limited to liquidity on one chain. Now they access capital from everywhere. It changed the scale of what we could offer overnight.</p>
-              </blockquote>
-              <footer class="testimonials__attribution">John Doe, Sr. Product Manager</footer>
+              <div class="testimonials__slide-frame">
+                <div class="testimonials__slide-shadow" aria-hidden="true"></div>
+                <div class="testimonials__slide-surface">
+                  <div class="testimonials__slide-pattern" aria-hidden="true">
+                    <img src="assets/testimonials/card-bg.png" alt="" width="1002" height="280" decoding="async">
+                  </div>
+                  <div class="testimonials__slide-content">
+                    <img src="assets/testimonials/clober-logo-white.svg" alt="" class="testimonials__slide-logo testimonials__slide-logo--clober" width="142" height="34">
+                    <blockquote class="testimonials__quote">
+                      <p>Before Nexus, our traders were limited to liquidity on one chain. Now they access capital from everywhere. It changed the scale of what we could offer overnight.</p>
+                    </blockquote>
+                    <footer class="testimonials__attribution">John Doe, Sr. Product Manager</footer>
+                  </div>
+                </div>
+              </div>
             </article>
 
             <article class="testimonials__slide" id="testimonial-panel-1" data-index="1" role="tabpanel" aria-labelledby="testimonial-tab-1" aria-hidden="true">
-              <img src="assets/testimonials/bean-logo-white.png" alt="" class="testimonials__slide-logo testimonials__slide-logo--bean" width="135" height="55">
-              <blockquote class="testimonials__quote">
-                <p>Integrating Deposits let our users fund positions from any chain in one step. Onboarding friction dropped immediately and retention followed.</p>
-              </blockquote>
-              <footer class="testimonials__attribution">Jane Smith, Head of Growth</footer>
+              <div class="testimonials__slide-frame">
+                <div class="testimonials__slide-shadow" aria-hidden="true"></div>
+                <div class="testimonials__slide-surface">
+                  <div class="testimonials__slide-pattern" aria-hidden="true">
+                    <img src="assets/testimonials/card-bg.png" alt="" width="1002" height="280" decoding="async">
+                  </div>
+                  <div class="testimonials__slide-content">
+                    <img src="assets/testimonials/bean-logo-white.png" alt="" class="testimonials__slide-logo testimonials__slide-logo--bean" width="135" height="55">
+                    <blockquote class="testimonials__quote">
+                      <p>Integrating Deposits let our users fund positions from any chain in one step. Onboarding friction dropped immediately and retention followed.</p>
+                    </blockquote>
+                    <footer class="testimonials__attribution">Jane Smith, Head of Growth</footer>
+                  </div>
+                </div>
+              </div>
             </article>
 
             <article class="testimonials__slide" id="testimonial-panel-2" data-index="2" role="tabpanel" aria-labelledby="testimonial-tab-2" aria-hidden="true">
-              <img src="assets/testimonials/mace-logo.svg" alt="" class="testimonials__slide-logo testimonials__slide-logo--mace" width="177" height="30">
-              <blockquote class="testimonials__quote">
-                <p>FastBridge turned a four-step bridge flow into a single transaction. Our power users finally had the experience they expected from a modern trading app.</p>
-              </blockquote>
-              <footer class="testimonials__attribution">Alex Chen, CTO</footer>
+              <div class="testimonials__slide-frame">
+                <div class="testimonials__slide-shadow" aria-hidden="true"></div>
+                <div class="testimonials__slide-surface">
+                  <div class="testimonials__slide-pattern" aria-hidden="true">
+                    <img src="assets/testimonials/card-bg.png" alt="" width="1002" height="280" decoding="async">
+                  </div>
+                  <div class="testimonials__slide-content">
+                    <img src="assets/testimonials/mace-logo.svg" alt="" class="testimonials__slide-logo testimonials__slide-logo--mace" width="177" height="30">
+                    <blockquote class="testimonials__quote">
+                      <p>FastBridge turned a four-step bridge flow into a single transaction. Our power users finally had the experience they expected from a modern trading app.</p>
+                    </blockquote>
+                    <footer class="testimonials__attribution">Alex Chen, CTO</footer>
+                  </div>
+                </div>
+              </div>
             </article>
           </div>
         </div>
@@ -374,9 +395,6 @@
   </section>
 
   <section class="stats" aria-label="AVAIL stats">
-    <div class="stats__bg" aria-hidden="true">
-      <canvas class="stats__bg-canvas"></canvas>
-    </div>
 
     <div class="stats__inner">
       <div class="stats__content">
@@ -388,32 +406,49 @@
 
       <div class="stats__grid">
         <article class="stats__card stats__card--blue">
-          <p class="stats__value">$53B</p>
-          <p class="stats__label">Potential Nexus TVL</p>
+          <div class="stats__card-pattern stats__card-pattern--blue" aria-hidden="true">
+            <img src="assets/stats/pattern-blue.png" alt="" width="1920" height="1080" decoding="async">
+          </div>
+          <div class="stats__card-content">
+            <p class="stats__value">$53B</p>
+            <p class="stats__label">Potential Nexus TVL</p>
+          </div>
         </article>
 
         <article class="stats__card stats__card--light stats__card--blue-text">
-          <p class="stats__value">50M+</p>
-          <p class="stats__label">$AVAIL staked</p>
+          <div class="stats__card-pattern stats__card-pattern--light-a" aria-hidden="true">
+            <img src="assets/stats/pattern-light.png" alt="" width="1920" height="1080" decoding="async">
+          </div>
+          <div class="stats__card-content">
+            <p class="stats__value">50M+</p>
+            <p class="stats__label">$AVAIL staked</p>
+          </div>
         </article>
 
         <article class="stats__card stats__card--light stats__card--dark-text">
-          <p class="stats__value">10+</p>
-          <p class="stats__label">chains connected</p>
+          <div class="stats__card-pattern stats__card-pattern--light-b" aria-hidden="true">
+            <img src="assets/stats/pattern-light.png" alt="" width="1920" height="1080" decoding="async">
+          </div>
+          <div class="stats__card-content">
+            <p class="stats__value">10+</p>
+            <p class="stats__label">chains connected</p>
+          </div>
         </article>
 
         <article class="stats__card stats__card--dark">
-          <p class="stats__value">100+</p>
-          <p class="stats__label">active validators</p>
+          <div class="stats__card-pattern stats__card-pattern--dark" aria-hidden="true">
+            <img src="assets/stats/pattern-dark.png" alt="" width="1920" height="1080" decoding="async">
+          </div>
+          <div class="stats__card-content">
+            <p class="stats__value">100+</p>
+            <p class="stats__label">active validators</p>
+          </div>
         </article>
       </div>
     </div>
   </section>
 
   <section class="investors" aria-label="Investors">
-    <div class="investors__bg" aria-hidden="true">
-      <canvas class="investors__bg-canvas"></canvas>
-    </div>
 
     <div class="investors__inner">
       <h2 class="investors__headline">Backed by the best</h2>
@@ -696,9 +731,6 @@
   </section>
 
   <section class="news" aria-label="News and events">
-    <div class="news__bg" aria-hidden="true">
-      <canvas class="news__bg-canvas"></canvas>
-    </div>
 
     <div class="news__inner">
       <header class="news__header">
@@ -738,6 +770,7 @@
       </div>
     </div>
   </section>
+  </div>
 
   <footer class="site-footer" aria-label="Footer">
     <div class="site-footer__inner">
@@ -819,12 +852,11 @@
       id="hero-handoff-panel-img"
       src="assets/1.png"
       alt=""
-      width="710"
-      height="647"
+      width="1756"
+      height="1600"
     >
   </div>
 
-  <script src="halftone-background.js"></script>
   <script src="hero-roll.js"></script>
   <script src="hero-product-handoff.js"></script>
   <script src="testimonials.js"></script>

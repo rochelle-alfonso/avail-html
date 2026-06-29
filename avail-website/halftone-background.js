@@ -289,9 +289,4 @@
     };
   }
 
-  document.addEventListener('DOMContentLoaded', function () {
-    document.querySelectorAll('.landing__bg, .product__content-bg, .testimonials__bg, .chains__bg, .stats__bg, .investors__bg, .news__bg').forEach(function (el) {
-      initHalftoneBackground(el, el.classList.contains('landing__bg') ? { vividChance: 0.18 } : null);
-    });
-  });
 })();
