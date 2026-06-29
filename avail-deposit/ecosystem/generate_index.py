@@ -52,6 +52,7 @@ def main() -> None:
   <meta name="description" content="Discover the growing network of chains, applications, and infrastructure building with Avail." />
   <link rel="icon" type="image/png" href="../assets/logo-mark.svg" />
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../nav.css" />
 </head>
 <body>
   <div class="page-shell">
@@ -60,14 +61,37 @@ def main() -> None:
     </div>
 
   <header class="nav-header">
+    <a href="#" class="nav-logo" aria-label="Avail home">
+      <img src="../assets/logo-mark.svg" alt="" class="nav-logo__mark" width="30" height="30">
+      <img src="../assets/logo-wordmark.svg" alt="avail" class="nav-logo__wordmark" width="57" height="21">
+    </a>
+
     <div class="nav-pill">
-      <a href="#" class="nav-logo" aria-label="Avail home">
-        <img src="../assets/logo-mark.svg" alt="" class="nav-logo__mark" width="24" height="24">
-        <img src="../assets/logo-wordmark.svg" alt="avail" class="nav-logo__wordmark" width="46" height="17">
-      </a>
       <nav class="nav-links" aria-label="Primary">
-        <a href="#" class="nav-links__item">Solutions</a>
-        <a href="#" class="nav-links__item">Products</a>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-solutions-trigger" aria-controls="nav-solutions-menu">Solutions</button>
+          <div class="nav-dropdown__menu" id="nav-solutions-menu" role="menu" aria-labelledby="nav-solutions-trigger">
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">App Developers</p>
+              <a href="#" class="nav-dropdown__link" role="menuitem">User Onboarding</a>
+              <a href="#" class="nav-dropdown__link" role="menuitem">Multi-Chain Solutions</a>
+            </div>
+            <div class="nav-dropdown__section">
+              <p class="nav-dropdown__heading">Blockchain Developers</p>
+              <a href="#" class="nav-dropdown__link" role="menuitem">Data Availability</a>
+            </div>
+          </div>
+        </div>
+        <div class="nav-dropdown">
+          <button type="button" class="nav-links__trigger" aria-haspopup="true" aria-expanded="false" id="nav-products-trigger" aria-controls="nav-products-menu">Products</button>
+          <div class="nav-dropdown__menu nav-dropdown__menu--products" id="nav-products-menu" role="menu" aria-labelledby="nav-products-trigger">
+            <a href="#" class="nav-dropdown__link" role="menuitem">Avail FastBridge</a>
+            <a href="#" class="nav-dropdown__link" role="menuitem">Avail Deposits</a>
+            <a href="#" class="nav-dropdown__link" role="menuitem">Avail Nexus</a>
+            <a href="#" class="nav-dropdown__link" role="menuitem">Avail DA</a>
+            <a href="#" class="nav-dropdown__link" role="menuitem">Avail Atomic</a>
+          </div>
+        </div>
         <a href="#" class="nav-links__item nav-links__item--active">Ecosystem</a>
         <a href="#" class="nav-links__item">Docs</a>
         <a href="#" class="nav-links__item">Blog</a>
@@ -76,14 +100,33 @@ def main() -> None:
         <span class="nav-menu__icon" aria-hidden="true"></span>
         <span class="nav-menu__label">Menu</span>
       </button>
+
+      <a href="#" class="btn btn-primary nav-header__cta">Build with Avail</a>
     </div>
-    <a href="#" class="btn btn-primary nav-header__cta">Build with Avail</a>
   </header>
 
   <div class="mobile-menu" id="mobile-menu" hidden>
     <nav class="mobile-menu__nav" aria-label="Mobile">
-      <a href="#" class="mobile-menu__link">Solutions</a>
-      <a href="#" class="mobile-menu__link">Products</a>
+      <details class="mobile-menu__details">
+        <summary class="mobile-menu__link">Solutions</summary>
+        <div class="mobile-menu__sub">
+          <p class="mobile-menu__heading">App Developers</p>
+          <a href="#" class="mobile-menu__sublink">User Onboarding</a>
+          <a href="#" class="mobile-menu__sublink">Multi-Chain Solutions</a>
+          <p class="mobile-menu__heading">Blockchain Developers</p>
+          <a href="#" class="mobile-menu__sublink">Data Availability</a>
+        </div>
+      </details>
+      <details class="mobile-menu__details">
+        <summary class="mobile-menu__link">Products</summary>
+        <div class="mobile-menu__sub">
+          <a href="#" class="mobile-menu__sublink">Avail FastBridge</a>
+          <a href="#" class="mobile-menu__sublink">Avail Deposits</a>
+          <a href="#" class="mobile-menu__sublink">Avail Nexus</a>
+          <a href="#" class="mobile-menu__sublink">Avail DA</a>
+          <a href="#" class="mobile-menu__sublink">Avail Atomic</a>
+        </div>
+      </details>
       <a href="#" class="mobile-menu__link">Ecosystem</a>
       <a href="#" class="mobile-menu__link">Docs</a>
       <a href="#" class="mobile-menu__link">Blog</a>

@@ -33,12 +33,12 @@ INVESTORS = [
 ]
 
 NAV_HTML = """  <header class="nav-header">
-    <div class="nav-pill">
-      <a href="#" class="nav-logo" aria-label="Avail home">
-        <img src="../assets/logo-mark.svg" alt="" class="nav-logo__mark" width="24" height="24">
-        <img src="../assets/logo-wordmark.svg" alt="avail" class="nav-logo__wordmark" width="46" height="17">
-      </a>
+    <a href="#" class="nav-logo" aria-label="Avail home">
+      <img src="../assets/logo-mark.svg" alt="" class="nav-logo__mark" width="30" height="30">
+      <img src="../assets/logo-wordmark.svg" alt="avail" class="nav-logo__wordmark" width="57" height="21">
+    </a>
 
+    <div class="nav-pill">
       <nav class="nav-links" aria-label="Primary">
         <a href="#" class="nav-links__item">Solutions</a>
         <a href="#" class="nav-links__item">Products</a>
@@ -51,9 +51,9 @@ NAV_HTML = """  <header class="nav-header">
         <span class="nav-menu__icon" aria-hidden="true"></span>
         <span class="nav-menu__label">Menu</span>
       </button>
-    </div>
 
-    <a href="#" class="btn btn-primary nav-header__cta">Build with Avail</a>
+      <a href="#" class="btn btn-primary nav-header__cta">Build with Avail</a>
+    </div>
   </header>
 
   <div class="mobile-menu" id="mobile-menu" hidden>
