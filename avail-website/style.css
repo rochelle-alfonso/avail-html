@@ -664,6 +664,21 @@ img {
     padding: 40px;
   }
 
+  .nav-logo {
+    height: 24px;
+    gap: 3px;
+  }
+
+  .nav-logo__mark {
+    width: 24px;
+    height: 24px;
+  }
+
+  .nav-logo__wordmark {
+    width: 46px;
+    height: 17px;
+  }
+
   .nav-links,
   .nav-header__cta {
     display: none;
@@ -803,21 +818,6 @@ img {
 @media (max-width: 460px) {
   .nav-header {
     padding: 20px 24px 0;
-  }
-
-  .nav-logo {
-    height: 24px;
-    gap: 3px;
-  }
-
-  .nav-logo__mark {
-    width: 24px;
-    height: 24px;
-  }
-
-  .nav-logo__wordmark {
-    width: 46px;
-    height: 17px;
   }
 
   .nav-pill {
