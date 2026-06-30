@@ -1822,24 +1822,24 @@ img {
   }
 
   .testimonials__slide-frame {
-    height: 181px;
+    height: 221px;
   }
 
   .testimonials__slide-shadow {
     top: 8px;
     left: 8px;
     width: calc(100% - 8px);
-    height: 173px;
+    height: 213px;
   }
 
   .testimonials__slide-surface {
     width: calc(100% - 8px);
-    height: 173px;
+    height: 213px;
   }
 
   .testimonials__slide-content {
     gap: 12px;
-    padding: 20px 16px;
+    padding: 40px 16px;
   }
 
   .testimonials__slide-logo--clober {
