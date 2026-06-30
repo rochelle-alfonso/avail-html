@@ -300,6 +300,7 @@
           toggle.setAttribute('aria-expanded', String(!isOpen));
           toggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
           menu.hidden = isOpen;
+        if (label) label.textContent = isOpen ? 'Menu' : 'Close';
           document.body.classList.toggle('menu-open', !isOpen);
         });
       }

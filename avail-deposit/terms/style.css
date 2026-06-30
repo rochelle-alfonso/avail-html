@@ -369,39 +369,5 @@ button { font: inherit; border: none; background: none; cursor: pointer; }
   .hero--terms__eyebrow { font-size: 32px; }
   .hero--terms__title { font-size: 48px; }
   .terms-body__inner { font-size: 15px; }
-  .site-footer__nav { flex-direction: column; gap: 32px; }
   .site-footer__logo { padding: 48px 24px 0; }
-}
-
-@media (max-width: 460px) {
-  .page-shell { border-width: 0; }
-  .page-bg { top: 0; left: 0; right: 0; }
-  .nav-header { padding: 20px 24px 0; }
-  .nav-pill { height: 50px; }
-  .mobile-menu { inset: 70px 0 0; padding: 16px 24px 24px; }
-  .hero--terms__title { font-size: 36px; }
-  .site-footer__top { gap: 24px; padding: 46px 24px 0; }
-  .site-footer__cta { max-width: 322px; align-items: center; text-align: center; }
-  .site-footer__headline { font-size: 32px; max-width: 278px; }
-  .site-footer__subcopy { max-width: 278px; font-size: 14px; }
-  .site-footer__copyright { font-size: 12px; text-align: center; }
-  .site-footer__nav {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 24px;
-    max-width: 298px;
-    margin: 0 auto;
-  }
-  .site-footer__nav-columns { justify-content: space-between; width: 100%; }
-  .site-footer__nav-group--pages .site-footer__nav-list { gap: 12px; }
-  .site-footer__nav-group--support-press { justify-content: space-between; width: 100%; }
-  .site-footer__nav-group--support-press .site-footer__nav-list { gap: 12px; }
-  .site-footer__nav-group--socials .site-footer__nav-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 24px;
-    row-gap: 12px;
-  }
-  .site-footer__logo { padding: 48px 24px 0; }
-  .site-footer__logo-img { max-width: 327px; }
 }

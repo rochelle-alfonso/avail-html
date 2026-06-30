@@ -448,16 +448,18 @@
 
         <nav class="site-footer__nav" aria-label="Footer navigation">
           <div class="site-footer__nav-group site-footer__nav-group--pages">
-            <p class="site-footer__nav-heading">Pages</p>
             <div class="site-footer__nav-columns">
-              <ul class="site-footer__nav-list">
+              <div class="site-footer__nav-subgroup">
+                <p class="site-footer__nav-heading">Pages</p>
+                <ul class="site-footer__nav-list">
                 <li><a href="../../avail-website/" class="site-footer__nav-link">Home</a></li>
                 <li><a href="../about-us/" class="site-footer__nav-link">About us</a></li>
                 <li><a href="./" class="site-footer__nav-link">Nexus</a></li>
                 <li><a href="../da/" class="site-footer__nav-link">DA</a></li>
                 <li><a href="https://avail.keka.com/careers" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Careers</a></li>
               </ul>
-              <ul class="site-footer__nav-list">
+              </div>
+              <ul class="site-footer__nav-list site-footer__nav-list--pages-right">
                 <li><a href="https://blog.availproject.org/" class="site-footer__nav-link" target="_blank" rel="noopener noreferrer">Blog</a></li>
                 <li><a href="../ecosystem/" class="site-footer__nav-link">Ecosystem</a></li>
                 <li><a href="../events/" class="site-footer__nav-link">Events</a></li>
@@ -522,6 +524,7 @@
           toggle.setAttribute('aria-expanded', String(!isOpen));
           toggle.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
           menu.hidden = isOpen;
+        if (label) label.textContent = isOpen ? 'Menu' : 'Close';
           document.body.classList.toggle('menu-open', !isOpen);
         });
       }

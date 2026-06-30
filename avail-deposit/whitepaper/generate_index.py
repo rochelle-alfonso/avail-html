@@ -56,16 +56,18 @@ FOOTER_HTML = """  <footer class="site-footer" aria-label="Footer">
 
         <nav class="site-footer__nav" aria-label="Footer navigation">
           <div class="site-footer__nav-group site-footer__nav-group--pages">
-            <p class="site-footer__nav-heading">Pages</p>
             <div class="site-footer__nav-columns">
-              <ul class="site-footer__nav-list">
+              <div class="site-footer__nav-subgroup">
+                <p class="site-footer__nav-heading">Pages</p>
+                <ul class="site-footer__nav-list">
                 <li><a href="#" class="site-footer__nav-link">Home</a></li>
                 <li><a href="../about-us/" class="site-footer__nav-link">About us</a></li>
                 <li><a href="../nexus/" class="site-footer__nav-link">Nexus</a></li>
                 <li><a href="../da/" class="site-footer__nav-link">DA</a></li>
                 <li><a href="#" class="site-footer__nav-link">Careers</a></li>
               </ul>
-              <ul class="site-footer__nav-list">
+              </div>
+              <ul class="site-footer__nav-list site-footer__nav-list--pages-right">
                 <li><a href="#" class="site-footer__nav-link">Blog</a></li>
                 <li><a href="../ecosystem/" class="site-footer__nav-link">Ecosystem</a></li>
                 <li><a href="../terms/" class="site-footer__nav-link">T&amp;C</a></li>
