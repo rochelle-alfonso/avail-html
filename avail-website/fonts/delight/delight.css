@@ -1,0 +1,17 @@
+@font-face {
+  font-family: 'Delight';
+  src: local('Delight Medium'), local('Delight-Medium'), local('Delight'),
+       url('Delight-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Delight';
+  src: local('Delight Regular'), local('Delight'),
+       url('Delight-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}

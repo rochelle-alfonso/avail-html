@@ -23,12 +23,7 @@
   --section-frame: 10px;
 }
 
-@font-face {
-  font-family: 'Delight';
-  src: local('Delight Medium'), local('Delight');
-  font-weight: 500;
-  font-style: normal;
-}
+@import url('fonts/delight/delight.css');
 
 html {
   -webkit-text-size-adjust: 100%;
