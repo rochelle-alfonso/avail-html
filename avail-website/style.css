@@ -1,5 +1,21 @@
 /* Avail Website · Landing — matched to Figma node 603:1569 */
 
+@font-face {
+  font-family: 'Delight';
+  src: url('fonts/delight/Delight-Medium.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Delight';
+  src: url('fonts/delight/Delight-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
@@ -22,8 +38,6 @@
   --content-inset: 72px;
   --section-frame: 10px;
 }
-
-@import url('fonts/delight/delight.css');
 
 html {
   -webkit-text-size-adjust: 100%;
